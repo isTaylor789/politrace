@@ -1,0 +1,436 @@
+{
+  "gold": {
+    "oraciones": 40,
+    "entidades": 74,
+    "por_tipo": {
+      "ORG": 21,
+      "PER": 15,
+      "LOC": 38
+    }
+  },
+  "menciones": {
+    "n_oraciones": 40,
+    "estricto": true,
+    "coref": true,
+    "por_tipo": {
+      "ORG": {
+        "tp": 15,
+        "fp": 4,
+        "fn": 6,
+        "precision": 0.789,
+        "recall": 0.714,
+        "f1": 0.75,
+        "precision_ci": [
+          0.567,
+          0.915
+        ],
+        "recall_ci": [
+          0.5,
+          0.862
+        ]
+      },
+      "PER": {
+        "tp": 12,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.857,
+        "recall": 0.8,
+        "f1": 0.828,
+        "precision_ci": [
+          0.601,
+          0.96
+        ],
+        "recall_ci": [
+          0.548,
+          0.93
+        ]
+      },
+      "LOC": {
+        "tp": 31,
+        "fp": 0,
+        "fn": 7,
+        "precision": 1.0,
+        "recall": 0.816,
+        "f1": 0.899,
+        "precision_ci": [
+          0.89,
+          1.0
+        ],
+        "recall_ci": [
+          0.666,
+          0.908
+        ]
+      }
+    },
+    "micro": {
+      "tp": 58,
+      "fp": 6,
+      "fn": 16,
+      "precision": 0.906,
+      "recall": 0.784,
+      "f1": 0.841,
+      "precision_ci": [
+        0.81,
+        0.956
+      ],
+      "recall_ci": [
+        0.677,
+        0.862
+      ]
+    }
+  },
+  "ablaciones": {
+    "gazetteer + patrones + coref (estricto)": {
+      "n_oraciones": 40,
+      "estricto": true,
+      "coref": true,
+      "por_tipo": {
+        "ORG": {
+          "tp": 15,
+          "fp": 4,
+          "fn": 6,
+          "precision": 0.789,
+          "recall": 0.714,
+          "f1": 0.75,
+          "precision_ci": [
+            0.567,
+            0.915
+          ],
+          "recall_ci": [
+            0.5,
+            0.862
+          ]
+        },
+        "PER": {
+          "tp": 12,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.857,
+          "recall": 0.8,
+          "f1": 0.828,
+          "precision_ci": [
+            0.601,
+            0.96
+          ],
+          "recall_ci": [
+            0.548,
+            0.93
+          ]
+        },
+        "LOC": {
+          "tp": 31,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.816,
+          "f1": 0.899,
+          "precision_ci": [
+            0.89,
+            1.0
+          ],
+          "recall_ci": [
+            0.666,
+            0.908
+          ]
+        }
+      },
+      "micro": {
+        "tp": 58,
+        "fp": 6,
+        "fn": 16,
+        "precision": 0.906,
+        "recall": 0.784,
+        "f1": 0.841,
+        "precision_ci": [
+          0.81,
+          0.956
+        ],
+        "recall_ci": [
+          0.677,
+          0.862
+        ]
+      }
+    },
+    "sin coreferencia (estricto)": {
+      "n_oraciones": 40,
+      "estricto": true,
+      "coref": false,
+      "por_tipo": {
+        "ORG": {
+          "tp": 14,
+          "fp": 4,
+          "fn": 7,
+          "precision": 0.778,
+          "recall": 0.667,
+          "f1": 0.718,
+          "precision_ci": [
+            0.548,
+            0.91
+          ],
+          "recall_ci": [
+            0.454,
+            0.828
+          ]
+        },
+        "PER": {
+          "tp": 12,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.857,
+          "recall": 0.8,
+          "f1": 0.828,
+          "precision_ci": [
+            0.601,
+            0.96
+          ],
+          "recall_ci": [
+            0.548,
+            0.93
+          ]
+        },
+        "LOC": {
+          "tp": 31,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.816,
+          "f1": 0.899,
+          "precision_ci": [
+            0.89,
+            1.0
+          ],
+          "recall_ci": [
+            0.666,
+            0.908
+          ]
+        }
+      },
+      "micro": {
+        "tp": 57,
+        "fp": 6,
+        "fn": 17,
+        "precision": 0.905,
+        "recall": 0.77,
+        "f1": 0.832,
+        "precision_ci": [
+          0.807,
+          0.956
+        ],
+        "recall_ci": [
+          0.663,
+          0.851
+        ]
+      }
+    },
+    "con coreferencia (laxo)": {
+      "n_oraciones": 40,
+      "estricto": false,
+      "coref": true,
+      "por_tipo": {
+        "ORG": {
+          "tp": 15,
+          "fp": 4,
+          "fn": 6,
+          "precision": 0.789,
+          "recall": 0.714,
+          "f1": 0.75,
+          "precision_ci": [
+            0.567,
+            0.915
+          ],
+          "recall_ci": [
+            0.5,
+            0.862
+          ]
+        },
+        "PER": {
+          "tp": 12,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.857,
+          "recall": 0.8,
+          "f1": 0.828,
+          "precision_ci": [
+            0.601,
+            0.96
+          ],
+          "recall_ci": [
+            0.548,
+            0.93
+          ]
+        },
+        "LOC": {
+          "tp": 31,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.816,
+          "f1": 0.899,
+          "precision_ci": [
+            0.89,
+            1.0
+          ],
+          "recall_ci": [
+            0.666,
+            0.908
+          ]
+        }
+      },
+      "micro": {
+        "tp": 58,
+        "fp": 6,
+        "fn": 16,
+        "precision": 0.906,
+        "recall": 0.784,
+        "f1": 0.841,
+        "precision_ci": [
+          0.81,
+          0.956
+        ],
+        "recall_ci": [
+          0.677,
+          0.862
+        ]
+      }
+    }
+  },
+  "relaciones": {
+    "n": 53,
+    "aciertos": 29,
+    "precision": 0.547,
+    "por_tipo": {
+      "coocurre": {
+        "n": 30,
+        "aciertos": 21,
+        "precision": 0.7
+      },
+      "recibe": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "apoya": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "visita": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "encabeza": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "entrega": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "pide_a": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "denuncia": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "firma_con": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "gobierna": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "agradece": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "acusa": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "condena": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "amenaza": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "invita": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "se_reune_con": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "cargo_inferido": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "ocupa_cargo": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "nombra": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "anuncia_a": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "inaugura": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "exige_a": {
+        "n": 1,
+        "aciertos": 1,
+        "precision": 1.0
+      },
+      "felicita": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      },
+      "viaja_a": {
+        "n": 1,
+        "aciertos": 0,
+        "precision": 0.0
+      }
+    },
+    "grupos": {
+      "verbales (todos los tipos)": {
+        "n": 21,
+        "aciertos": 6,
+        "precision": 0.286
+      },
+      "cargo (inferido/explícito)": {
+        "n": 2,
+        "aciertos": 2,
+        "precision": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,1174 @@
+{
+  "opciones": {
+    "patterns": true,
+    "coref": true,
+    "min_weight": 2,
+    "limit": 0
+  },
+  "volumen": {
+    "documentos": 4531,
+    "oraciones": 993494,
+    "menciones": 643811,
+    "relaciones_ocurrencias": 257063,
+    "segundos": 211.1
+  },
+  "cobertura": {
+    "oraciones_con_entidades": 371705,
+    "oraciones_sin_entidades": 621789,
+    "oraciones_con_relaciones": 115191,
+    "pct_oraciones_con_entidades": 37.41
+  },
+  "menciones": {
+    "por_tipo": {
+      "PER": 231466,
+      "LOC": 214522,
+      "ORG": 158992,
+      "CARGO": 38831
+    },
+    "por_fuente": {
+      "gazetteer": 380300,
+      "nombre": 174736,
+      "cargo_de": 38831,
+      "coref": 24587,
+      "sigla": 20101,
+      "cargo_inferido": 4643,
+      "cargo_explicito": 613
+    },
+    "elípticas_por_coref": 24587
+  },
+  "relaciones": {
+    "por_tipo": {
+      "coocurre": 80181,
+      "recibe": 509,
+      "entrega": 404,
+      "apoya": 355,
+      "visita": 297,
+      "denuncia": 279,
+      "pide_a": 260,
+      "firma_con": 238,
+      "encabeza": 184,
+      "se_reune_con": 154,
+      "agradece": 134,
+      "inaugura": 99,
+      "acusa": 96,
+      "gobierna": 89,
+      "invita": 80,
+      "amenaza": 79,
+      "exige_a": 73,
+      "anuncia_a": 66,
+      "nombra": 62,
+      "critica": 55,
+      "condena": 52,
+      "viaja_a": 42,
+      "expulsa": 21,
+      "rechaza": 19,
+      "saluda": 11,
+      "felicita": 10,
+      "sanciona": 9,
+      "decreta": 6,
+      "cargo_inferido": 4,
+      "ocupa_cargo": 4,
+      "promulga": 4
+    },
+    "aristas_publicadas": 18659
+  },
+  "entidades": {
+    "nodos_por_tipo": {
+      "PER": 38405,
+      "ORG": 8304,
+      "LOC": 137,
+      "CARGO": 23
+    },
+    "top_menciones": [
+      {
+        "nodo": "PER:Andrés Manuel López Obrador",
+        "label": "Andrés Manuel López Obrador",
+        "tipo": "PER",
+        "menciones": 56064,
+        "docs": 2298
+      },
+      {
+        "nodo": "LOC:México",
+        "label": "México",
+        "tipo": "LOC",
+        "menciones": 39538,
+        "docs": 2371
+      },
+      {
+        "nodo": "LOC:España",
+        "label": "España",
+        "tipo": "LOC",
+        "menciones": 18639,
+        "docs": 1873
+      },
+      {
+        "nodo": "CARGO:secretario",
+        "label": "secretario",
+        "tipo": "CARGO",
+        "menciones": 16034,
+        "docs": 2075
+      },
+      {
+        "nodo": "LOC:Estados Unidos",
+        "label": "Estados Unidos",
+        "tipo": "LOC",
+        "menciones": 15652,
+        "docs": 2224
+      },
+      {
+        "nodo": "ORG:Gobierno de México",
+        "label": "Gobierno de México",
+        "tipo": "ORG",
+        "menciones": 11186,
+        "docs": 1942
+      },
+      {
+        "nodo": "CARGO:presidente",
+        "label": "presidente",
+        "tipo": "CARGO",
+        "menciones": 7011,
+        "docs": 2503
+      },
+      {
+        "nodo": "ORG:Guardia Nacional",
+        "label": "Guardia Nacional",
+        "tipo": "ORG",
+        "menciones": 6793,
+        "docs": 1186
+      },
+      {
+        "nodo": "ORG:Gobierno de España",
+        "label": "Gobierno de España",
+        "tipo": "ORG",
+        "menciones": 6657,
+        "docs": 932
+      },
+      {
+        "nodo": "ORG:PEMEX",
+        "label": "PEMEX",
+        "tipo": "ORG",
+        "menciones": 6612,
+        "docs": 1091
+      },
+      {
+        "nodo": "LOC:Ciudad de México",
+        "label": "Ciudad de México",
+        "tipo": "LOC",
+        "menciones": 6582,
+        "docs": 1587
+      },
+      {
+        "nodo": "LOC:Chile",
+        "label": "Chile",
+        "tipo": "LOC",
+        "menciones": 5845,
+        "docs": 1158
+      },
+      {
+        "nodo": "LOC:Veracruz",
+        "label": "Veracruz",
+        "tipo": "LOC",
+        "menciones": 5692,
+        "docs": 1196
+      },
+      {
+        "nodo": "LOC:Europa",
+        "label": "Europa",
+        "tipo": "LOC",
+        "menciones": 5513,
+        "docs": 1430
+      },
+      {
+        "nodo": "CARGO:general",
+        "label": "general",
+        "tipo": "CARGO",
+        "menciones": 5448,
+        "docs": 1727
+      },
+      {
+        "nodo": "LOC:Sonora",
+        "label": "Sonora",
+        "tipo": "LOC",
+        "menciones": 5036,
+        "docs": 979
+      },
+      {
+        "nodo": "LOC:Oaxaca",
+        "label": "Oaxaca",
+        "tipo": "LOC",
+        "menciones": 4973,
+        "docs": 1163
+      },
+      {
+        "nodo": "ORG:COVID",
+        "label": "COVID",
+        "tipo": "ORG",
+        "menciones": 4397,
+        "docs": 966
+      },
+      {
+        "nodo": "ORG:IMSS",
+        "label": "IMSS",
+        "tipo": "ORG",
+        "menciones": 4218,
+        "docs": 785
+      },
+      {
+        "nodo": "LOC:Tabasco",
+        "label": "Tabasco",
+        "tipo": "LOC",
+        "menciones": 3864,
+        "docs": 1234
+      },
+      {
+        "nodo": "ORG:Poder Judicial",
+        "label": "Poder Judicial",
+        "tipo": "ORG",
+        "menciones": 3856,
+        "docs": 918
+      },
+      {
+        "nodo": "LOC:Guerrero",
+        "label": "Guerrero",
+        "tipo": "LOC",
+        "menciones": 3813,
+        "docs": 1064
+      },
+      {
+        "nodo": "ORG:Unión Europea",
+        "label": "Unión Europea",
+        "tipo": "ORG",
+        "menciones": 3728,
+        "docs": 882
+      },
+      {
+        "nodo": "LOC:Juárez",
+        "label": "Juárez",
+        "tipo": "LOC",
+        "menciones": 3699,
+        "docs": 1291
+      },
+      {
+        "nodo": "LOC:Chiapas",
+        "label": "Chiapas",
+        "tipo": "LOC",
+        "menciones": 3612,
+        "docs": 1068
+      }
+    ],
+    "nodos_con_un_solo_documento": 34776
+  },
+  "grafo": {
+    "nodos_totales": 46869,
+    "nodos_aislados": 42724,
+    "nodos_conectados": 4145,
+    "nodos": 4145,
+    "aristas_proyectadas": 14052,
+    "aristas_tipadas": 18659,
+    "densidad": 0.001636,
+    "componentes_conexas": 186,
+    "componente_gigante": 0.08,
+    "grado_medio": 6.78,
+    "comunidades": 228,
+    "modularidad": 0.5471,
+    "top_grado": [
+      {
+        "nodo": "PER:Andrés Manuel López Obrador",
+        "label": "Andrés Manuel López Obrador",
+        "tipo": "PER",
+        "grado": 633
+      },
+      {
+        "nodo": "LOC:México",
+        "label": "México",
+        "tipo": "LOC",
+        "grado": 620
+      },
+      {
+        "nodo": "CARGO:secretario",
+        "label": "secretario",
+        "tipo": "CARGO",
+        "grado": 542
+      },
+      {
+        "nodo": "CARGO:presidente",
+        "label": "presidente",
+        "tipo": "CARGO",
+        "grado": 486
+      },
+      {
+        "nodo": "ORG:Gobierno de México",
+        "label": "Gobierno de México",
+        "tipo": "ORG",
+        "grado": 456
+      },
+      {
+        "nodo": "CARGO:general",
+        "label": "general",
+        "tipo": "CARGO",
+        "grado": 417
+      },
+      {
+        "nodo": "LOC:España",
+        "label": "España",
+        "tipo": "LOC",
+        "grado": 371
+      },
+      {
+        "nodo": "LOC:Estados Unidos",
+        "label": "Estados Unidos",
+        "tipo": "LOC",
+        "grado": 350
+      },
+      {
+        "nodo": "LOC:Ciudad de México",
+        "label": "Ciudad de México",
+        "tipo": "LOC",
+        "grado": 264
+      },
+      {
+        "nodo": "CARGO:director",
+        "label": "director",
+        "tipo": "CARGO",
+        "grado": 243
+      },
+      {
+        "nodo": "ORG:Gobierno de España",
+        "label": "Gobierno de España",
+        "tipo": "ORG",
+        "grado": 225
+      },
+      {
+        "nodo": "LOC:Veracruz",
+        "label": "Veracruz",
+        "tipo": "LOC",
+        "grado": 189
+      },
+      {
+        "nodo": "ORG:Guardia Nacional",
+        "label": "Guardia Nacional",
+        "tipo": "ORG",
+        "grado": 186
+      },
+      {
+        "nodo": "ORG:PEMEX",
+        "label": "PEMEX",
+        "tipo": "ORG",
+        "grado": 181
+      },
+      {
+        "nodo": "LOC:Juárez",
+        "label": "Juárez",
+        "tipo": "LOC",
+        "grado": 169
+      }
+    ],
+    "top_intermediacion": [
+      {
+        "nodo": "PER:Andrés Manuel López Obrador",
+        "label": "Andrés Manuel López Obrador",
+        "tipo": "PER",
+        "betweenness": 0.13865
+      },
+      {
+        "nodo": "CARGO:presidente",
+        "label": "presidente",
+        "tipo": "CARGO",
+        "betweenness": 0.1084
+      },
+      {
+        "nodo": "LOC:México",
+        "label": "México",
+        "tipo": "LOC",
+        "betweenness": 0.10411
+      },
+      {
+        "nodo": "CARGO:secretario",
+        "label": "secretario",
+        "tipo": "CARGO",
+        "betweenness": 0.10341
+      },
+      {
+        "nodo": "CARGO:general",
+        "label": "general",
+        "tipo": "CARGO",
+        "betweenness": 0.08688
+      },
+      {
+        "nodo": "LOC:España",
+        "label": "España",
+        "tipo": "LOC",
+        "betweenness": 0.08382
+      },
+      {
+        "nodo": "ORG:Gobierno de México",
+        "label": "Gobierno de México",
+        "tipo": "ORG",
+        "betweenness": 0.05118
+      },
+      {
+        "nodo": "LOC:Estados Unidos",
+        "label": "Estados Unidos",
+        "tipo": "LOC",
+        "betweenness": 0.04873
+      },
+      {
+        "nodo": "LOC:Chile",
+        "label": "Chile",
+        "tipo": "LOC",
+        "betweenness": 0.04853
+      },
+      {
+        "nodo": "ORG:Gobierno de España",
+        "label": "Gobierno de España",
+        "tipo": "ORG",
+        "betweenness": 0.04476
+      },
+      {
+        "nodo": "LOC:Juárez",
+        "label": "Juárez",
+        "tipo": "LOC",
+        "betweenness": 0.03314
+      },
+      {
+        "nodo": "PER:Felipe Calderón",
+        "label": "Felipe Calderón",
+        "tipo": "PER",
+        "betweenness": 0.0306
+      },
+      {
+        "nodo": "LOC:Veracruz",
+        "label": "Veracruz",
+        "tipo": "LOC",
+        "betweenness": 0.0286
+      },
+      {
+        "nodo": "LOC:Ciudad de México",
+        "label": "Ciudad de México",
+        "tipo": "LOC",
+        "betweenness": 0.02584
+      },
+      {
+        "nodo": "LOC:Oaxaca",
+        "label": "Oaxaca",
+        "tipo": "LOC",
+        "betweenness": 0.02498
+      }
+    ],
+    "comunidades_top": [
+      {
+        "id": 0,
+        "tamano": 1045,
+        "miembros": [
+          "canciller",
+          "embajador",
+          "fiscal general",
+          "juez",
+          "presidente",
+          "vicepresidente",
+          "Amazonia",
+          "America Latina"
+        ]
+      },
+      {
+        "id": 1,
+        "tamano": 859,
+        "miembros": [
+          "gobernador",
+          "Agua Negra",
+          "Aguascalientes",
+          "Baja California",
+          "Campeche",
+          "Chiapas",
+          "Chihuahua",
+          "Ciudad de México"
+        ]
+      },
+      {
+        "id": 2,
+        "tamano": 528,
+        "miembros": [
+          "ministro",
+          "portavoz",
+          "Africa",
+          "Andalucía",
+          "Aragón",
+          "Asturias",
+          "Baleares",
+          "Barcelona"
+        ]
+      },
+      {
+        "id": 3,
+        "tamano": 455,
+        "miembros": [
+          "almirante",
+          "comandante",
+          "coordinador",
+          "secretario",
+          "subsecretario",
+          "Misiones",
+          "Toledo",
+          "ASA"
+        ]
+      },
+      {
+        "id": 4,
+        "tamano": 454,
+        "miembros": [
+          "delegado",
+          "director",
+          "fiscal",
+          "general",
+          "magistrado",
+          "vocero",
+          "Mendoza",
+          "Academia Nacional de Medicina"
+        ]
+      },
+      {
+        "id": 5,
+        "tamano": 120,
+        "miembros": [
+          "Antofagasta",
+          "Araucanía",
+          "Arica",
+          "Atacama",
+          "Biobío",
+          "Concepción",
+          "Coquimbo",
+          "Iquique"
+        ]
+      }
+    ]
+  },
+  "por_hablante": {
+    "Andrés Manuel López Obrador": {
+      "menciones": 518158,
+      "entidades_top": [
+        {
+          "label": "Andrés Manuel López Obrador",
+          "tipo": "PER",
+          "n": 56019
+        },
+        {
+          "label": "México",
+          "tipo": "LOC",
+          "n": 39286
+        },
+        {
+          "label": "secretario",
+          "tipo": "CARGO",
+          "n": 15806
+        },
+        {
+          "label": "Estados Unidos",
+          "tipo": "LOC",
+          "n": 14653
+        },
+        {
+          "label": "Gobierno de México",
+          "tipo": "ORG",
+          "n": 11186
+        },
+        {
+          "label": "Guardia Nacional",
+          "tipo": "ORG",
+          "n": 6789
+        },
+        {
+          "label": "PEMEX",
+          "tipo": "ORG",
+          "n": 6610
+        },
+        {
+          "label": "Ciudad de México",
+          "tipo": "LOC",
+          "n": 6572
+        }
+      ],
+      "relaciones_top": {
+        "coocurre": 210287,
+        "cargo_inferido": 1179,
+        "recibe": 514,
+        "entrega": 397,
+        "apoya": 323,
+        "denuncia": 293
+      }
+    },
+    "Javier Milei": {
+      "menciones": 9604,
+      "entidades_top": [
+        {
+          "label": "Argentina",
+          "tipo": "LOC",
+          "n": 2187
+        },
+        {
+          "label": "PBI",
+          "tipo": "ORG",
+          "n": 800
+        },
+        {
+          "label": "Banco Central",
+          "tipo": "ORG",
+          "n": 737
+        },
+        {
+          "label": "Estados Unidos",
+          "tipo": "LOC",
+          "n": 180
+        },
+        {
+          "label": "Gobierno de Argentina",
+          "tipo": "ORG",
+          "n": 176
+        },
+        {
+          "label": "Adam Smith",
+          "tipo": "PER",
+          "n": 163
+        },
+        {
+          "label": "Buenos Aires",
+          "tipo": "LOC",
+          "n": 97
+        },
+        {
+          "label": "Luis Caputo",
+          "tipo": "PER",
+          "n": 91
+        }
+      ],
+      "relaciones_top": {
+        "coocurre": 2065,
+        "pide_a": 7,
+        "firma_con": 4,
+        "recibe": 4,
+        "visita": 2,
+        "viaja_a": 2
+      }
+    },
+    "Nicolás Maduro": {
+      "menciones": 3809,
+      "entidades_top": [
+        {
+          "label": "Venezuela",
+          "tipo": "LOC",
+          "n": 743
+        },
+        {
+          "label": "Estados Unidos",
+          "tipo": "LOC",
+          "n": 137
+        },
+        {
+          "label": "Hugo Chávez",
+          "tipo": "PER",
+          "n": 104
+        },
+        {
+          "label": "ALBA",
+          "tipo": "ORG",
+          "n": 82
+        },
+        {
+          "label": "Colombia",
+          "tipo": "LOC",
+          "n": 79
+        },
+        {
+          "label": "Asamblea Nacional",
+          "tipo": "ORG",
+          "n": 75
+        },
+        {
+          "label": "Caribe",
+          "tipo": "LOC",
+          "n": 75
+        },
+        {
+          "label": "Bolívar",
+          "tipo": "LOC",
+          "n": 73
+        }
+      ],
+      "relaciones_top": {
+        "coocurre": 1587,
+        "denuncia": 3,
+        "amenaza": 3,
+        "firma_con": 3,
+        "nombra": 1,
+        "sanciona": 1
+      }
+    },
+    "Pedro Sánchez": {
+      "menciones": 86126,
+      "entidades_top": [
+        {
+          "label": "España",
+          "tipo": "LOC",
+          "n": 16994
+        },
+        {
+          "label": "Gobierno de España",
+          "tipo": "ORG",
+          "n": 6657
+        },
+        {
+          "label": "Europa",
+          "tipo": "LOC",
+          "n": 4351
+        },
+        {
+          "label": "Unión Europea",
+          "tipo": "ORG",
+          "n": 3428
+        },
+        {
+          "label": "Ucrania",
+          "tipo": "LOC",
+          "n": 1976
+        },
+        {
+          "label": "Pedro Sánchez",
+          "tipo": "PER",
+          "n": 1721
+        },
+        {
+          "label": "PP",
+          "tipo": "ORG",
+          "n": 1590
+        },
+        {
+          "label": "presidente",
+          "tipo": "CARGO",
+          "n": 1579
+        }
+      ],
+      "relaciones_top": {
+        "coocurre": 29333,
+        "apoya": 81,
+        "visita": 75,
+        "amenaza": 40,
+        "exige_a": 32,
+        "firma_con": 32
+      }
+    },
+    "Sebastián Piñera Echenique": {
+      "menciones": 26114,
+      "entidades_top": [
+        {
+          "label": "Chile",
+          "tipo": "LOC",
+          "n": 5036
+        },
+        {
+          "label": "Gobierno de Chile",
+          "tipo": "ORG",
+          "n": 538
+        },
+        {
+          "label": "presidente",
+          "tipo": "CARGO",
+          "n": 395
+        },
+        {
+          "label": "Santiago",
+          "tipo": "LOC",
+          "n": 379
+        },
+        {
+          "label": "America Latina",
+          "tipo": "LOC",
+          "n": 366
+        },
+        {
+          "label": "La Araucanía",
+          "tipo": "LOC",
+          "n": 349
+        },
+        {
+          "label": "Fuerzas Armadas",
+          "tipo": "ORG",
+          "n": 329
+        },
+        {
+          "label": "ministro",
+          "tipo": "CARGO",
+          "n": 318
+        }
+      ],
+      "relaciones_top": {
+        "coocurre": 8533,
+        "recibe": 22,
+        "visita": 15,
+        "entrega": 15,
+        "inaugura": 15,
+        "firma_con": 10
+      }
+    }
+  },
+  "ejemplos_relaciones": [
+    {
+      "source": "ORG:Gobierno de España",
+      "target": "LOC:España",
+      "type": "coocurre",
+      "weight": 4240,
+      "docs": 836,
+      "evidence": [
+        {
+          "doc_id": 2511,
+          "sent_idx": 9,
+          "sentence": "Porque la Presidencia del Gobierno de España también es el Gobierno y yo, además, que, antes de ser fraile he sido cocinero, y he participado y he trabajado de miembro de Gabinetes de distintos responsables políticos, en mi pasado, siempre he concedido mucha importancia a los Gabinetes, mucha import"
+        },
+        {
+          "doc_id": 2512,
+          "sent_idx": 25,
+          "sentence": "Me estoy refiriendo singularmente a la comisión bilateral entre el Gobierno de España y el Gobierno de la Generalitat de Cataluña."
+        },
+        {
+          "doc_id": 2512,
+          "sent_idx": 26,
+          "sentence": "Ese es el ánimo que tiene el Gobierno de España."
+        }
+      ]
+    },
+    {
+      "source": "ORG:Gobierno de México",
+      "target": "LOC:México",
+      "type": "coocurre",
+      "weight": 1590,
+      "docs": 766,
+      "evidence": [
+        {
+          "doc_id": 7,
+          "sent_idx": 106,
+          "sentence": "La pregunta es, saber si esta iniciativa para cancelar la reforma educativa considera cancelarla totalmente o el Gobierno de México tiene algunos aspectos que considera rescatables.SECRETARIO ESTEBAN MOCTEZUMA BARRAGÁN"
+        },
+        {
+          "doc_id": 11,
+          "sent_idx": 144,
+          "sentence": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Nosotros no aceptamos cooperación para funciones de seguridad que sólo competen al Gobierno de México."
+        },
+        {
+          "doc_id": 15,
+          "sent_idx": 18,
+          "sentence": "La aplicación de la sección 235 B2C del Acta de Inmigración y Nacionalidad de los Estados Unidos de América, en el sentido que fue notificada al Gobierno de México es un asunto interno de ese país."
+        }
+      ]
+    },
+    {
+      "source": "ORG:Gobierno de México",
+      "target": "LOC:Estados Unidos",
+      "type": "coocurre",
+      "weight": 1568,
+      "docs": 714,
+      "evidence": [
+        {
+          "doc_id": 2,
+          "sent_idx": 157,
+          "sentence": "Yo le he dado a él la responsabilidad de atender este asunto y hay comunicación con el Gobierno de Estados Unidos."
+        },
+        {
+          "doc_id": 11,
+          "sent_idx": 2,
+          "sentence": "Les informo que ayer hubo buenas noticias porque se dio a conocer una declaración unilateral del gobierno de Estados Unidos acerca de destinar fondos, recursos, inversión, para Centroamérica, para tres países de Centroamérica, y también para nuestro país."
+        },
+        {
+          "doc_id": 11,
+          "sent_idx": 56,
+          "sentence": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Es que es probable que hoy, si no mañana, el secretario de Relaciones Exteriores, Marcelo Ebrard, les hable del proceso que estamos siguiendo de cómo se están llevando a cabo las conversaciones con los funcionarios del gobierno de Estados Unidos para resolve"
+        }
+      ]
+    },
+    {
+      "source": "ORG:Secretaría de la Defensa",
+      "target": "CARGO:secretario",
+      "type": "coocurre",
+      "weight": 1544,
+      "docs": 821,
+      "evidence": [
+        {
+          "doc_id": 0,
+          "sent_idx": 2,
+          "sentence": "la Secretaría de la Defensa y la Secretaría de Marina, instituciones que son fundamentales para garantizar la seguridad nacional, la defensa de nuestro territorio, también para garantizar la seguridad interior, y espero que pronto estas dos importantes instituciones nos ayuden"
+        },
+        {
+          "doc_id": 0,
+          "sent_idx": 3,
+          "sentence": "una vez si así se decide en el Congreso, que se reforme la Constitución para que podamos integrar la Guardia Nacional y, tanto la Secretaría de la Defensa, como la Secretaría de Marina nos apoyen"
+        },
+        {
+          "doc_id": 0,
+          "sent_idx": 15,
+          "sentence": "Si a esto se suman los 20 mil elementos de la Policía Federal, ya tendríamos un cuerpo para atender el problema de la inseguridad de alrededor de 60 mil elementos, y eso sería en el corto plazo porque, en una segunda etapa, convocaríamos a que miembros del Ejército y de la Marina también se adhirier"
+        }
+      ]
+    },
+    {
+      "source": "ORG:Fiscalía General de la República",
+      "target": "CARGO:general",
+      "type": "coocurre",
+      "weight": 1401,
+      "docs": 584,
+      "evidence": [
+        {
+          "doc_id": 21,
+          "sent_idx": 55,
+          "sentence": "Además, inicialmente se contará con el apoyo de la Universidad de Ciencias de la Seguridad en Apodaca, Nuevo León; la Fiscalía General de la República, la propia Policía Federal, entre otras instituciones nacionales y extranjeras."
+        },
+        {
+          "doc_id": 46,
+          "sent_idx": 54,
+          "sentence": "La investigación estará a cargo de la Fiscalía General de la República y de la Procuraduría General de Justicia del Estado de Hidalgo, así como de Petróleos Mexicanos, de Pemex."
+        },
+        {
+          "doc_id": 47,
+          "sent_idx": 4,
+          "sentence": "Y posteriormente va a haber un informe de las procuradurías o de la Procuraduría General, en el caso de Hidalgo, y de la Fiscalía General de la República; los dos procuradores, Raúl Arroyo, de Hidalgo, y el fiscal Alejandro Gertz."
+        }
+      ]
+    },
+    {
+      "source": "ORG:Secretaría de Marina",
+      "target": "CARGO:secretario",
+      "type": "coocurre",
+      "weight": 1275,
+      "docs": 616,
+      "evidence": [
+        {
+          "doc_id": 14,
+          "sent_idx": 62,
+          "sentence": "Es paisano, y le estoy pidiendo que también la Secretaría de Marina ayude en este proyecto."
+        },
+        {
+          "doc_id": 16,
+          "sent_idx": 25,
+          "sentence": "Esta investigación inició a las 12 del día, una vez que la Secretaría de Marina terminó de hacer su investigación, su gestión, y naturalmente nos orientamos desde el principio a la identificación de las partes que son esenciales, que pueden contener información sobre los sucesos acaecidos."
+        },
+        {
+          "doc_id": 16,
+          "sent_idx": 163,
+          "sentence": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Hay ciertos elementos de una revisión técnica que hizo la Secretaría de Marina, pero no queremos adelantar nada."
+        }
+      ]
+    },
+    {
+      "source": "LOC:México",
+      "target": "LOC:Estados Unidos",
+      "type": "coocurre",
+      "weight": 1198,
+      "docs": 641,
+      "evidence": [
+        {
+          "doc_id": 2,
+          "sent_idx": 221,
+          "sentence": "Y, no solo eso, también en visas de trabajo para México y para Estados Unidos."
+        },
+        {
+          "doc_id": 11,
+          "sent_idx": 43,
+          "sentence": "Y sigue la posibilidad de que centroamericanos retornen a México después de cruzar a los Estados Unidos para pedir asilo.Y, finalmente, ayer se conoció que torturaron y asesinaron a dos hondureños jóvenes, adolescentes, en Tijuana."
+        },
+        {
+          "doc_id": 12,
+          "sent_idx": 422,
+          "sentence": "Y, la segunda pregunta es, ¿cuándo va a dar a conocer los nombres de los embajadores, sobre todo, el representante de México en Estados Unidos?"
+        }
+      ]
+    },
+    {
+      "source": "LOC:Estados Unidos",
+      "target": "LOC:México",
+      "type": "coocurre",
+      "weight": 1074,
+      "docs": 616,
+      "evidence": [
+        {
+          "doc_id": 2,
+          "sent_idx": 142,
+          "sentence": "Y, del otro lado, de regreso del Canciller designado, Marcelo Ebrard, desde Estados Unidos y este viaje, México va a aceptar el plan (inaudible) en México, quedarse en México, para los migrantes, mientras que esperan que su proceso, o que procesen su solicitud de refugio en los Estados Unidos."
+        },
+        {
+          "doc_id": 11,
+          "sent_idx": 62,
+          "sentence": "Y queremos también que en Estados Unidos se den visas de trabajo para México, que se amplíe el número de visas y que también haya visas de trabajo para migrantes centroamericanos."
+        },
+        {
+          "doc_id": 14,
+          "sent_idx": 16,
+          "sentence": "Cuando la intervención, cuando los conservadores se oponían al cambio, el presidente Juárez tuvo que plantear la posibilidad de un tratado con Estados Unidos para defender a México de la invasión francesa, de la intervención militar."
+        }
+      ]
+    },
+    {
+      "source": "ORG:Secretaría de la Defensa Nacional",
+      "target": "CARGO:secretario",
+      "type": "coocurre",
+      "weight": 1020,
+      "docs": 531,
+      "evidence": [
+        {
+          "doc_id": 21,
+          "sent_idx": 47,
+          "sentence": "Para materializar esta etapa, se reclutarán del 2019 al 2021, un total de 50 mil jóvenes; durante el presente año solamente corresponderá captar 21 mil 170 elementos, destinados, bajo responsabilidad de la Secretaría de la Defensa Nacional, 14 mil y por la Secretaría de Marina, seis mil."
+        },
+        {
+          "doc_id": 39,
+          "sent_idx": 54,
+          "sentence": "Entonces, para evitar esta situación el señor presidente ha ordenado que se fortalezca la seguridad en este ducto, que son 311 kilómetros Tuxpan-Azcapotzalco, el Ejército, la Secretaría de la Defensa Nacional y la Secretaría de Marina van a encargarse cada uno de la mitad, de un promedio de 160 kiló"
+        },
+        {
+          "doc_id": 39,
+          "sent_idx": 172,
+          "sentence": "Por otro lado, preguntarle en el tema de la Guardia Nacional, esta propuesta para que sea encabezada por un civil, ¿cómo sería el funcionamiento y por qué accedió, por qué cedió su gobierno, para que no sea adscrita a la Secretaría de la Defensa Nacional?"
+        }
+      ]
+    },
+    {
+      "source": "CARGO:presidente",
+      "target": "LOC:México",
+      "type": "coocurre",
+      "weight": 920,
+      "docs": 623,
+      "evidence": [
+        {
+          "doc_id": 1,
+          "sent_idx": 0,
+          "sentence": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADORPALACIO NACIONAL 04 de diciembre de 2018   Conferencia de prensa del presidente de México, Andrés Manuel López Obrador."
+        },
+        {
+          "doc_id": 4,
+          "sent_idx": 0,
+          "sentence": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADORDescarga audio:  07-12-18 AUDIO CONFERENCIA DE PRENSA PRESIDENTE DE MÉXICO PALACIO NACIONAL, 07 de diciembre de 2018 Versión estenográfica   Conferencia de prensa del presidente de  México, Andrés Manuel López Obrador     -~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OB"
+        },
+        {
+          "doc_id": 5,
+          "sent_idx": 81,
+          "sentence": "Desde luego que, como ciudadano, pueden decir: es que usted es el Presidente de México, usted es el titular del Ejecutivo."
+        }
+      ]
+    },
+    {
+      "source": "ORG:Secretaría de Salud",
+      "target": "CARGO:secretario",
+      "type": "coocurre",
+      "weight": 837,
+      "docs": 462,
+      "evidence": [
+        {
+          "doc_id": 2,
+          "sent_idx": 110,
+          "sentence": "Además, aprovecho para informarlo y que los dueños de restaurantes, de hoteles, de talleres, de tiendas, que ya sepa todo México, que no hay inspección de la Secretaría de Salud, de la Secretaría del Medio de Ambiente, de la Secretaría de Economía."
+        },
+        {
+          "doc_id": 2,
+          "sent_idx": 245,
+          "sentence": "Tengo tres preguntas, especialmente por los indígenas, yo le pido, señor presidente, que no vaya usted a invitar a Rigoberta Menchú, porque su fundación ha cometido muchas violaciones en materia de salud aquí, en México, con las indígenas mexicanas, como lo acredita y lo demostró el médico Óscar Alb"
+        },
+        {
+          "doc_id": 3,
+          "sent_idx": 250,
+          "sentence": "Y uno de los problemas que tiene, entre otros el problema de salud es que está fragmentado; o sea, es el Seguro, es el ISSSTE, es la Secretaría de Salud federal y los estados, que al final de cuentas, el servicio es deficiente, en los centros de salud no hay medicinas, no hay buena atención médica."
+        }
+      ]
+    },
+    {
+      "source": "PER:Luisa María Alcalde",
+      "target": "ORG:Secretaría de Gobernación",
+      "type": "cargo_inferido",
+      "weight": 750,
+      "docs": 427,
+      "evidence": [
+        {
+          "doc_id": 4,
+          "sent_idx": 226,
+          "sentence": "Están trabajando de manera coordinada la Secretaría de Gobernación y la Secretaría de Relaciones Exteriores."
+        },
+        {
+          "doc_id": 5,
+          "sent_idx": 8,
+          "sentence": "Va a participar la Policía Federal, va a participar la Secretaría de Gobernación, a través de migración y aduanas, porque tenemos que evitar la extorsión en las aduanas a nuestros paisanos."
+        },
+        {
+          "doc_id": 5,
+          "sent_idx": 192,
+          "sentence": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Vamos a informarles sobre el procedimiento que ya está llevando a cabo la Secretaría de Gobernación."
+        }
+      ]
+    },
+    {
+      "source": "ORG:Secretaría de Gobernación",
+      "target": "PER:Luisa María Alcalde",
+      "type": "coocurre",
+      "weight": 725,
+      "docs": 425,
+      "evidence": [
+        {
+          "doc_id": 4,
+          "sent_idx": 226,
+          "sentence": "Están trabajando de manera coordinada la Secretaría de Gobernación y la Secretaría de Relaciones Exteriores."
+        },
+        {
+          "doc_id": 5,
+          "sent_idx": 8,
+          "sentence": "Va a participar la Policía Federal, va a participar la Secretaría de Gobernación, a través de migración y aduanas, porque tenemos que evitar la extorsión en las aduanas a nuestros paisanos."
+        },
+        {
+          "doc_id": 5,
+          "sent_idx": 192,
+          "sentence": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Vamos a informarles sobre el procedimiento que ya está llevando a cabo la Secretaría de Gobernación."
+        }
+      ]
+    },
+    {
+      "source": "PER:Jesús Ramírez Cuevas",
+      "target": "CARGO:vocero",
+      "type": "coocurre",
+      "weight": 590,
+      "docs": 580,
+      "evidence": [
+        {
+          "doc_id": 69,
+          "sent_idx": 113,
+          "sentence": "JESÚS RAMÍREZ CUEVAS, VOCERO DEL GOBIERNO DE MÉXICO:  Toca el turno a los medios de comunicación mexicanos."
+        },
+        {
+          "doc_id": 69,
+          "sent_idx": 217,
+          "sentence": "JESÚS RAMÍREZ CUEVAS, VOCERO DEL GOBIERNO DE MÉXICO: Ahora, por los medios de comunicación mexicanos, tiene la palabra Daniel Rosas, del Grupo Radio Centro."
+        },
+        {
+          "doc_id": 191,
+          "sent_idx": 29,
+          "sentence": "JESÚS RAMÍREZ CUEVAS, COORDINADOR GENERAL DE COMUNICACIÓN SOCIAL Y VOCERO DE PRESIDENCIA: Buenos días."
+        }
+      ]
+    },
+    {
+      "source": "CARGO:secretario",
+      "target": "ORG:Secretaría de Marina",
+      "type": "coocurre",
+      "weight": 589,
+      "docs": 406,
+      "evidence": [
+        {
+          "doc_id": 0,
+          "sent_idx": 2,
+          "sentence": "la Secretaría de la Defensa y la Secretaría de Marina, instituciones que son fundamentales para garantizar la seguridad nacional, la defensa de nuestro territorio, también para garantizar la seguridad interior, y espero que pronto estas dos importantes instituciones nos ayuden"
+        },
+        {
+          "doc_id": 0,
+          "sent_idx": 3,
+          "sentence": "una vez si así se decide en el Congreso, que se reforme la Constitución para que podamos integrar la Guardia Nacional y, tanto la Secretaría de la Defensa, como la Secretaría de Marina nos apoyen"
+        },
+        {
+          "doc_id": 0,
+          "sent_idx": 33,
+          "sentence": "Cuando se hacen encuestas y se le pregunta a la gente a qué instituciones le tienen confianza, salen en primer lugar la Secretaría de la Defensa, la Secretaría de Marina, y se debe mucho, pienso yo, a las labores de auxilio que llevan a cabo las Fuerzas Armadas, que son los primeros en llegar cuando"
+        }
+      ]
+    }
+  ]
+}

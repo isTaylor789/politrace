@@ -1,0 +1,396 @@
+{
+  "description": "Gold manual de área temática dominante (módulo 6). Etiquetado leyendo el título y el inicio del discurso; una etiqueta por discurso. Las áreas coinciden con el gazetteer de mt_scripts/labels.py para poder comparar nombres, pero la evaluación de pureza es invariante a la numeración de tópicos.",
+  "n_items": 47,
+  "themes": [
+    "democracia, instituciones y electoral",
+    "economía, inflación y fiscal",
+    "empleo y trabajo",
+    "energía, clima y medio ambiente",
+    "ideología, libertad y valores",
+    "infraestructura y obras",
+    "migración y frontera",
+    "pandemia y crisis sanitaria",
+    "política exterior",
+    "salud, educación y protección social",
+    "seguridad y justicia",
+    "vivienda y territorio"
+  ],
+  "items": [
+    {
+      "doc_id": 20,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2018-12-29",
+      "theme": "economía, inflación y fiscal",
+      "title": "29.12.18 Versión estenográfica de la firma del Decreto de Estímulos Fiscales de la Región Fronteriza Norte",
+      "note": "decreto de estímulos fiscales en Nuevo León"
+    },
+    {
+      "doc_id": 138,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2019-03-09",
+      "theme": "economía, inflación y fiscal",
+      "title": "09.03.19 Versión estenográfica. Apoyo a productores y precios de garantía, en Encarnación de Díaz, Jalisco",
+      "note": "precios de garantía a productores"
+    },
+    {
+      "doc_id": 2321,
+      "speaker": "Javier Milei",
+      "date": "2024-06-05",
+      "theme": "economía, inflación y fiscal",
+      "title": "Palabras del Presidente de la Nación, Javier Milei, en el 10 Latam Economic Forum, en Salón Golden Mercantil",
+      "note": "Latam Economic Forum"
+    },
+    {
+      "doc_id": 3867,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2018-11-07",
+      "theme": "economía, inflación y fiscal",
+      "title": "Presidente Piñera inaugura seminario Día de la Competencia",
+      "note": "seminario Día de la Competencia"
+    },
+    {
+      "doc_id": 2488,
+      "speaker": "Nicolás Maduro",
+      "date": "2020-01-14",
+      "theme": "economía, inflación y fiscal",
+      "title": "Discurso de Memoria y Cuenta 2019 del presidente Nicolás Maduro ante la Asamblea Nacional Constituyente.",
+      "note": "Memoria y Cuenta 2019"
+    },
+    {
+      "doc_id": 2134,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2024-05-01",
+      "theme": "empleo y trabajo",
+      "title": "Discurso del presidente Andrés Manuel López Obrador en el Día Internacional del Trabajo",
+      "note": "Día Internacional del Trabajo"
+    },
+    {
+      "doc_id": 3611,
+      "speaker": "Pedro Sánchez",
+      "date": "2026-02-16",
+      "theme": "empleo y trabajo",
+      "title": "Intervención del presidente del Gobierno en la firma del acuerdo para la subida del Salario Mínimo Interprofesional de 2",
+      "note": "acuerdo de subida salarial"
+    },
+    {
+      "doc_id": 4519,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2022-02-22",
+      "theme": "empleo y trabajo",
+      "title": "Presidente Piñera anuncia la extensión del IFE Laboral y Subsidio Protege",
+      "note": "IFE Laboral y Subsidio Protege"
+    },
+    {
+      "doc_id": 35,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2019-01-11",
+      "theme": "salud, educación y protección social",
+      "title": "11.01.19 Versión estenográfica entrega de la Pensión para el Bienestar de las Personas con Discapacidad",
+      "note": "Pensión para el Bienestar"
+    },
+    {
+      "doc_id": 2251,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2024-08-24",
+      "theme": "salud, educación y protección social",
+      "title": "24.08.24 Versión estenográfica. Inauguración de Agua Saludable para La Laguna, segunda etapa, desde Lerdo, Durango",
+      "note": "Agua Saludable para La Laguna"
+    },
+    {
+      "doc_id": 4309,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2020-12-16",
+      "theme": "salud, educación y protección social",
+      "title": "Presidente Piñera anuncia inicio de pago del Bono Covid Navidad",
+      "note": "Bono Covid Navidad"
+    },
+    {
+      "doc_id": 58,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2019-01-24",
+      "theme": "seguridad y justicia",
+      "title": "24.01.19 Versión estenográfica. III Sesión Extraordinaria del Consejo Nacional de Seguridad Pública",
+      "note": "Consejo Nacional de Seguridad"
+    },
+    {
+      "doc_id": 2438,
+      "speaker": "Javier Milei",
+      "date": "2025-10-02",
+      "theme": "seguridad y justicia",
+      "title": "Presentación de las reformas TOLERANCIA CERO CON EL CRIMEN del Presidente Javier Milei y la Ministra de Seguridad Nacion",
+      "note": "reformas Tolerancia Cero con el Crimen"
+    },
+    {
+      "doc_id": 2554,
+      "speaker": "Pedro Sánchez",
+      "date": "2018-09-24",
+      "theme": "seguridad y justicia",
+      "title": "Intervención del presidente del Gobierno en el acto \"Violencia contra mujeres y jóvenes con discapacidad\"",
+      "note": "acto contra la violencia de género"
+    },
+    {
+      "doc_id": 2483,
+      "speaker": "Nicolás Maduro",
+      "date": "2018-12-15",
+      "theme": "política exterior",
+      "title": "Discurso del presidente Nicolás Maduro durante la XVI Cumbre del ALBA-TCP.",
+      "note": "Cumbre del ALBA-TCP"
+    },
+    {
+      "doc_id": 2510,
+      "speaker": "Nicolás Maduro",
+      "date": "2023-01-24",
+      "theme": "política exterior",
+      "title": "Mensaje del Presidente Nicolás Maduro a la VII Cumbre de Jefas y Jefes de Estado y Gobierno de la CELAC.",
+      "note": "Cumbre de la CELAC"
+    },
+    {
+      "doc_id": 2299,
+      "speaker": "Javier Milei",
+      "date": "2024-01-26",
+      "theme": "política exterior",
+      "title": "Palabras del Presidente de la Nación, Javier Milei, en el acto oficial por el Día Internacional en Memoria de las Víctim",
+      "note": "acto en el Museo del Holocausto"
+    },
+    {
+      "doc_id": 3635,
+      "speaker": "Pedro Sánchez",
+      "date": "2026-04-13",
+      "theme": "política exterior",
+      "title": "Conferencia del presidente del Gobierno, Pedro Sánchez, en la Universidad Tsinghua",
+      "note": "conferencia en la Universidad de Tsinghua"
+    },
+    {
+      "doc_id": 3610,
+      "speaker": "Pedro Sánchez",
+      "date": "2026-02-14",
+      "theme": "política exterior",
+      "title": "Intervención del presidente del Gobierno, Pedro Sánchez, en el panel \"Fortifying the Foundation of Transatlantic Securit",
+      "note": "panel de seguridad en Múnich"
+    },
+    {
+      "doc_id": 3700,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2018-05-10",
+      "theme": "infraestructura y obras",
+      "title": "Presidente Piñera anuncia Plan de Infraestructura en desayuno de la CChC",
+      "note": "Plan de Infraestructura"
+    },
+    {
+      "doc_id": 4527,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2022-03-01",
+      "theme": "infraestructura y obras",
+      "title": "Presidente Piñera visita obras de nueva Autopista Américo Vespucio Oriente y destaca medidas de recuperación económica",
+      "note": "Autopista Américo Vespucio Oriente"
+    },
+    {
+      "doc_id": 4088,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2019-07-30",
+      "theme": "infraestructura y obras",
+      "title": "Presidente Piñera da inicio a las obras de extensión de la Línea 2 de Metro",
+      "note": "extensión de la Línea 2 del Metro"
+    },
+    {
+      "doc_id": 1941,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2023-09-15",
+      "theme": "infraestructura y obras",
+      "title": "15.09.23 Versión estenográfica. Inauguración de El Insurgente, Tren Interurbano México-Toluca",
+      "note": "Tren Interurbano El Insurgente"
+    },
+    {
+      "doc_id": 3533,
+      "speaker": "Pedro Sánchez",
+      "date": "2025-09-18",
+      "theme": "infraestructura y obras",
+      "title": "Intervención del presidente del Gobierno en la presentación de la propuesta de inversiones de AENA para los Aeropuertos ",
+      "note": "propuesta de movilidad sostenible"
+    },
+    {
+      "doc_id": 2264,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2024-09-07",
+      "theme": "energía, clima y medio ambiente",
+      "title": "07.09.24 Versión estenográfica. Inauguración del Parque Nacional del Jaguar y Museo de la Costa Oriental, desde Tulum, Q",
+      "note": "Parque Nacional del Jaguar"
+    },
+    {
+      "doc_id": 4530,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2022-03-05",
+      "theme": "energía, clima y medio ambiente",
+      "title": "Presidente Piñera anuncia la creación del Parque Nacional Glaciares de Santiago",
+      "note": "Parque Nacional Glaciares de Santiago"
+    },
+    {
+      "doc_id": 2610,
+      "speaker": "Pedro Sánchez",
+      "date": "2018-12-03",
+      "theme": "energía, clima y medio ambiente",
+      "title": "Intervención del presidente del Gobierno en la Cumbre del Clima COP 24",
+      "note": "Cumbre del Clima COP 24"
+    },
+    {
+      "doc_id": 2339,
+      "speaker": "Javier Milei",
+      "date": "2024-08-08",
+      "theme": "energía, clima y medio ambiente",
+      "title": "Discurso del Presidente Javier Milei en el acto conmemorativo por el primer trillón de pies cúbicos transportados de gas",
+      "note": "acto con GasAndes"
+    },
+    {
+      "doc_id": 4475,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2021-12-21",
+      "theme": "vivienda y territorio",
+      "title": "Presidente Piñera anuncia “Compromiso Vivienda”, iniciativa que destina terrenos fiscales para dar solución habitacional",
+      "note": "Compromiso Vivienda"
+    },
+    {
+      "doc_id": 3596,
+      "speaker": "Pedro Sánchez",
+      "date": "2026-01-12",
+      "theme": "vivienda y territorio",
+      "title": "Intervención del presidente del Gobierno en el inicio de los trabajos para la construcción de 10.700 viviendas del nuevo",
+      "note": "inicio de trabajos de vivienda"
+    },
+    {
+      "doc_id": 3362,
+      "speaker": "Pedro Sánchez",
+      "date": "2024-07-30",
+      "theme": "vivienda y territorio",
+      "title": "Intervención del presidente del Gobierno en el acto de suscripción de convenios a través del ICO para construir vivienda",
+      "note": "convenios de vivienda con el ICO"
+    },
+    {
+      "doc_id": 79,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2019-02-05",
+      "theme": "democracia, instituciones y electoral",
+      "title": "05.02.19 Versión estenográfica. Aniversario de la promulgación de la Constitución de 1917 en Querétaro, Querétaro",
+      "note": "aniversario de la Constitución"
+    },
+    {
+      "doc_id": 2295,
+      "speaker": "Javier Milei",
+      "date": "2023-12-10",
+      "theme": "democracia, instituciones y electoral",
+      "title": "Palabras del presidente de la Nación, Javier Milei, luego del acto de jura y asunción presidencial, desde las escalinata",
+      "note": "jura y asunción presidencial"
+    },
+    {
+      "doc_id": 2514,
+      "speaker": "Pedro Sánchez",
+      "date": "2018-06-20",
+      "theme": "democracia, instituciones y electoral",
+      "title": "Respuestas del presidente del Gobierno en el Pleno del Congreso de los Diputados en la sesión de control parlamentario",
+      "note": "Pleno del Congreso de los Diputados"
+    },
+    {
+      "doc_id": 2481,
+      "speaker": "Nicolás Maduro",
+      "date": "2015-07-06",
+      "theme": "democracia, instituciones y electoral",
+      "title": "Discurso del Presidente Nicolás Maduro Moros en Sesión Especial de la Asamblea Nacional.",
+      "note": "Sesión Especial de la Asamblea Nacional"
+    },
+    {
+      "doc_id": 2614,
+      "speaker": "Pedro Sánchez",
+      "date": "2018-12-06",
+      "theme": "democracia, instituciones y electoral",
+      "title": "Con la Constitución. Cuarenta años de convivencia en libertad",
+      "note": "40 años de la Constitución"
+    },
+    {
+      "doc_id": 939,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2020-10-31",
+      "theme": "pandemia y crisis sanitaria",
+      "title": "31.10.20 Ofrenda homenaje a víctimas de la pandemia, desde Palacio Nacional",
+      "note": "ofrenda a víctimas de la pandemia"
+    },
+    {
+      "doc_id": 4175,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2020-02-15",
+      "theme": "pandemia y crisis sanitaria",
+      "title": "Presidente Piñera anuncia más de dos millones de vacunados contra COVID-19",
+      "note": "dos millones de vacunados contra COVID-19"
+    },
+    {
+      "doc_id": 2789,
+      "speaker": "Pedro Sánchez",
+      "date": "2020-03-10",
+      "theme": "pandemia y crisis sanitaria",
+      "title": "Comparecencia del presidente del Gobierno tras el Consejo Europeo extraordinario sobre el coronavirus",
+      "note": "Consejo Europeo extraordinario por la COVID"
+    },
+    {
+      "doc_id": 3313,
+      "speaker": "Pedro Sánchez",
+      "date": "2024-03-13",
+      "theme": "pandemia y crisis sanitaria",
+      "title": "Intervención del presidente del Gobierno en el acto '14M. El día en que empezamos a vencer', por el 4º aniversario de la",
+      "note": "acto 14M, aniversario del estado de alarma"
+    },
+    {
+      "doc_id": 2500,
+      "speaker": "Nicolás Maduro",
+      "date": "2020-12-03",
+      "theme": "pandemia y crisis sanitaria",
+      "title": "Intervención del presidente Nicolás Maduro en el debate general de la ONU en respuesta a la pandemia del COVID-19.",
+      "note": "debate general de la ONU en pandemia"
+    },
+    {
+      "doc_id": 3673,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2018-04-09",
+      "theme": "migración y frontera",
+      "title": "Presidente Piñera anuncia Reforma Migratoria",
+      "note": "Reforma Migratoria"
+    },
+    {
+      "doc_id": 4373,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2021-04-11",
+      "theme": "migración y frontera",
+      "title": "Presidente Piñera promulga nueva Ley de Migraciones para Chile",
+      "note": "nueva Ley de Migraciones"
+    },
+    {
+      "doc_id": 24,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2019-01-04",
+      "theme": "migración y frontera",
+      "title": "04.01.19 Versión estenográfica del inicio del Programa Zona Libre de la Frontera Norte",
+      "note": "Programa Zona Libre de la Frontera Sur"
+    },
+    {
+      "doc_id": 2310,
+      "speaker": "Javier Milei",
+      "date": "2024-04-25",
+      "theme": "ideología, libertad y valores",
+      "title": "Palabras del Presidente de la Nación, Javier Milei, en la cena de la Fundación Libertad",
+      "note": "cena de la Fundación Libertad"
+    },
+    {
+      "doc_id": 2479,
+      "speaker": "Javier Milei",
+      "date": "2026-04-27",
+      "theme": "ideología, libertad y valores",
+      "title": "Discurso del Presidente Javier Milei en la Cena Anual 2026 de la Fundación Libertad",
+      "note": "Cena Anual de la Fundación Libertad"
+    },
+    {
+      "doc_id": 3427,
+      "speaker": "Pedro Sánchez",
+      "date": "2025-01-08",
+      "theme": "ideología, libertad y valores",
+      "title": "Intervención del presidente del Gobierno en el acto 'España en libertad'",
+      "note": "acto España en libertad"
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+{
+  "meta": {
+    "params": {
+      "min_df": 10,
+      "max_df_ratio": 0.5,
+      "max_terms": 8000,
+      "k_grid": [
+        6,
+        8,
+        10,
+        12,
+        15
+      ],
+      "families": [
+        "lsa",
+        "nmf",
+        "lda"
+      ],
+      "seed": 42,
+      "cooc_window": 10,
+      "cooc_top_terms": 10,
+      "nmf": {
+        "init": "nndsvda",
+        "max_iter": 500
+      },
+      "lda": {
+        "max_iter": 12,
+        "learning_method": "online"
+      },
+      "lsa_components": 50,
+      "window": {
+        "k": 8,
+        "min_docs": 30,
+        "min_sim": 0.25
+      },
+      "stability": {
+        "runs": 5,
+        "subsample": 0.8
+      },
+      "clean_window": [
+        "2023",
+        "2024"
+      ]
+    },
+    "verification": {
+      "max_abs_diff": 0.0,
+      "nnz_mt": 3687905,
+      "nnz_ri": 3687905,
+      "ok": true,
+      "n_docs": 4531,
+      "n_ri": 30083
+    },
+    "n_docs": 4531,
+    "space": {
+      "n_terms": 8000,
+      "nnz": 2579502
+    },
+    "cooc": {
+      "n_candidates": 189,
+      "window": 10
+    },
+    "chosen": {
+      "family": "nmf",
+      "k": 10,
+      "c_v": 0.44334921378518705,
+      "umass": -1.0582809958192696,
+      "diversity": 0.94,
+      "exclusivity": 0.681905465381744,
+      "best_in_family": {
+        "k": 15,
+        "c_v": 0.49205594555931353,
+        "se": 0.04813350372822438,
+        "band": 0.05
+      },
+      "threshold": 0.44205594555931355,
+      "criterion": "menor k con c_v >= c_v_max - max(SE, 0.05) (regla 1-SE)"
+    },
+    "seconds": 186.9
+  },
+  "items": [
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "docs": 2294,
+      "k": 8,
+      "terms": 4000,
+      "low_confidence": false,
+      "topics": [
+        {
+          "topic": 1,
+          "name": "Becas · pension · creditos",
+          "auto_label": "Becas · pension · creditos",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.20303171796885822,
+          "exclusivity": 0.7184977202110605,
+          "top_terms": [
+            "becas",
+            "pension",
+            "creditos",
+            "banco",
+            "sucursales",
+            "productores",
+            "sembrando",
+            "mensuales",
+            "oaxaca",
+            "discapacidad"
+          ]
+        },
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "auto_label": "Investigacion · jesus · judicial",
+          "manual_label": "democracia, instituciones y electoral",
+          "manual_anchors": [
+            "eleccion",
+            "electoral",
+            "judicial",
+            "vot"
+          ],
+          "share": 0.19954938782809875,
+          "exclusivity": 0.40104441825502696,
+          "top_terms": [
+            "investigacion",
+            "jesus",
+            "judicial",
+            "intervencion",
+            "denuncia",
+            "ramirez",
+            "agua",
+            "fiscalia",
+            "voto",
+            "electoral"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "seguridad y justicia",
+          "auto_label": "Guardia · delitos · homicidios",
+          "manual_label": "seguridad y justicia",
+          "manual_anchors": [
+            "delincuent",
+            "delit",
+            "polici"
+          ],
+          "share": 0.13296405031285277,
+          "exclusivity": 0.7947576615059594,
+          "top_terms": [
+            "guardia",
+            "delitos",
+            "homicidios",
+            "marina",
+            "policia",
+            "detenidos",
+            "fiscalia",
+            "vehiculos",
+            "ejercito",
+            "kilogramos"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "infraestructura y obras",
+          "auto_label": "Tren · maya · aeropuerto",
+          "manual_label": "infraestructura y obras",
+          "manual_anchors": [
+            "aeropuert",
+            "cancun",
+            "obra",
+            "tren"
+          ],
+          "share": 0.12241990971835293,
+          "exclusivity": 0.8281612776983618,
+          "top_terms": [
+            "tren",
+            "maya",
+            "aeropuerto",
+            "obra",
+            "tramo",
+            "cancun",
+            "sureste",
+            "roo",
+            "quintana",
+            "arqueologicas"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "energía, clima y medio ambiente",
+          "auto_label": "Pemex · electricidad · refineria",
+          "manual_label": "energía, clima y medio ambiente",
+          "manual_anchors": [
+            "combust",
+            "energet",
+            "gas",
+            "petrole"
+          ],
+          "share": 0.11382895215518873,
+          "exclusivity": 0.8169829610012622,
+          "top_terms": [
+            "pemex",
+            "electricidad",
+            "refineria",
+            "petroleo",
+            "gasolina",
+            "barriles",
+            "energia",
+            "petrolera",
+            "produccion",
+            "comision"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "salud, educación y protección social",
+          "auto_label": "Hospitales · imss · medicamentos",
+          "manual_label": "salud, educación y protección social",
+          "manual_anchors": [
+            "hospital",
+            "imss"
+          ],
+          "share": 0.09468999790027084,
+          "exclusivity": 0.8240255892662567,
+          "top_terms": [
+            "hospitales",
+            "imss",
+            "medicamentos",
+            "medicina",
+            "enfermeras",
+            "unidades",
+            "doctor",
+            "issste",
+            "zoe",
+            "instituto"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "pandemia y crisis sanitaria",
+          "auto_label": "Vacunas · dosis · covid",
+          "manual_label": "pandemia y crisis sanitaria",
+          "manual_anchors": [
+            "contagi",
+            "pandemi"
+          ],
+          "share": 0.07178310341502178,
+          "exclusivity": 0.7385490877331591,
+          "top_terms": [
+            "vacunas",
+            "dosis",
+            "covid",
+            "pandemia",
+            "epidemia",
+            "gatell",
+            "pfizer",
+            "hugo",
+            "hospitalizacion",
+            "doctor"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Centavos · precio · litro",
+          "auto_label": "Centavos · precio · litro",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.06173288070135653,
+          "exclusivity": 0.7855753978950872,
+          "top_terms": [
+            "centavos",
+            "precio",
+            "litro",
+            "margen",
+            "gas",
+            "franquicia",
+            "consumidores",
+            "gasolineras",
+            "video",
+            "promedio"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Javier Milei",
+      "docs": 187,
+      "k": 8,
+      "terms": 4000,
+      "low_confidence": false,
+      "topics": [
+        {
+          "topic": 1,
+          "name": "economía, inflación y fiscal",
+          "auto_label": "Deficit · monetaria · superavit",
+          "manual_label": "economía, inflación y fiscal",
+          "manual_anchors": [
+            "ajust",
+            "deficit",
+            "deud",
+            "dolar",
+            "monetari",
+            "superavit"
+          ],
+          "share": 0.19803941356902233,
+          "exclusivity": 0.5119893725404087,
+          "top_terms": [
+            "deficit",
+            "monetaria",
+            "superavit",
+            "gasto",
+            "ajuste",
+            "reforma",
+            "eliminar",
+            "emision",
+            "dolares",
+            "banco"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Batalla · casta · occidente",
+          "auto_label": "Batalla · casta · occidente",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.18611053016258705,
+          "exclusivity": 0.5527576580518339,
+          "top_terms": [
+            "batalla",
+            "casta",
+            "occidente",
+            "cultural",
+            "izquierda",
+            "colectivismo",
+            "fracaso",
+            "liberales",
+            "cpac",
+            "miseria"
+          ]
+        },
+        {
+          "topic": 0,
+          "name": "economía, inflación y fiscal",
+          "auto_label": "Monetaria · dinero · tasa",
+          "manual_label": "economía, inflación y fiscal",
+          "manual_anchors": [
+            "ajust",
+            "deficit",
+            "dolar",
+            "monetari",
+            "tas"
+          ],
+          "share": 0.14738950391330774,
+          "exclusivity": 0.6405998055404273,
+          "top_terms": [
+            "monetaria",
+            "dinero",
+            "tasa",
+            "demanda",
+            "central",
+            "banco",
+            "dolares",
+            "interes",
+            "ajuste",
+            "cantidad"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Patria · armadas · malvinas",
+          "auto_label": "Patria · armadas · malvinas",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.1091624068222775,
+          "exclusivity": 0.8677653591445799,
+          "top_terms": [
+            "patria",
+            "armadas",
+            "malvinas",
+            "soberania",
+            "sable",
+            "belgrano",
+            "petri",
+            "islas",
+            "heroes",
+            "nacional"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Neoclasica · rendimientos · smith",
+          "auto_label": "Neoclasica · rendimientos · smith",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.10296165715108992,
+          "exclusivity": 0.7267967237422195,
+          "top_terms": [
+            "neoclasica",
+            "rendimientos",
+            "smith",
+            "teoria",
+            "adam",
+            "pero",
+            "capita",
+            "monopolios",
+            "creciente",
+            "pareto"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Israel · judio · terrorismo",
+          "auto_label": "Israel · judio · terrorismo",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.09741780623134855,
+          "exclusivity": 0.9246016074370393,
+          "top_terms": [
+            "israel",
+            "judio",
+            "terrorismo",
+            "antisemitismo",
+            "holocausto",
+            "pueblo",
+            "hamas",
+            "barbarie",
+            "amia",
+            "jerusalen"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Eficiencia · moral · etica",
+          "auto_label": "Eficiencia · moral · etica",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.08864206420718493,
+          "exclusivity": 0.6871031775613298,
+          "top_terms": [
+            "eficiencia",
+            "moral",
+            "etica",
+            "occidente",
+            "utilitarismo",
+            "dinamica",
+            "derecho",
+            "soto",
+            "sistema",
+            "ende"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "política exterior",
+          "auto_label": "Mercosur · comercio · bloque",
+          "manual_label": "política exterior",
+          "manual_anchors": [
+            "internacional",
+            "mercosur"
+          ],
+          "share": 0.07027661794318173,
+          "exclusivity": 0.797913707219295,
+          "top_terms": [
+            "mercosur",
+            "comercio",
+            "bloque",
+            "aranceles",
+            "comercial",
+            "paraguay",
+            "acuerdo",
+            "pro",
+            "internacional",
+            "global"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "docs": 30,
+      "k": 6,
+      "terms": 2745,
+      "low_confidence": true,
+      "topics": [
+        {
+          "topic": 2,
+          "name": "Unilateral · coercitivas · bloqueo",
+          "auto_label": "Unilateral · coercitivas · bloqueo",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.2631043252370098,
+          "exclusivity": 0.6017589552877185,
+          "top_terms": [
+            "unilateral",
+            "coercitivas",
+            "bloqueo",
+            "pandemia",
+            "criminal",
+            "ilegal",
+            "hegemonicos",
+            "agresion",
+            "covid",
+            "sanciones"
+          ]
+        },
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "auto_label": "Electoral · elecciones · asamblea",
+          "manual_label": "democracia, instituciones y electoral",
+          "manual_anchors": [
+            "eleccion",
+            "electoral",
+            "oposicion",
+            "vot"
+          ],
+          "share": 0.1943061713302023,
+          "exclusivity": 0.6407187293826194,
+          "top_terms": [
+            "electoral",
+            "elecciones",
+            "asamblea",
+            "sao",
+            "comandante",
+            "colombia",
+            "constituyente",
+            "voto",
+            "imperio",
+            "compañeros"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Opep · mision · clap",
+          "auto_label": "Opep · mision · clap",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.16539577949023482,
+          "exclusivity": 0.6827134885556816,
+          "top_terms": [
+            "opep",
+            "mision",
+            "clap",
+            "plan",
+            "proteccion",
+            "bolivar",
+            "bloqueo",
+            "pdvsa",
+            "consolidar",
+            "economia"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Alineados · movimiento · hermanos",
+          "auto_label": "Alineados · movimiento · hermanos",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.14919713150687705,
+          "exclusivity": 0.6846971428344218,
+          "top_terms": [
+            "alineados",
+            "movimiento",
+            "hermanos",
+            "azerbaiyan",
+            "imperio",
+            "baku",
+            "caracas",
+            "bolivar",
+            "aliyev",
+            "siglo"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Alba · coronavirus · evo",
+          "auto_label": "Alba · coronavirus · evo",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.11534096869942904,
+          "exclusivity": 0.8095892474306912,
+          "top_terms": [
+            "alba",
+            "coronavirus",
+            "evo",
+            "sucre",
+            "ramonet",
+            "campo",
+            "caribe",
+            "pensamiento",
+            "fidel",
+            "ayma"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Caribeños · latinoamericanos · celac",
+          "auto_label": "Caribeños · latinoamericanos · celac",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.11265562373624698,
+          "exclusivity": 0.7117599728936431,
+          "top_terms": [
+            "caribeños",
+            "latinoamericanos",
+            "celac",
+            "consejo",
+            "latina",
+            "ministro",
+            "caracas",
+            "caribe",
+            "cumbre",
+            "retomar"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "docs": 1136,
+      "k": 8,
+      "terms": 3303,
+      "low_confidence": false,
+      "topics": [
+        {
+          "topic": 7,
+          "name": "política exterior",
+          "auto_label": "Relacion · cumbre · multilateral",
+          "manual_label": "política exterior",
+          "manual_anchors": [
+            "chin",
+            "marruec",
+            "multilateral"
+          ],
+          "share": 0.19123545676477088,
+          "exclusivity": 0.6715109400039662,
+          "top_terms": [
+            "relacion",
+            "cumbre",
+            "multilateral",
+            "cooperacion",
+            "global",
+            "climatico",
+            "bilateral",
+            "ambos",
+            "china",
+            "migracion"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "igualdad, género y derechos",
+          "auto_label": "Mujeres · igualdad · deporte",
+          "manual_label": "igualdad, género y derechos",
+          "manual_anchors": [
+            "gener",
+            "iguald",
+            "mujer",
+            "niñ"
+          ],
+          "share": 0.1664039757426751,
+          "exclusivity": 0.7215818925116637,
+          "top_terms": [
+            "mujeres",
+            "igualdad",
+            "deporte",
+            "feminista",
+            "generacion",
+            "democracia",
+            "lucha",
+            "violencia",
+            "hombre",
+            "reivindicar"
+          ]
+        },
+        {
+          "topic": 0,
+          "name": "Euros · sector · economia",
+          "auto_label": "Euros · sector · economia",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.15146103769824476,
+          "exclusivity": 0.6088807424292335,
+          "top_terms": [
+            "euros",
+            "sector",
+            "economia",
+            "empresas",
+            "transicion",
+            "digital",
+            "transformacion",
+            "inversion",
+            "empleos",
+            "proyecto"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "salud, educación y protección social",
+          "auto_label": "Autonomas · sanitaria · alarma",
+          "manual_label": "salud, educación y protección social",
+          "manual_anchors": [
+            "salud",
+            "vacun"
+          ],
+          "share": 0.1329293927987195,
+          "exclusivity": 0.6663495766272595,
+          "top_terms": [
+            "autonomas",
+            "sanitaria",
+            "alarma",
+            "pandemia",
+            "virus",
+            "sanidad",
+            "vacunas",
+            "medidas",
+            "crisis",
+            "emergencia"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "democracia, instituciones y electoral",
+          "auto_label": "Cataluña · catalana · independencia",
+          "manual_label": "democracia, instituciones y electoral",
+          "manual_anchors": [
+            "cataluñ",
+            "eleccion",
+            "vot"
+          ],
+          "share": 0.111955438687884,
+          "exclusivity": 0.6639747560155165,
+          "top_terms": [
+            "cataluña",
+            "catalana",
+            "independencia",
+            "parlamentarios",
+            "popular",
+            "dialogo",
+            "convivencia",
+            "cuestion",
+            "voto",
+            "generalitat"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "política exterior",
+          "auto_label": "Ucrania · putin · ucraniano",
+          "manual_label": "política exterior",
+          "manual_anchors": [
+            "otan",
+            "putin",
+            "ucrani",
+            "zelenski"
+          ],
+          "share": 0.10065108346718978,
+          "exclusivity": 0.8095419519959943,
+          "top_terms": [
+            "ucrania",
+            "putin",
+            "ucraniano",
+            "guerra",
+            "otan",
+            "zelenski",
+            "rusia",
+            "consejo",
+            "energetica",
+            "rusa"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "vivienda y territorio",
+          "auto_label": "Vivienda · parlamentarios · feijoo",
+          "manual_label": "vivienda y territorio",
+          "manual_anchors": [
+            "alquil",
+            "viviend"
+          ],
+          "share": 0.090436126086198,
+          "exclusivity": 0.655506279644973,
+          "top_terms": [
+            "vivienda",
+            "parlamentarios",
+            "feijoo",
+            "euros",
+            "ley",
+            "grupo",
+            "abascal",
+            "autonomas",
+            "pregunta",
+            "legislatura"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "política exterior",
+          "auto_label": "Palestina · gaza · humanitaria",
+          "manual_label": "política exterior",
+          "manual_anchors": [
+            "gaz",
+            "israel",
+            "palestin"
+          ],
+          "share": 0.05492748875431833,
+          "exclusivity": 0.8730659035994499,
+          "top_terms": [
+            "palestina",
+            "gaza",
+            "humanitaria",
+            "israel",
+            "paz",
+            "israeli",
+            "solucion",
+            "hamas",
+            "terrorismo",
+            "fuego"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "docs": 884,
+      "k": 8,
+      "terms": 2406,
+      "low_confidence": false,
+      "topics": [
+        {
+          "topic": 5,
+          "name": "Energia · tecnologia · comercio",
+          "auto_label": "Energia · tecnologia · comercio",
+          "manual_label": null,
+          "manual_anchors": [],
+          "share": 0.2168528193762162,
+          "exclusivity": 0.6863561811046537,
+          "top_terms": [
+            "energia",
+            "tecnologia",
+            "comercio",
+            "desafios",
+            "desarrollo",
+            "materia",
+            "innovacion",
+            "cumbre",
+            "cambio",
+            "apec"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "igualdad, género y derechos",
+          "auto_label": "Ley · derecho · mujeres",
+          "manual_label": "igualdad, género y derechos",
+          "manual_anchors": [
+            "derech",
+            "mujer"
+          ],
+          "share": 0.19310398438288798,
+          "exclusivity": 0.5128175349583658,
+          "top_terms": [
+            "ley",
+            "derecho",
+            "mujeres",
+            "violencia",
+            "compatriotas",
+            "libertad",
+            "humanos",
+            "constitucion",
+            "respeto",
+            "sociedad"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "salud, educación y protección social",
+          "auto_label": "Region · hospitales · agua",
+          "manual_label": "salud, educación y protección social",
+          "manual_anchors": [
+            "hospital",
+            "salud"
+          ],
+          "share": 0.16577548584970628,
+          "exclusivity": 0.5938360358217015,
+          "top_terms": [
+            "region",
+            "hospitales",
+            "agua",
+            "araucania",
+            "plan",
+            "vivienda",
+            "maravilloso",
+            "usted",
+            "salud",
+            "parque"
+          ]
+        },
+        {
+          "topic": 0,
+          "name": "pandemia y crisis sanitaria",
+          "auto_label": "Compatriotas · coronavirus · ingresos",
+          "manual_label": "pandemia y crisis sanitaria",
+          "manual_anchors": [
+            "coronavirus",
+            "cuarenten",
+            "pandemi"
+          ],
+          "share": 0.10521700780089617,
+          "exclusivity": 0.6377688606632155,
+          "top_terms": [
+            "compatriotas",
+            "coronavirus",
+            "ingresos",
+            "pandemia",
+            "pymes",
+            "empleos",
+            "bono",
+            "proteccion",
+            "sanitaria",
+            "proteger"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "igualdad, género y derechos",
+          "auto_label": "Niños · educacion · sename",
+          "manual_label": "igualdad, género y derechos",
+          "manual_anchors": [
+            "infanci",
+            "niñ"
+          ],
+          "share": 0.10040713549109266,
+          "exclusivity": 0.6988310926513378,
+          "top_terms": [
+            "niños",
+            "educacion",
+            "sename",
+            "niñez",
+            "padres",
+            "profesores",
+            "sociedad",
+            "vulnerables",
+            "calidad",
+            "liceos"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "seguridad y justicia",
+          "auto_label": "Carabineros · delincuencia · narcotrafico",
+          "manual_label": "seguridad y justicia",
+          "manual_anchors": [
+            "carabiner",
+            "delincuent",
+            "delit",
+            "narcotraf",
+            "polici"
+          ],
+          "share": 0.08475241598360891,
+          "exclusivity": 0.678616919778506,
+          "top_terms": [
+            "carabineros",
+            "delincuencia",
+            "narcotrafico",
+            "policia",
+            "terrorismo",
+            "ley",
+            "combatir",
+            "proteger",
+            "labor",
+            "eficacia"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "salud, educación y protección social",
+          "auto_label": "Pension · adultos · previsional",
+          "manual_label": "salud, educación y protección social",
+          "manual_anchors": [
+            "pension",
+            "salud"
+          ],
+          "share": 0.06717646346453736,
+          "exclusivity": 0.7691580800452468,
+          "top_terms": [
+            "pension",
+            "adultos",
+            "previsional",
+            "solidario",
+            "pilar",
+            "mujeres",
+            "edad",
+            "reforma",
+            "clase",
+            "aporte"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "pandemia y crisis sanitaria",
+          "auto_label": "Vacunas · dosis · salud",
+          "manual_label": "pandemia y crisis sanitaria",
+          "manual_anchors": [
+            "contagi",
+            "coronavirus",
+            "pandemi"
+          ],
+          "share": 0.06671468765105441,
+          "exclusivity": 0.6005006857519315,
+          "top_terms": [
+            "vacunas",
+            "dosis",
+            "salud",
+            "compatriotas",
+            "pandemia",
+            "poblacion",
+            "masiva",
+            "millones",
+            "proceso",
+            "proteger"
+          ]
+        }
+      ]
+    }
+  ]
+}

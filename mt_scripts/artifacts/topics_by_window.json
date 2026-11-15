@@ -1,0 +1,5828 @@
+{
+  "meta": {
+    "params": {
+      "min_df": 10,
+      "max_df_ratio": 0.5,
+      "max_terms": 8000,
+      "k_grid": [
+        6,
+        8,
+        10,
+        12,
+        15
+      ],
+      "families": [
+        "lsa",
+        "nmf",
+        "lda"
+      ],
+      "seed": 42,
+      "cooc_window": 10,
+      "cooc_top_terms": 10,
+      "nmf": {
+        "init": "nndsvda",
+        "max_iter": 500
+      },
+      "lda": {
+        "max_iter": 12,
+        "learning_method": "online"
+      },
+      "lsa_components": 50,
+      "window": {
+        "k": 8,
+        "min_docs": 30,
+        "min_sim": 0.25
+      },
+      "stability": {
+        "runs": 5,
+        "subsample": 0.8
+      },
+      "clean_window": [
+        "2023",
+        "2024"
+      ]
+    },
+    "verification": {
+      "max_abs_diff": 0.0,
+      "nnz_mt": 3687905,
+      "nnz_ri": 3687905,
+      "ok": true,
+      "n_docs": 4531,
+      "n_ri": 30083
+    },
+    "n_docs": 4531,
+    "space": {
+      "n_terms": 8000,
+      "nnz": 2579502
+    },
+    "cooc": {
+      "n_candidates": 189,
+      "window": 10
+    },
+    "chosen": {
+      "family": "nmf",
+      "k": 10,
+      "c_v": 0.44334921378518705,
+      "umass": -1.0582809958192696,
+      "diversity": 0.94,
+      "exclusivity": 0.681905465381744,
+      "best_in_family": {
+        "k": 15,
+        "c_v": 0.49205594555931353,
+        "se": 0.04813350372822438,
+        "band": 0.05
+      },
+      "threshold": 0.44205594555931355,
+      "criterion": "menor k con c_v >= c_v_max - max(SE, 0.05) (regla 1-SE)"
+    },
+    "seconds": 186.9
+  },
+  "params": {
+    "family": "nmf",
+    "k": 8,
+    "min_docs": 30,
+    "min_sim": 0.25
+  },
+  "items": [
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year": "2019",
+      "docs": 552,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "seguridad y justicia",
+          "share": 0.22846857530595258,
+          "top_terms": [
+            "guardia",
+            "investigacion",
+            "policia",
+            "delitos",
+            "denuncia",
+            "fiscalia",
+            "grupo",
+            "algunos"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "salud, educación y protección social",
+          "share": 0.13850413244105672,
+          "top_terms": [
+            "medicos",
+            "hospitales",
+            "imss",
+            "medicina",
+            "medicamentos",
+            "avion",
+            "coplamar",
+            "unidades"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Creditos · productores · becas",
+          "share": 0.17649879794678722,
+          "top_terms": [
+            "creditos",
+            "productores",
+            "becas",
+            "adultos",
+            "mensuales",
+            "tutor",
+            "pension",
+            "tarjeta"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Ductos · combustible · pipas",
+          "share": 0.07394872857139205,
+          "top_terms": [
+            "ductos",
+            "combustible",
+            "pipas",
+            "gasolina",
+            "pemex",
+            "hidalgo",
+            "clandestinas",
+            "abasto"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "migración y frontera",
+          "share": 0.06446943570215809,
+          "top_terms": [
+            "casaubon",
+            "marcelo",
+            "ebrard",
+            "migrantes",
+            "migratorio",
+            "canciller",
+            "centroamerica",
+            "migracion"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "energía, clima y medio ambiente",
+          "share": 0.1146796175094556,
+          "top_terms": [
+            "pemex",
+            "petroleo",
+            "refineria",
+            "barriles",
+            "produccion",
+            "petrolera",
+            "electricidad",
+            "inversion"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Centavos · precio · litro",
+          "share": 0.06998420003535166,
+          "top_terms": [
+            "centavos",
+            "precio",
+            "litro",
+            "margen",
+            "gasolineras",
+            "gasolina",
+            "gas",
+            "consumidores"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Indigenas · oaxaca · avion",
+          "share": 0.1334465124878465,
+          "top_terms": [
+            "indigenas",
+            "oaxaca",
+            "avion",
+            "cultura",
+            "sembrando",
+            "presidencial",
+            "becas",
+            "yucatan"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year": "2020",
+      "docs": 439,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "pandemia y crisis sanitaria",
+          "share": 0.11914567081387487,
+          "top_terms": [
+            "epidemia",
+            "covid",
+            "gatell",
+            "hugo",
+            "coronavirus",
+            "doctor",
+            "contagios",
+            "enfermedad"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "salud, educación y protección social",
+          "share": 0.18408324978731852,
+          "top_terms": [
+            "escuelas",
+            "becas",
+            "pension",
+            "oaxaca",
+            "alumnos",
+            "sucursales",
+            "avion",
+            "maestros"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Centavos · litro · margen",
+          "share": 0.08271653047579251,
+          "top_terms": [
+            "centavos",
+            "litro",
+            "margen",
+            "precio",
+            "franquicia",
+            "gas",
+            "gasolineras",
+            "video"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "infraestructura y obras",
+          "share": 0.09802184383430225,
+          "top_terms": [
+            "tren",
+            "obra",
+            "sureste",
+            "tramo",
+            "aeropuerto",
+            "maya",
+            "campeche",
+            "yucatan"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Investigacion · agua · medicamentos",
+          "share": 0.2187978780739547,
+          "top_terms": [
+            "investigacion",
+            "agua",
+            "medicamentos",
+            "denuncia",
+            "fiscalia",
+            "consulta",
+            "mujeres",
+            "creditos"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Refineria · petroleo · gasolina",
+          "share": 0.10709930336483121,
+          "top_terms": [
+            "refineria",
+            "petroleo",
+            "gasolina",
+            "petrolera",
+            "barriles",
+            "produccion",
+            "pemex",
+            "precio"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "seguridad y justicia",
+          "share": 0.13016295722111731,
+          "top_terms": [
+            "guardia",
+            "marina",
+            "delitos",
+            "robo",
+            "homicidios",
+            "policia",
+            "instalaciones",
+            "paz"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Vacunas · covid · fase",
+          "share": 0.059972566428808716,
+          "top_terms": [
+            "vacunas",
+            "covid",
+            "fase",
+            "pfizer",
+            "cansino",
+            "dosis",
+            "alcocer",
+            "marcelo"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year": "2021",
+      "docs": 365,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.1766868926957918,
+          "top_terms": [
+            "investigacion",
+            "fiscalia",
+            "denuncia",
+            "delitos",
+            "candidato",
+            "violencia",
+            "electoral",
+            "elecciones"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Centavos · litro · precio",
+          "share": 0.09416969983971661,
+          "top_terms": [
+            "centavos",
+            "litro",
+            "precio",
+            "colocacion",
+            "video",
+            "gas",
+            "margen",
+            "franquicia"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Oaxaca · guerrero · sembrando",
+          "share": 0.12807379717138176,
+          "top_terms": [
+            "oaxaca",
+            "guerrero",
+            "sembrando",
+            "becas",
+            "pension",
+            "banco",
+            "montaña",
+            "sucursales"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Dosis · ruta · pfizer",
+          "share": 0.09917348444742236,
+          "top_terms": [
+            "dosis",
+            "ruta",
+            "pfizer",
+            "astrazeneca",
+            "distribucion",
+            "envasado",
+            "gatell",
+            "marcelo"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "seguridad y justicia",
+          "share": 0.17173581642231625,
+          "top_terms": [
+            "cuarteles",
+            "california",
+            "michoacan",
+            "paz",
+            "armadas",
+            "salario",
+            "zacatecas",
+            "delitos"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "energía, clima y medio ambiente",
+          "share": 0.12294457522155756,
+          "top_terms": [
+            "electricidad",
+            "energia",
+            "gas",
+            "pemex",
+            "comision",
+            "precio",
+            "cfe",
+            "petroleo"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "salud, educación y protección social",
+          "share": 0.0947487759779722,
+          "top_terms": [
+            "hospitales",
+            "medicamentos",
+            "imss",
+            "medicina",
+            "sonora",
+            "gratuita",
+            "deficit",
+            "examen"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "infraestructura y obras",
+          "share": 0.11246695822384147,
+          "top_terms": [
+            "aeropuerto",
+            "tren",
+            "obra",
+            "maya",
+            "tramo",
+            "sureste",
+            "roo",
+            "quintana"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year": "2022",
+      "docs": 361,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.19743802634928814,
+          "top_terms": [
+            "electoral",
+            "video",
+            "mentiras",
+            "falso",
+            "ine",
+            "elecciones",
+            "cuevas",
+            "ramirez"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Centavos · litro · franquicia",
+          "share": 0.09941625853243836,
+          "top_terms": [
+            "centavos",
+            "litro",
+            "franquicia",
+            "margen",
+            "cara",
+            "consumidores",
+            "pemex",
+            "colocacion"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "salud, educación y protección social",
+          "share": 0.0904504299226145,
+          "top_terms": [
+            "hospitales",
+            "imss",
+            "zoe",
+            "medicamentos",
+            "nayarit",
+            "colima",
+            "tlaxcala",
+            "unidades"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "energía, clima y medio ambiente",
+          "share": 0.1327424316703431,
+          "top_terms": [
+            "refineria",
+            "gasolina",
+            "inflacion",
+            "autosuficiencia",
+            "petroleo",
+            "fertilizantes",
+            "maiz",
+            "alimentos"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "salud, educación y protección social",
+          "share": 0.1307561466400897,
+          "top_terms": [
+            "becas",
+            "sucursales",
+            "pension",
+            "adultos",
+            "escuelas",
+            "discapacidad",
+            "sembrando",
+            "guerrero"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "infraestructura y obras",
+          "share": 0.11333279573123513,
+          "top_terms": [
+            "aeropuerto",
+            "felipe",
+            "angeles",
+            "ingenieros",
+            "pasajeros",
+            "sucursales",
+            "militares",
+            "roo"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "seguridad y justicia",
+          "share": 0.14539198375056986,
+          "top_terms": [
+            "detenidos",
+            "fiscalia",
+            "homicidios",
+            "delitos",
+            "detencion",
+            "guardia",
+            "vinculados",
+            "sentencia"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "salud, educación y protección social",
+          "share": 0.09047192740342111,
+          "top_terms": [
+            "vacunas",
+            "dosis",
+            "covid",
+            "refuerzo",
+            "piezas",
+            "medicamentos",
+            "gatell",
+            "distribucion"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year": "2023",
+      "docs": 308,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.1842666089045304,
+          "top_terms": [
+            "judicial",
+            "cuevas",
+            "mentiras",
+            "falso",
+            "ine",
+            "fox",
+            "pan",
+            "electoral"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Centavos · tramo · arqueologicas",
+          "share": 0.12316821287101734,
+          "top_terms": [
+            "centavos",
+            "tramo",
+            "arqueologicas",
+            "precio",
+            "estacion",
+            "litro",
+            "via",
+            "yucatan"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Sucursales · becas · pension",
+          "share": 0.13513022361009014,
+          "top_terms": [
+            "sucursales",
+            "becas",
+            "pension",
+            "adultos",
+            "discapacitados",
+            "tarjeta",
+            "discapacidad",
+            "minimo"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Acapulco · coyuca · huracan",
+          "share": 0.060701130452371244,
+          "top_terms": [
+            "acapulco",
+            "coyuca",
+            "huracan",
+            "otis",
+            "vivienda",
+            "evelyn",
+            "electricidad",
+            "censo"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "seguridad y justicia",
+          "share": 0.10318505855792458,
+          "top_terms": [
+            "kilogramos",
+            "detenidos",
+            "delitos",
+            "fentanilo",
+            "homicidios",
+            "drogas",
+            "guardia",
+            "asegurar"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "salud, educación y protección social",
+          "share": 0.11248910146177792,
+          "top_terms": [
+            "hospitales",
+            "imss",
+            "medicamentos",
+            "vacunas",
+            "medicina",
+            "zoe",
+            "abasto",
+            "issste"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "infraestructura y obras",
+          "share": 0.11476482314278719,
+          "top_terms": [
+            "aeropuerto",
+            "cancun",
+            "tulum",
+            "ingenieros",
+            "aviacion",
+            "roo",
+            "quintana",
+            "angeles"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Istmo · coatzacoalcos · cuba",
+          "share": 0.16629484099950126,
+          "top_terms": [
+            "istmo",
+            "coatzacoalcos",
+            "cuba",
+            "cruz",
+            "revolucionario",
+            "salinas",
+            "independencia",
+            "soberania"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year": "2024",
+      "docs": 248,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.1791364641963602,
+          "top_terms": [
+            "judicial",
+            "cuevas",
+            "falso",
+            "mentiras",
+            "video",
+            "magistrados",
+            "jueces",
+            "ministro"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Centavos · precio · canasta",
+          "share": 0.07906224757201097,
+          "top_terms": [
+            "centavos",
+            "precio",
+            "canasta",
+            "litro",
+            "debajo",
+            "gas",
+            "promedio",
+            "ganancia"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Morelos · virreyes · felicidad",
+          "share": 0.22596907712631933,
+          "top_terms": [
+            "morelos",
+            "virreyes",
+            "felicidad",
+            "independencia",
+            "amor",
+            "becas",
+            "paisanos",
+            "licenciatura"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "salud, educación y protección social",
+          "share": 0.0934193677498399,
+          "top_terms": [
+            "hospitales",
+            "medicos",
+            "imss",
+            "clinica",
+            "comite",
+            "zoe",
+            "doctor",
+            "medicamentos"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "infraestructura y obras",
+          "share": 0.11301342124094244,
+          "top_terms": [
+            "quintana",
+            "cancun",
+            "roo",
+            "arqueologicas",
+            "tramo",
+            "aeropuerto",
+            "kilometros",
+            "yucatan"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "seguridad y justicia",
+          "share": 0.11658535501011669,
+          "top_terms": [
+            "homicidios",
+            "delitos",
+            "guardia",
+            "fiscalia",
+            "detenidos",
+            "juez",
+            "rosa",
+            "kilogramos"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Electricidad · energia · pemex",
+          "share": 0.10388522327847764,
+          "top_terms": [
+            "electricidad",
+            "energia",
+            "pemex",
+            "cfe",
+            "central",
+            "petroleo",
+            "refineria",
+            "megawatts"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Acapulco · riego · acueducto",
+          "share": 0.08892884382593294,
+          "top_terms": [
+            "acapulco",
+            "riego",
+            "acueducto",
+            "presa",
+            "coyuca",
+            "yaquis",
+            "hectareas",
+            "yaqui"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Javier Milei",
+      "year": "2024",
+      "docs": 87,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "economía, inflación y fiscal",
+          "share": 0.10357814759467453,
+          "top_terms": [
+            "dinero",
+            "monetaria",
+            "tasa",
+            "demanda",
+            "determinacion",
+            "interes",
+            "cantidad",
+            "fijar"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "política exterior",
+          "share": 0.0881553019354406,
+          "top_terms": [
+            "comercio",
+            "mercosur",
+            "global",
+            "aranceles",
+            "individuos",
+            "derecho",
+            "comercial",
+            "internacional"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Neoclasica · monopolios · teoria",
+          "share": 0.11139788533522758,
+          "top_terms": [
+            "neoclasica",
+            "monopolios",
+            "teoria",
+            "rendimientos",
+            "smith",
+            "adam",
+            "pero",
+            "capita"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Judio · holocausto · israel",
+          "share": 0.06444561129363574,
+          "top_terms": [
+            "judio",
+            "holocausto",
+            "israel",
+            "terrorismo",
+            "hamas",
+            "elegir",
+            "amia",
+            "antisemitismo"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Occidente · cpac · casta",
+          "share": 0.13621004314828838,
+          "top_terms": [
+            "occidente",
+            "cpac",
+            "casta",
+            "batalla",
+            "cultural",
+            "izquierda",
+            "causa",
+            "woke"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "economía, inflación y fiscal",
+          "share": 0.18025486454398987,
+          "top_terms": [
+            "monetaria",
+            "deficit",
+            "ajuste",
+            "banco",
+            "central",
+            "dolares",
+            "remunerados",
+            "hiperinflacion"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "seguridad y justicia",
+          "share": 0.13746979290799463,
+          "top_terms": [
+            "patria",
+            "armadas",
+            "victimarios",
+            "honor",
+            "belgrano",
+            "bandera",
+            "maya",
+            "delitos"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "economía, inflación y fiscal",
+          "share": 0.1784883532407486,
+          "top_terms": [
+            "sector",
+            "gasto",
+            "eliminar",
+            "tecnologico",
+            "inversion",
+            "deficit",
+            "casta",
+            "exportacion"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Javier Milei",
+      "year": "2025",
+      "docs": 69,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "economía, inflación y fiscal",
+          "share": 0.14090890182210125,
+          "top_terms": [
+            "ajuste",
+            "deficit",
+            "rendimientos",
+            "creciente",
+            "dolares",
+            "deuda",
+            "neoclasica",
+            "pero"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "economía, inflación y fiscal",
+          "share": 0.22758945503605246,
+          "top_terms": [
+            "superavit",
+            "cambiario",
+            "provincia",
+            "inversion",
+            "eliminar",
+            "emision",
+            "gestion",
+            "ajuste"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Israel · terrorismo · judio",
+          "share": 0.09794076627599896,
+          "top_terms": [
+            "israel",
+            "terrorismo",
+            "judio",
+            "antisemitismo",
+            "barbarie",
+            "cunio",
+            "enemigos",
+            "occidente"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Batalla · occidente · envidia",
+          "share": 0.20537166548476676,
+          "top_terms": [
+            "batalla",
+            "occidente",
+            "envidia",
+            "propiedad",
+            "izquierda",
+            "eficiencia",
+            "soto",
+            "moral"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Mercosur · bloque · aranceles",
+          "share": 0.07457642049644055,
+          "top_terms": [
+            "mercosur",
+            "bloque",
+            "aranceles",
+            "malvinas",
+            "comercio",
+            "comercial",
+            "pro",
+            "transnacionales"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Presti · patria · armadas",
+          "share": 0.08157085523455204,
+          "top_terms": [
+            "presti",
+            "patria",
+            "armadas",
+            "teniente",
+            "jurado",
+            "soberania",
+            "demonizar",
+            "petri"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Paraguay · bilateral · desregulacion",
+          "share": 0.04455586165517098,
+          "top_terms": [
+            "paraguay",
+            "bilateral",
+            "desregulacion",
+            "omnipresente",
+            "sudamerica",
+            "colectivismo",
+            "hiperinflacion",
+            "forzosa"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "economía, inflación y fiscal",
+          "share": 0.12748607399491688,
+          "top_terms": [
+            "tasa",
+            "interes",
+            "equilibrio",
+            "kuka",
+            "kirchnerismo",
+            "oferta",
+            "subir",
+            "dolares"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2018",
+      "docs": 121,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.14000004889804296,
+          "top_terms": [
+            "cataluña",
+            "catalana",
+            "independencia",
+            "generalitat",
+            "dialogo",
+            "pregunta",
+            "parlamentarios",
+            "referendum"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "discurso y comunicación política",
+          "share": 0.22035186210169957,
+          "top_terms": [
+            "iberoamericana",
+            "sociedades",
+            "nacion",
+            "bolivia",
+            "desafios",
+            "amigos",
+            "cumbre",
+            "cooperacion"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Marruecos · migratorio · migracion",
+          "share": 0.12031547810026988,
+          "top_terms": [
+            "marruecos",
+            "migratorio",
+            "migracion",
+            "cooperacion",
+            "canciller",
+            "alemania",
+            "asilo",
+            "flujo"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Cuba · cubanos · habana",
+          "share": 0.061784876125366074,
+          "top_terms": [
+            "cuba",
+            "cubanos",
+            "habana",
+            "canel",
+            "lazos",
+            "silla",
+            "empresarios",
+            "empresas"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Gibraltar · reino · brexit",
+          "share": 0.06713442581948093,
+          "top_terms": [
+            "gibraltar",
+            "reino",
+            "brexit",
+            "britanico",
+            "consejo",
+            "frontex",
+            "negocios",
+            "irlanda"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Formacion · profesional · economia",
+          "share": 0.16985525062558174,
+          "top_terms": [
+            "formacion",
+            "profesional",
+            "economia",
+            "cohesion",
+            "sector",
+            "ambito",
+            "empresas",
+            "euros"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.09826051891425829,
+          "top_terms": [
+            "constitucion",
+            "constitucional",
+            "cohesion",
+            "reforma",
+            "magna",
+            "consenso",
+            "eta",
+            "anhelo"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.12229753941530054,
+          "top_terms": [
+            "rivera",
+            "parlamentarios",
+            "hernando",
+            "grupo",
+            "autonomas",
+            "popular",
+            "cataluña",
+            "vasco"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2019",
+      "docs": 137,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.12927670034130365,
+          "top_terms": [
+            "cataluña",
+            "catalana",
+            "independencia",
+            "convivencia",
+            "usted",
+            "ultraderecha",
+            "sentencia",
+            "democratica"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "política exterior",
+          "share": 0.1040968039518694,
+          "top_terms": [
+            "europa",
+            "union",
+            "proteger",
+            "democracia",
+            "continente",
+            "valores",
+            "economia",
+            "reto"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.07654322956946373,
+          "top_terms": [
+            "britanico",
+            "reino",
+            "union",
+            "parlamento",
+            "brexit",
+            "consejo",
+            "elecciones",
+            "desordenada"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.17684940623478138,
+          "top_terms": [
+            "investidura",
+            "iglesias",
+            "coalicion",
+            "parlamentarios",
+            "voto",
+            "psoe",
+            "usted",
+            "elecciones"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "deporte y cultura",
+          "share": 0.09104991622197499,
+          "top_terms": [
+            "deporte",
+            "baloncesto",
+            "femenino",
+            "medallas",
+            "campeonato",
+            "equipo",
+            "haceis",
+            "seleccion"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "energía, clima y medio ambiente",
+          "share": 0.11793573640474378,
+          "top_terms": [
+            "climatico",
+            "transicion",
+            "planeta",
+            "ecologica",
+            "multilateral",
+            "agenda",
+            "global",
+            "clima"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Timmermans · frans · spitzenkandidat",
+          "share": 0.04746759683611094,
+          "top_terms": [
+            "timmermans",
+            "frans",
+            "spitzenkandidat",
+            "parlamento",
+            "socialdemocrata",
+            "comision",
+            "familias",
+            "candidato"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Turismo · sector · empleos",
+          "share": 0.2567806104397519,
+          "top_terms": [
+            "turismo",
+            "sector",
+            "empleos",
+            "innovacion",
+            "turistico",
+            "mujeres",
+            "empresas",
+            "definitiva"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2020",
+      "docs": 105,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "pandemia y crisis sanitaria",
+          "share": 0.13604110780471707,
+          "top_terms": [
+            "alarma",
+            "desescalada",
+            "fase",
+            "virus",
+            "sanidad",
+            "prorroga",
+            "ccaa",
+            "confinamiento"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Digital · digitalizacion · transformacion",
+          "share": 0.21304627307684032,
+          "top_terms": [
+            "digital",
+            "digitalizacion",
+            "transformacion",
+            "ecologica",
+            "cohesion",
+            "resiliencia",
+            "reto",
+            "sostenible"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.16890917807169956,
+          "top_terms": [
+            "parlamentarios",
+            "oposicion",
+            "popular",
+            "pacto",
+            "judicial",
+            "rufian",
+            "renovables",
+            "coalicion"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "pandemia y crisis sanitaria",
+          "share": 0.1605274451088543,
+          "top_terms": [
+            "virus",
+            "alarma",
+            "sanidad",
+            "confinamiento",
+            "vacunas",
+            "contagios",
+            "mascarillas",
+            "ciudadania"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Italia · portugues · italiano",
+          "share": 0.12639853191257278,
+          "top_terms": [
+            "italia",
+            "portugues",
+            "italiano",
+            "cohesion",
+            "portugal",
+            "ambos",
+            "giuseppe",
+            "propuesta"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Turismo · turistico · sostenibilidad",
+          "share": 0.08005404993265802,
+          "top_terms": [
+            "turismo",
+            "turistico",
+            "sostenibilidad",
+            "competitividad",
+            "ifema",
+            "sostenible",
+            "modelo",
+            "ertes"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "economía, inflación y fiscal",
+          "share": 0.07883412475537545,
+          "top_terms": [
+            "cataluña",
+            "catalana",
+            "generalitat",
+            "reencuentro",
+            "barcelona",
+            "coalicion",
+            "govern",
+            "independencia"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "deporte y cultura",
+          "share": 0.03618928933728259,
+          "top_terms": [
+            "deporte",
+            "competicion",
+            "medallas",
+            "tokio",
+            "olimpicos",
+            "representais",
+            "seleccion",
+            "femenino"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2021",
+      "docs": 110,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "Euros · digital · transicion",
+          "share": 0.19283235278039848,
+          "top_terms": [
+            "euros",
+            "digital",
+            "transicion",
+            "transformacion",
+            "resiliencia",
+            "sector",
+            "empresas",
+            "economia"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Vacunas · dosis · acelerar",
+          "share": 0.17372484946886943,
+          "top_terms": [
+            "vacunas",
+            "dosis",
+            "acelerar",
+            "sanitaria",
+            "covid",
+            "pues",
+            "autonomas",
+            "alarma"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.07626764141346581,
+          "top_terms": [
+            "indultos",
+            "catalana",
+            "cataluña",
+            "concordia",
+            "espiritu",
+            "convivencia",
+            "catalunya",
+            "reencuentro"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Palmeras · palma · isla",
+          "share": 0.04264289188862198,
+          "top_terms": [
+            "palmeras",
+            "palma",
+            "isla",
+            "canarias",
+            "cabildo",
+            "volcan",
+            "reconstruccion",
+            "trasladar"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Africano · africa · multilateral",
+          "share": 0.13302878252189723,
+          "top_terms": [
+            "africano",
+            "africa",
+            "multilateral",
+            "cooperacion",
+            "ambos",
+            "bilateral",
+            "global",
+            "contribuir"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "igualdad, género y derechos",
+          "share": 0.13141770347745127,
+          "top_terms": [
+            "mujeres",
+            "igualdad",
+            "feminista",
+            "hombre",
+            "vicepresidenta",
+            "mujer",
+            "sociedades",
+            "derecho"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "política exterior",
+          "share": 0.1771260857405087,
+          "top_terms": [
+            "otan",
+            "pues",
+            "comision",
+            "pregunta",
+            "debate",
+            "consejo",
+            "precio",
+            "usted"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Iberoamericana · cumbre · rebeca",
+          "share": 0.07295969270878713,
+          "top_terms": [
+            "iberoamericana",
+            "cumbre",
+            "rebeca",
+            "iberoamerica",
+            "portugal",
+            "andorra",
+            "multilateral",
+            "majestad"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2022",
+      "docs": 172,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "Euros · sector · digital",
+          "share": 0.17299837605066581,
+          "top_terms": [
+            "euros",
+            "sector",
+            "digital",
+            "economia",
+            "proyecto",
+            "inversion",
+            "transformacion",
+            "perte"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "política exterior",
+          "share": 0.17413707669819603,
+          "top_terms": [
+            "putin",
+            "ucraniano",
+            "otan",
+            "refugiados",
+            "invasion",
+            "solidaridad",
+            "sanciones",
+            "rusa"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "energía, clima y medio ambiente",
+          "share": 0.12854410159946159,
+          "top_terms": [
+            "iberica",
+            "energetica",
+            "gas",
+            "interconexion",
+            "energia",
+            "precio",
+            "mercado",
+            "peninsula"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.11008207698889673,
+          "top_terms": [
+            "usted",
+            "cataluña",
+            "popular",
+            "constitucional",
+            "pregunta",
+            "feijoo",
+            "parlamentarios",
+            "ley"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Incendios · vecinos · climatico",
+          "share": 0.08183140385975099,
+          "top_terms": [
+            "incendios",
+            "vecinos",
+            "climatico",
+            "extremadura",
+            "biodiversidad",
+            "calor",
+            "civil",
+            "alcalde"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "política exterior",
+          "share": 0.15398458646062638,
+          "top_terms": [
+            "cumbre",
+            "otan",
+            "ecuador",
+            "relacion",
+            "bilateral",
+            "ambos",
+            "global",
+            "balcanes"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "igualdad, género y derechos",
+          "share": 0.1380678364689124,
+          "top_terms": [
+            "mujeres",
+            "memoria",
+            "igualdad",
+            "niños",
+            "terrorismo",
+            "deporte",
+            "infancia",
+            "victimas"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Corea · coreana · seul",
+          "share": 0.04035454187349019,
+          "top_terms": [
+            "corea",
+            "coreana",
+            "seul",
+            "lengua",
+            "cervantes",
+            "indo",
+            "bilateral",
+            "relacion"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2023",
+      "docs": 129,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "Sector · euros · estrategica",
+          "share": 0.17406151917690565,
+          "top_terms": [
+            "sector",
+            "euros",
+            "estrategica",
+            "reindustrializacion",
+            "apuesta",
+            "innovacion",
+            "industria",
+            "ciencia"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "política exterior",
+          "share": 0.07582076558516129,
+          "top_terms": [
+            "humanitaria",
+            "palestina",
+            "israel",
+            "gaza",
+            "hamas",
+            "pausa",
+            "israeli",
+            "paz"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.18728249073927658,
+          "top_terms": [
+            "vivienda",
+            "usted",
+            "parlamentarios",
+            "ley",
+            "legislatura",
+            "autonomas",
+            "popular",
+            "mocion"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Cumbre · estrategica · migracion",
+          "share": 0.18528371851646663,
+          "top_terms": [
+            "cumbre",
+            "estrategica",
+            "migracion",
+            "caribe",
+            "celac",
+            "relacion",
+            "rotatoria",
+            "semestre"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "política exterior",
+          "share": 0.11058750039701969,
+          "top_terms": [
+            "zelenski",
+            "ucraniano",
+            "putin",
+            "leopard",
+            "paz",
+            "agresion",
+            "kiev",
+            "rusia"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "energía, clima y medio ambiente",
+          "share": 0.1405371466767261,
+          "top_terms": [
+            "climatico",
+            "euros",
+            "energia",
+            "renovables",
+            "multilateral",
+            "carbon",
+            "global",
+            "emision"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Marruecos · ambos · reino",
+          "share": 0.05326134531449068,
+          "top_terms": [
+            "marruecos",
+            "ambos",
+            "reino",
+            "relacion",
+            "sociedades",
+            "alto",
+            "cooperacion",
+            "base"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Irak · otan · mision",
+          "share": 0.07316551359395333,
+          "top_terms": [
+            "irak",
+            "otan",
+            "mision",
+            "militares",
+            "gratitud",
+            "tropas",
+            "desplegados",
+            "paz"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2024",
+      "docs": 142,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "Euros · empresas · economia",
+          "share": 0.22564817354623387,
+          "top_terms": [
+            "euros",
+            "empresas",
+            "economia",
+            "sector",
+            "competitividad",
+            "india",
+            "inversion",
+            "transicion"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "política exterior",
+          "share": 0.15987527636847465,
+          "top_terms": [
+            "palestina",
+            "gaza",
+            "israel",
+            "paz",
+            "ucrania",
+            "humanitaria",
+            "solucion",
+            "reconocimiento"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.1570894659243784,
+          "top_terms": [
+            "feijoo",
+            "cataluña",
+            "parlamentarios",
+            "euros",
+            "pregunta",
+            "abascal",
+            "grupo",
+            "legislatura"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Valenciana · comunitat · valencia",
+          "share": 0.10312359968727415,
+          "top_terms": [
+            "valenciana",
+            "comunitat",
+            "valencia",
+            "tragedia",
+            "dan",
+            "afecta",
+            "emergencia",
+            "generalitat"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "igualdad, género y derechos",
+          "share": 0.16271297669285398,
+          "top_terms": [
+            "mujeres",
+            "democracia",
+            "feminista",
+            "igualdad",
+            "generacion",
+            "multilateral",
+            "violencia",
+            "memoria"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "política exterior",
+          "share": 0.05633787483501823,
+          "top_terms": [
+            "china",
+            "shanghai",
+            "lengua",
+            "relacion",
+            "comercial",
+            "cooperacion",
+            "empresas",
+            "ambito"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "deporte y cultura",
+          "share": 0.05337053116312919,
+          "top_terms": [
+            "deporte",
+            "olimpicos",
+            "jugadores",
+            "juego",
+            "enhorabuena",
+            "vais",
+            "equipo",
+            "seleccion"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Mauritania · senegal · migracion",
+          "share": 0.08184210178263747,
+          "top_terms": [
+            "mauritania",
+            "senegal",
+            "migracion",
+            "africa",
+            "africano",
+            "gambia",
+            "migratorio",
+            "canarias"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2025",
+      "docs": 167,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "política exterior",
+          "share": 0.18039275034467103,
+          "top_terms": [
+            "union",
+            "comercial",
+            "empresas",
+            "economia",
+            "inversion",
+            "sector",
+            "competitividad",
+            "crecimiento"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "vivienda y territorio",
+          "share": 0.0746445089557647,
+          "top_terms": [
+            "vivienda",
+            "alquiler",
+            "asequible",
+            "ley",
+            "cataluña",
+            "precio",
+            "construccion",
+            "alcaldesa"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "política exterior",
+          "share": 0.09734624942658601,
+          "top_terms": [
+            "ucrania",
+            "ucraniano",
+            "putin",
+            "paz",
+            "union",
+            "otan",
+            "defensa",
+            "guerra"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "política exterior",
+          "share": 0.1086858009650283,
+          "top_terms": [
+            "palestina",
+            "gaza",
+            "israel",
+            "humanitaria",
+            "genocidio",
+            "israeli",
+            "hamas",
+            "terrorismo"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Climatico · emergencia · incendios",
+          "share": 0.10825232209665865,
+          "top_terms": [
+            "climatico",
+            "emergencia",
+            "incendios",
+            "pacto",
+            "civil",
+            "verano",
+            "proteccion",
+            "asturias"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Sevilla · multilateral · financiacion",
+          "share": 0.12676052692760223,
+          "top_terms": [
+            "sevilla",
+            "multilateral",
+            "financiacion",
+            "global",
+            "conferencia",
+            "sostenible",
+            "cooperacion",
+            "deuda"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.12711414748150504,
+          "top_terms": [
+            "parlamentarios",
+            "feijoo",
+            "abascal",
+            "grupo",
+            "autonomas",
+            "pedro",
+            "cataluña",
+            "popular"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "igualdad, género y derechos",
+          "share": 0.17680369380218403,
+          "top_terms": [
+            "igualdad",
+            "digital",
+            "democracia",
+            "mujeres",
+            "feminista",
+            "ley",
+            "sociedad",
+            "generacion"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2026",
+      "docs": 53,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "política exterior",
+          "share": 0.18072653814802547,
+          "top_terms": [
+            "multilateral",
+            "china",
+            "global",
+            "rearme",
+            "sociedades",
+            "cooperacion",
+            "democracia",
+            "igualdad"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "política exterior",
+          "share": 0.16159619480197535,
+          "top_terms": [
+            "guerra",
+            "iran",
+            "ucrania",
+            "irak",
+            "ilegal",
+            "libano",
+            "crisis",
+            "energetica"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Feijoo · parlamentarios · abascal",
+          "share": 0.12282144408973696,
+          "top_terms": [
+            "feijoo",
+            "parlamentarios",
+            "abascal",
+            "vox",
+            "pregunta",
+            "pedro",
+            "formula",
+            "euros"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Euros · formacion · fondo",
+          "share": 0.20595374893921076,
+          "top_terms": [
+            "euros",
+            "formacion",
+            "fondo",
+            "inversion",
+            "competitividad",
+            "vivienda",
+            "profesional",
+            "apuesta"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Borrasca · andalucia · vecinos",
+          "share": 0.07616141584119232,
+          "top_terms": [
+            "borrasca",
+            "andalucia",
+            "vecinos",
+            "emergencia",
+            "servicio",
+            "climatico",
+            "administracion",
+            "climatologicos"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "deporte y cultura",
+          "share": 0.06418285271479987,
+          "top_terms": [
+            "deporte",
+            "medallas",
+            "juego",
+            "bienvenido",
+            "invierno",
+            "moncloa",
+            "oriol",
+            "trasladaros"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "The · that · and",
+          "share": 0.03709460532741875,
+          "top_terms": [
+            "the",
+            "that",
+            "and",
+            "this",
+            "think",
+            "our",
+            "with",
+            "what"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Artificial · odio · redes",
+          "share": 0.1514632001376406,
+          "top_terms": [
+            "artificial",
+            "odio",
+            "redes",
+            "inteligencia",
+            "india",
+            "algoritmo",
+            "digital",
+            "tecnologia"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year": "2018",
+      "docs": 269,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "Proyecto · empleos · crecimiento",
+          "share": 0.1459344587821201,
+          "top_terms": [
+            "proyecto",
+            "empleos",
+            "crecimiento",
+            "modernizacion",
+            "calidad",
+            "compatriotas",
+            "inversion",
+            "innovacion"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "seguridad y justicia",
+          "share": 0.09794925784575256,
+          "top_terms": [
+            "carabineros",
+            "delincuencia",
+            "narcotrafico",
+            "terrorismo",
+            "combatir",
+            "general",
+            "compatriotas",
+            "policia"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "igualdad, género y derechos",
+          "share": 0.08787660658145409,
+          "top_terms": [
+            "niños",
+            "sename",
+            "familias",
+            "infancia",
+            "vulnerables",
+            "niñez",
+            "acogida",
+            "sociedad"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Region · magallanes · maravilloso",
+          "share": 0.1917004634576107,
+          "top_terms": [
+            "region",
+            "magallanes",
+            "maravilloso",
+            "vivienda",
+            "valparaiso",
+            "alcalde",
+            "aysen",
+            "araucania"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Apec · comercio · alianza",
+          "share": 0.15100012693219167,
+          "top_terms": [
+            "apec",
+            "comercio",
+            "alianza",
+            "pacifico",
+            "colaboracion",
+            "cumbre",
+            "acuerdo",
+            "libre"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Bolivia · internacional · derecho",
+          "share": 0.07604538544545164,
+          "top_terms": [
+            "bolivia",
+            "internacional",
+            "derecho",
+            "trata",
+            "mar",
+            "compatriotas",
+            "soberania",
+            "migracion"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Educacion · profesores · calidad",
+          "share": 0.10892287009878845,
+          "top_terms": [
+            "educacion",
+            "profesores",
+            "calidad",
+            "batalla",
+            "profesional",
+            "educacional",
+            "tecnicos",
+            "alumnos"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "igualdad, género y derechos",
+          "share": 0.14057083085663077,
+          "top_terms": [
+            "mujeres",
+            "adultos",
+            "dignidad",
+            "familias",
+            "previsional",
+            "sociedad",
+            "discriminacion",
+            "derecho"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year": "2019",
+      "docs": 243,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "salud, educación y protección social",
+          "share": 0.1478295975720875,
+          "top_terms": [
+            "proyecto",
+            "ley",
+            "adultos",
+            "previsional",
+            "pymes",
+            "modernizacion",
+            "pension",
+            "tributaria"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "seguridad y justicia",
+          "share": 0.09523983831325913,
+          "top_terms": [
+            "carabineros",
+            "policia",
+            "delincuencia",
+            "ley",
+            "labor",
+            "paz",
+            "investigacion",
+            "terrorismo"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Region · incendios · agua",
+          "share": 0.1442790069699968,
+          "top_terms": [
+            "region",
+            "incendios",
+            "agua",
+            "coquimbo",
+            "araucania",
+            "plan",
+            "arica",
+            "vivienda"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Comercio · china · cumbre",
+          "share": 0.17377111436163706,
+          "top_terms": [
+            "comercio",
+            "china",
+            "cumbre",
+            "apec",
+            "calentamiento",
+            "materia",
+            "climatico",
+            "colaboracion"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Derecho · democracia · humanos",
+          "share": 0.15762089408696955,
+          "top_terms": [
+            "derecho",
+            "democracia",
+            "humanos",
+            "libertad",
+            "patria",
+            "pueblo",
+            "compatriotas",
+            "respeto"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "Niños · educacion · liceos",
+          "share": 0.100161957867582,
+          "top_terms": [
+            "niños",
+            "educacion",
+            "liceos",
+            "padres",
+            "familias",
+            "calidad",
+            "aprender",
+            "sociedad"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "seguridad y justicia",
+          "share": 0.06800999292270202,
+          "top_terms": [
+            "drogas",
+            "narcotrafico",
+            "crimen",
+            "frontera",
+            "delincuencia",
+            "combatir",
+            "armadas",
+            "colaboracion"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "infraestructura y obras",
+          "share": 0.11308759790576564,
+          "top_terms": [
+            "buses",
+            "transporte",
+            "region",
+            "santiago",
+            "metros",
+            "energia",
+            "compatriotas",
+            "electricidad"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year": "2020",
+      "docs": 163,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "Ingresos · emergencia · proteccion",
+          "share": 0.1399167358726993,
+          "top_terms": [
+            "ingresos",
+            "emergencia",
+            "proteccion",
+            "beneficio",
+            "bono",
+            "hogares",
+            "ley",
+            "empleos"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "igualdad, género y derechos",
+          "share": 0.1696547710333705,
+          "top_terms": [
+            "plebiscito",
+            "mujeres",
+            "constitucion",
+            "violencia",
+            "derecho",
+            "ley",
+            "constituyente",
+            "hombre"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "Vacunas · biontech · pfizer",
+          "share": 0.08862675075199526,
+          "top_terms": [
+            "vacunas",
+            "biontech",
+            "pfizer",
+            "coronavirus",
+            "laboratorios",
+            "poblacion",
+            "dosis",
+            "johnson"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "pandemia y crisis sanitaria",
+          "share": 0.1619418738711693,
+          "top_terms": [
+            "coronavirus",
+            "sanitaria",
+            "cuarentena",
+            "contagios",
+            "medidas",
+            "colaboracion",
+            "residencias",
+            "ventiladores"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Region · plan · araucania",
+          "share": 0.23960418169698194,
+          "top_terms": [
+            "region",
+            "plan",
+            "araucania",
+            "magallanes",
+            "recuperacion",
+            "empleos",
+            "desarrollo",
+            "biobio"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "seguridad y justicia",
+          "share": 0.09225351272118826,
+          "top_terms": [
+            "carabineros",
+            "ley",
+            "delincuencia",
+            "derecho",
+            "ciudadanos",
+            "orden",
+            "publica",
+            "policia"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Liceos · bicentenario · educacion",
+          "share": 0.042066971698723976,
+          "top_terms": [
+            "liceos",
+            "bicentenario",
+            "educacion",
+            "niños",
+            "calidad",
+            "padres",
+            "profesores",
+            "excelencia"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Canasta · alimentos · metropolitana",
+          "share": 0.06593520235387158,
+          "top_terms": [
+            "canasta",
+            "alimentos",
+            "metropolitana",
+            "recesion",
+            "region",
+            "redes",
+            "distribucion",
+            "adversidad"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year": "2021",
+      "docs": 159,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "salud, educación y protección social",
+          "share": 0.16099263591119972,
+          "top_terms": [
+            "vacunas",
+            "dosis",
+            "salud",
+            "masiva",
+            "poblacion",
+            "adultos",
+            "proceso",
+            "refuerzo"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Climatico · agua · energia",
+          "share": 0.1310886934683553,
+          "top_terms": [
+            "climatico",
+            "agua",
+            "energia",
+            "tecnologia",
+            "sequia",
+            "hidrogeno",
+            "embalses",
+            "ciencia"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "seguridad y justicia",
+          "share": 0.06363943404106785,
+          "top_terms": [
+            "carabineros",
+            "ley",
+            "delincuencia",
+            "modernizacion",
+            "policia",
+            "labor",
+            "delitos",
+            "comisaria"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "Bono · pymes · ife",
+          "share": 0.14377599411098,
+          "top_terms": [
+            "bono",
+            "pymes",
+            "ife",
+            "empleos",
+            "recuperacion",
+            "ingresos",
+            "emergencia",
+            "beneficio"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "igualdad, género y derechos",
+          "share": 0.125148627326528,
+          "top_terms": [
+            "niños",
+            "mujeres",
+            "ley",
+            "pension",
+            "educacion",
+            "madres",
+            "subsidio",
+            "cuna"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "seguridad y justicia",
+          "share": 0.11461252304212226,
+          "top_terms": [
+            "araucania",
+            "terrorismo",
+            "violencia",
+            "narcotrafico",
+            "biobio",
+            "crimen",
+            "fuerza",
+            "ley"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "democracia, instituciones y electoral",
+          "share": 0.09634736182092934,
+          "top_terms": [
+            "constituyente",
+            "voto",
+            "elecciones",
+            "domingo",
+            "convencion",
+            "elegir",
+            "participacion",
+            "plebiscito"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "salud, educación y protección social",
+          "share": 0.16439473027881749,
+          "top_terms": [
+            "hospitales",
+            "deporte",
+            "salud",
+            "parque",
+            "emocion",
+            "vivienda",
+            "alegria",
+            "prestar"
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year": "2022",
+      "docs": 50,
+      "k": 8,
+      "topics": [
+        {
+          "topic": 0,
+          "name": "Liceos · region · agua",
+          "share": 0.11770140778240297,
+          "top_terms": [
+            "liceos",
+            "region",
+            "agua",
+            "bicentenario",
+            "crisis",
+            "sequia",
+            "parque",
+            "excelencia"
+          ]
+        },
+        {
+          "topic": 1,
+          "name": "Pension · adultos · alegria",
+          "share": 0.09581217055938547,
+          "top_terms": [
+            "pension",
+            "adultos",
+            "alegria",
+            "universal",
+            "previsional",
+            "ingrato",
+            "garantizar",
+            "solidario"
+          ]
+        },
+        {
+          "topic": 2,
+          "name": "pandemia y crisis sanitaria",
+          "share": 0.13093693433120795,
+          "top_terms": [
+            "vacunas",
+            "dosis",
+            "omicron",
+            "contagios",
+            "proteger",
+            "variante",
+            "refuerzo",
+            "coronavirus"
+          ]
+        },
+        {
+          "topic": 3,
+          "name": "seguridad y justicia",
+          "share": 0.14828282478449986,
+          "top_terms": [
+            "ley",
+            "armas",
+            "policia",
+            "carabineros",
+            "ilegal",
+            "narcotrafico",
+            "delitos",
+            "delincuencia"
+          ]
+        },
+        {
+          "topic": 4,
+          "name": "Hidrogeno · magallanes · desafios",
+          "share": 0.12322149015818593,
+          "top_terms": [
+            "hidrogeno",
+            "magallanes",
+            "desafios",
+            "antartica",
+            "energia",
+            "futuro",
+            "mineria",
+            "senadores"
+          ]
+        },
+        {
+          "topic": 5,
+          "name": "infraestructura y obras",
+          "share": 0.15765321800305565,
+          "top_terms": [
+            "metros",
+            "modernizacion",
+            "empleos",
+            "tren",
+            "aeropuerto",
+            "tunel",
+            "pandemia",
+            "recesion"
+          ]
+        },
+        {
+          "topic": 6,
+          "name": "Hospitales · quellon · region",
+          "share": 0.1118971226789976,
+          "top_terms": [
+            "hospitales",
+            "quellon",
+            "region",
+            "cochrane",
+            "aysen",
+            "hospitalaria",
+            "infraestructura",
+            "tecnologia"
+          ]
+        },
+        {
+          "topic": 7,
+          "name": "Bomberos · emergencia · talcahuano",
+          "share": 0.11449483170226463,
+          "top_terms": [
+            "bomberos",
+            "emergencia",
+            "talcahuano",
+            "asmar",
+            "coronel",
+            "carabineros",
+            "incendios",
+            "tragedia"
+          ]
+        }
+      ]
+    }
+  ],
+  "drift": [
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 0,
+      "topic_to": 4,
+      "similarity": 0.32,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 1,
+      "topic_to": 0,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 2,
+      "topic_to": 3,
+      "similarity": 0.02,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 3,
+      "topic_to": 6,
+      "similarity": 0.06,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 4,
+      "topic_to": 7,
+      "similarity": 0.08,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 5,
+      "topic_to": 5,
+      "similarity": 0.5400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 6,
+      "topic_to": 2,
+      "similarity": 0.6200000000000002,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 7,
+      "topic_to": 1,
+      "similarity": 0.5400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 0,
+      "topic_to": 6,
+      "similarity": 0.14,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 1,
+      "topic_to": 2,
+      "similarity": 0.38000000000000006,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 2,
+      "topic_to": 1,
+      "similarity": 0.6800000000000003,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 3,
+      "topic_to": 7,
+      "similarity": 0.5400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 4,
+      "topic_to": 0,
+      "similarity": 0.4000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 5,
+      "topic_to": 5,
+      "similarity": 0.5000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 6,
+      "topic_to": 4,
+      "similarity": 0.27999999999999997,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 7,
+      "topic_to": 3,
+      "similarity": 0.4000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.3,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 1,
+      "topic_to": 1,
+      "similarity": 0.5200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 2,
+      "topic_to": 4,
+      "similarity": 0.38000000000000006,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 3,
+      "topic_to": 7,
+      "similarity": 0.4200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 4,
+      "topic_to": 6,
+      "similarity": 0.16,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 5,
+      "topic_to": 3,
+      "similarity": 0.34,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 6,
+      "topic_to": 2,
+      "similarity": 0.36000000000000004,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 7,
+      "topic_to": 5,
+      "similarity": 0.5200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.4200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 1,
+      "topic_to": 1,
+      "similarity": 0.4000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 2,
+      "topic_to": 5,
+      "similarity": 0.5000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 3,
+      "topic_to": 7,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 4,
+      "topic_to": 2,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 5,
+      "topic_to": 6,
+      "similarity": 0.5400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 6,
+      "topic_to": 4,
+      "similarity": 0.5800000000000002,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 7,
+      "topic_to": 3,
+      "similarity": 0.02,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.5400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 1,
+      "topic_to": 1,
+      "similarity": 0.27999999999999997,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 2,
+      "topic_to": 2,
+      "similarity": 0.23999999999999996,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 3,
+      "topic_to": 7,
+      "similarity": 0.21999999999999997,
+      "matched": false
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 4,
+      "topic_to": 5,
+      "similarity": 0.6800000000000003,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 5,
+      "topic_to": 3,
+      "similarity": 0.38000000000000006,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 6,
+      "topic_to": 4,
+      "similarity": 0.4000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 7,
+      "topic_to": 6,
+      "similarity": 0.06,
+      "matched": false
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 0,
+      "topic_to": 7,
+      "similarity": 0.5200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 1,
+      "topic_to": 4,
+      "similarity": 0.25999999999999995,
+      "matched": true
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 2,
+      "topic_to": 6,
+      "similarity": 0.0,
+      "matched": false
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 3,
+      "topic_to": 2,
+      "similarity": 0.27999999999999997,
+      "matched": true
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 4,
+      "topic_to": 3,
+      "similarity": 0.27999999999999997,
+      "matched": true
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 5,
+      "topic_to": 0,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 6,
+      "topic_to": 5,
+      "similarity": 0.18,
+      "matched": false
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 7,
+      "topic_to": 1,
+      "similarity": 0.25999999999999995,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.46000000000000013,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 1,
+      "topic_to": 5,
+      "similarity": 0.19999999999999998,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 2,
+      "topic_to": 6,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 3,
+      "topic_to": 4,
+      "similarity": 0.04,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 4,
+      "topic_to": 2,
+      "similarity": 0.32,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 5,
+      "topic_to": 7,
+      "similarity": 0.38000000000000006,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 6,
+      "topic_to": 1,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 7,
+      "topic_to": 3,
+      "similarity": 0.16,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 0,
+      "topic_to": 6,
+      "similarity": 0.27999999999999997,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 1,
+      "topic_to": 4,
+      "similarity": 0.14,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 2,
+      "topic_to": 0,
+      "similarity": 0.06,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 3,
+      "topic_to": 2,
+      "similarity": 0.23999999999999996,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 4,
+      "topic_to": 7,
+      "similarity": 0.32,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 5,
+      "topic_to": 5,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 6,
+      "topic_to": 3,
+      "similarity": 0.02,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 7,
+      "topic_to": 1,
+      "similarity": 0.25999999999999995,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 0,
+      "topic_to": 1,
+      "similarity": 0.08,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 1,
+      "topic_to": 0,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 2,
+      "topic_to": 2,
+      "similarity": 0.08,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 3,
+      "topic_to": 3,
+      "similarity": 0.08,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 4,
+      "topic_to": 4,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 5,
+      "topic_to": 7,
+      "similarity": 0.14,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 6,
+      "topic_to": 6,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 7,
+      "topic_to": 5,
+      "similarity": 0.06,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.5000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 1,
+      "topic_to": 1,
+      "similarity": 0.02,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 2,
+      "topic_to": 3,
+      "similarity": 0.23999999999999996,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 3,
+      "topic_to": 4,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 4,
+      "topic_to": 7,
+      "similarity": 0.21999999999999997,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 5,
+      "topic_to": 6,
+      "similarity": 0.3,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 6,
+      "topic_to": 2,
+      "similarity": 0.32,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 7,
+      "topic_to": 5,
+      "similarity": 0.25999999999999995,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.5400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 1,
+      "topic_to": 4,
+      "similarity": 0.36000000000000004,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 2,
+      "topic_to": 5,
+      "similarity": 0.14,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 3,
+      "topic_to": 2,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 4,
+      "topic_to": 1,
+      "similarity": 0.02,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 5,
+      "topic_to": 3,
+      "similarity": 0.3,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 6,
+      "topic_to": 7,
+      "similarity": 0.16,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "topic_from": 7,
+      "topic_to": 6,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.5400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 1,
+      "topic_to": 1,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 2,
+      "topic_to": 2,
+      "similarity": 0.46000000000000013,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 3,
+      "topic_to": 5,
+      "similarity": 0.14,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 4,
+      "topic_to": 3,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 5,
+      "topic_to": 6,
+      "similarity": 0.02,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 6,
+      "topic_to": 7,
+      "similarity": 0.19999999999999998,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "topic_from": 7,
+      "topic_to": 4,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.46000000000000013,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 1,
+      "topic_to": 3,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 2,
+      "topic_to": 6,
+      "similarity": 0.5600000000000002,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 3,
+      "topic_to": 4,
+      "similarity": 0.3,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 4,
+      "topic_to": 7,
+      "similarity": 0.4200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 5,
+      "topic_to": 5,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 6,
+      "topic_to": 1,
+      "similarity": 0.0,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "topic_from": 7,
+      "topic_to": 2,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 0,
+      "topic_to": 3,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 1,
+      "topic_to": 5,
+      "similarity": 0.04,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 2,
+      "topic_to": 1,
+      "similarity": 0.25999999999999995,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 3,
+      "topic_to": 0,
+      "similarity": 0.19999999999999998,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 4,
+      "topic_to": 4,
+      "similarity": 0.27999999999999997,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 5,
+      "topic_to": 6,
+      "similarity": 0.02,
+      "matched": false
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 6,
+      "topic_to": 2,
+      "similarity": 0.4000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "topic_from": 7,
+      "topic_to": 7,
+      "similarity": 0.23999999999999996,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 0,
+      "topic_to": 7,
+      "similarity": 0.18,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 1,
+      "topic_to": 1,
+      "similarity": 0.48000000000000015,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 2,
+      "topic_to": 6,
+      "similarity": 0.14,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 3,
+      "topic_to": 2,
+      "similarity": 0.38000000000000006,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 4,
+      "topic_to": 3,
+      "similarity": 0.4200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 5,
+      "topic_to": 4,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 6,
+      "topic_to": 5,
+      "similarity": 0.32,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "topic_from": 7,
+      "topic_to": 0,
+      "similarity": 0.34,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 0,
+      "topic_to": 0,
+      "similarity": 0.21999999999999997,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 1,
+      "topic_to": 5,
+      "similarity": 0.5000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 2,
+      "topic_to": 4,
+      "similarity": 0.25999999999999995,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 3,
+      "topic_to": 2,
+      "similarity": 0.04,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 4,
+      "topic_to": 1,
+      "similarity": 0.19999999999999998,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 5,
+      "topic_to": 6,
+      "similarity": 0.4400000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 6,
+      "topic_to": 3,
+      "similarity": 0.06,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "topic_from": 7,
+      "topic_to": 7,
+      "similarity": 0.08,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 0,
+      "topic_to": 3,
+      "similarity": 0.5600000000000002,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 1,
+      "topic_to": 6,
+      "similarity": 0.32,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 2,
+      "topic_to": 0,
+      "similarity": 0.4000000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 3,
+      "topic_to": 7,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 4,
+      "topic_to": 1,
+      "similarity": 0.34,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 5,
+      "topic_to": 2,
+      "similarity": 0.4200000000000001,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 6,
+      "topic_to": 4,
+      "similarity": 0.25999999999999995,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "topic_from": 7,
+      "topic_to": 5,
+      "similarity": 0.1,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 0,
+      "topic_to": 2,
+      "similarity": 0.23999999999999996,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 1,
+      "topic_to": 4,
+      "similarity": 0.27999999999999997,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 2,
+      "topic_to": 3,
+      "similarity": 0.36000000000000004,
+      "matched": true
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 3,
+      "topic_to": 5,
+      "similarity": 0.21999999999999997,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 4,
+      "topic_to": 1,
+      "similarity": 0.18,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 5,
+      "topic_to": 7,
+      "similarity": 0.12000000000000001,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 6,
+      "topic_to": 0,
+      "similarity": 0.04,
+      "matched": false
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "topic_from": 7,
+      "topic_to": 6,
+      "similarity": 0.23999999999999996,
+      "matched": false
+    }
+  ],
+  "summary": [
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2019",
+      "year_to": "2020",
+      "mean_similarity": 0.5050000000000001,
+      "matched": 4,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 4,
+      "lost_topics": 4
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2020",
+      "year_to": "2021",
+      "mean_similarity": 0.4542857142857143,
+      "matched": 7,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 1,
+      "lost_topics": 1
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2021",
+      "year_to": "2022",
+      "mean_similarity": 0.40571428571428575,
+      "matched": 7,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 1,
+      "lost_topics": 1
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2022",
+      "year_to": "2023",
+      "mean_similarity": 0.48000000000000015,
+      "matched": 6,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 2,
+      "lost_topics": 2
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year_from": "2023",
+      "year_to": "2024",
+      "mean_similarity": 0.4560000000000001,
+      "matched": 5,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 3,
+      "lost_topics": 3
+    },
+    {
+      "speaker": "Javier Milei",
+      "year_from": "2024",
+      "year_to": "2025",
+      "mean_similarity": 0.34,
+      "matched": 6,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 2,
+      "lost_topics": 2
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2018",
+      "year_to": "2019",
+      "mean_similarity": 0.3866666666666667,
+      "matched": 3,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 5,
+      "lost_topics": 5
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2019",
+      "year_to": "2020",
+      "mean_similarity": 0.2866666666666666,
+      "matched": 3,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 5,
+      "lost_topics": 5
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2020",
+      "year_to": "2021",
+      "mean_similarity": 0.4400000000000001,
+      "matched": 1,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 7,
+      "lost_topics": 7
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2021",
+      "year_to": "2022",
+      "mean_similarity": 0.34500000000000003,
+      "matched": 4,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 4,
+      "lost_topics": 4
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2022",
+      "year_to": "2023",
+      "mean_similarity": 0.4100000000000001,
+      "matched": 4,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 4,
+      "lost_topics": 4
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2023",
+      "year_to": "2024",
+      "mean_similarity": 0.48000000000000015,
+      "matched": 3,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 5,
+      "lost_topics": 5
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2024",
+      "year_to": "2025",
+      "mean_similarity": 0.4360000000000001,
+      "matched": 5,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 3,
+      "lost_topics": 3
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year_from": "2025",
+      "year_to": "2026",
+      "mean_similarity": 0.34500000000000003,
+      "matched": 4,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 4,
+      "lost_topics": 4
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2018",
+      "year_to": "2019",
+      "mean_similarity": 0.38800000000000007,
+      "matched": 5,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 3,
+      "lost_topics": 3
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2019",
+      "year_to": "2020",
+      "mean_similarity": 0.4000000000000001,
+      "matched": 3,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 5,
+      "lost_topics": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2020",
+      "year_to": "2021",
+      "mean_similarity": 0.38333333333333336,
+      "matched": 6,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 2,
+      "lost_topics": 2
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "year_from": "2021",
+      "year_to": "2022",
+      "mean_similarity": 0.32,
+      "matched": 2,
+      "topics_from": 8,
+      "topics_to": 8,
+      "new_topics": 6,
+      "lost_topics": 6
+    }
+  ],
+  "chains": [
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 0,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          0,
+          4
+        ],
+        [
+          "2020",
+          "2021",
+          4,
+          0
+        ],
+        [
+          "2021",
+          "2022",
+          0,
+          0
+        ],
+        [
+          "2022",
+          "2023",
+          0,
+          0
+        ],
+        [
+          "2023",
+          "2024",
+          0,
+          0
+        ]
+      ],
+      "similarities": [
+        0.32,
+        0.4000000000000001,
+        0.3,
+        0.4200000000000001,
+        0.5400000000000001
+      ],
+      "year_end": "2024",
+      "topic_end": 0,
+      "mean_similarity": 0.3960000000000001,
+      "n_years": 6
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 1,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          1,
+          0
+        ],
+        [
+          "2020",
+          "2021",
+          0,
+          6
+        ],
+        [
+          "2021",
+          "2022",
+          6,
+          2
+        ],
+        [
+          "2022",
+          "2023",
+          2,
+          5
+        ],
+        [
+          "2023",
+          "2024",
+          5,
+          3
+        ]
+      ],
+      "similarities": [
+        0.1,
+        0.14,
+        0.36000000000000004,
+        0.5000000000000001,
+        0.38000000000000006
+      ],
+      "year_end": "2024",
+      "topic_end": 3,
+      "mean_similarity": 0.29600000000000004,
+      "n_years": 6
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 2,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          2,
+          3
+        ],
+        [
+          "2020",
+          "2021",
+          3,
+          7
+        ],
+        [
+          "2021",
+          "2022",
+          7,
+          5
+        ],
+        [
+          "2022",
+          "2023",
+          5,
+          6
+        ],
+        [
+          "2023",
+          "2024",
+          6,
+          4
+        ]
+      ],
+      "similarities": [
+        0.02,
+        0.5400000000000001,
+        0.5200000000000001,
+        0.5400000000000001,
+        0.4000000000000001
+      ],
+      "year_end": "2024",
+      "topic_end": 4,
+      "mean_similarity": 0.4040000000000001,
+      "n_years": 6
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 3,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          3,
+          6
+        ],
+        [
+          "2020",
+          "2021",
+          6,
+          4
+        ],
+        [
+          "2021",
+          "2022",
+          4,
+          6
+        ],
+        [
+          "2022",
+          "2023",
+          6,
+          4
+        ],
+        [
+          "2023",
+          "2024",
+          4,
+          5
+        ]
+      ],
+      "similarities": [
+        0.06,
+        0.27999999999999997,
+        0.16,
+        0.5800000000000002,
+        0.6800000000000003
+      ],
+      "year_end": "2024",
+      "topic_end": 5,
+      "mean_similarity": 0.35200000000000004,
+      "n_years": 6
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 4,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          4,
+          7
+        ],
+        [
+          "2020",
+          "2021",
+          7,
+          3
+        ],
+        [
+          "2021",
+          "2022",
+          3,
+          7
+        ],
+        [
+          "2022",
+          "2023",
+          7,
+          3
+        ],
+        [
+          "2023",
+          "2024",
+          3,
+          7
+        ]
+      ],
+      "similarities": [
+        0.08,
+        0.4000000000000001,
+        0.4200000000000001,
+        0.02,
+        0.21999999999999997
+      ],
+      "year_end": "2024",
+      "topic_end": 7,
+      "mean_similarity": 0.22800000000000004,
+      "n_years": 6
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 5,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          5,
+          5
+        ],
+        [
+          "2020",
+          "2021",
+          5,
+          5
+        ],
+        [
+          "2021",
+          "2022",
+          5,
+          3
+        ],
+        [
+          "2022",
+          "2023",
+          3,
+          7
+        ],
+        [
+          "2023",
+          "2024",
+          7,
+          6
+        ]
+      ],
+      "similarities": [
+        0.5400000000000001,
+        0.5000000000000001,
+        0.34,
+        0.12000000000000001,
+        0.06
+      ],
+      "year_end": "2024",
+      "topic_end": 6,
+      "mean_similarity": 0.3120000000000001,
+      "n_years": 6
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 6,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          6,
+          2
+        ],
+        [
+          "2020",
+          "2021",
+          2,
+          1
+        ],
+        [
+          "2021",
+          "2022",
+          1,
+          1
+        ],
+        [
+          "2022",
+          "2023",
+          1,
+          1
+        ],
+        [
+          "2023",
+          "2024",
+          1,
+          1
+        ]
+      ],
+      "similarities": [
+        0.6200000000000002,
+        0.6800000000000003,
+        0.5200000000000001,
+        0.4000000000000001,
+        0.27999999999999997
+      ],
+      "year_end": "2024",
+      "topic_end": 1,
+      "mean_similarity": 0.5000000000000001,
+      "n_years": 6
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic_start": 7,
+      "year_start": "2019",
+      "path": [
+        [
+          "2019",
+          "2020",
+          7,
+          1
+        ],
+        [
+          "2020",
+          "2021",
+          1,
+          2
+        ],
+        [
+          "2021",
+          "2022",
+          2,
+          4
+        ],
+        [
+          "2022",
+          "2023",
+          4,
+          2
+        ],
+        [
+          "2023",
+          "2024",
+          2,
+          2
+        ]
+      ],
+      "similarities": [
+        0.5400000000000001,
+        0.38000000000000006,
+        0.38000000000000006,
+        0.4400000000000001,
+        0.23999999999999996
+      ],
+      "year_end": "2024",
+      "topic_end": 2,
+      "mean_similarity": 0.3960000000000001,
+      "n_years": 6
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 0,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          0,
+          7
+        ]
+      ],
+      "similarities": [
+        0.5200000000000001
+      ],
+      "year_end": "2025",
+      "topic_end": 7,
+      "mean_similarity": 0.5200000000000001,
+      "n_years": 2
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 1,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          1,
+          4
+        ]
+      ],
+      "similarities": [
+        0.25999999999999995
+      ],
+      "year_end": "2025",
+      "topic_end": 4,
+      "mean_similarity": 0.25999999999999995,
+      "n_years": 2
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 2,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          2,
+          6
+        ]
+      ],
+      "similarities": [
+        0.0
+      ],
+      "year_end": "2025",
+      "topic_end": 6,
+      "mean_similarity": 0.0,
+      "n_years": 2
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 3,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          3,
+          2
+        ]
+      ],
+      "similarities": [
+        0.27999999999999997
+      ],
+      "year_end": "2025",
+      "topic_end": 2,
+      "mean_similarity": 0.27999999999999997,
+      "n_years": 2
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 4,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          4,
+          3
+        ]
+      ],
+      "similarities": [
+        0.27999999999999997
+      ],
+      "year_end": "2025",
+      "topic_end": 3,
+      "mean_similarity": 0.27999999999999997,
+      "n_years": 2
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 5,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          5,
+          0
+        ]
+      ],
+      "similarities": [
+        0.4400000000000001
+      ],
+      "year_end": "2025",
+      "topic_end": 0,
+      "mean_similarity": 0.4400000000000001,
+      "n_years": 2
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 6,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          6,
+          5
+        ]
+      ],
+      "similarities": [
+        0.18
+      ],
+      "year_end": "2025",
+      "topic_end": 5,
+      "mean_similarity": 0.18,
+      "n_years": 2
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic_start": 7,
+      "year_start": "2024",
+      "path": [
+        [
+          "2024",
+          "2025",
+          7,
+          1
+        ]
+      ],
+      "similarities": [
+        0.25999999999999995
+      ],
+      "year_end": "2025",
+      "topic_end": 1,
+      "mean_similarity": 0.25999999999999995,
+      "n_years": 2
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 0,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          0,
+          0
+        ],
+        [
+          "2019",
+          "2020",
+          0,
+          6
+        ],
+        [
+          "2020",
+          "2021",
+          6,
+          6
+        ],
+        [
+          "2021",
+          "2022",
+          6,
+          2
+        ],
+        [
+          "2022",
+          "2023",
+          2,
+          5
+        ],
+        [
+          "2023",
+          "2024",
+          5,
+          6
+        ],
+        [
+          "2024",
+          "2025",
+          6,
+          1
+        ],
+        [
+          "2025",
+          "2026",
+          1,
+          5
+        ]
+      ],
+      "similarities": [
+        0.46000000000000013,
+        0.27999999999999997,
+        0.1,
+        0.32,
+        0.14,
+        0.02,
+        0.0,
+        0.04
+      ],
+      "year_end": "2026",
+      "topic_end": 5,
+      "mean_similarity": 0.17,
+      "n_years": 9
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 1,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          1,
+          5
+        ],
+        [
+          "2019",
+          "2020",
+          5,
+          5
+        ],
+        [
+          "2020",
+          "2021",
+          5,
+          7
+        ],
+        [
+          "2021",
+          "2022",
+          7,
+          5
+        ],
+        [
+          "2022",
+          "2023",
+          5,
+          3
+        ],
+        [
+          "2023",
+          "2024",
+          3,
+          5
+        ],
+        [
+          "2024",
+          "2025",
+          5,
+          5
+        ],
+        [
+          "2025",
+          "2026",
+          5,
+          6
+        ]
+      ],
+      "similarities": [
+        0.19999999999999998,
+        0.12000000000000001,
+        0.14,
+        0.25999999999999995,
+        0.3,
+        0.14,
+        0.1,
+        0.02
+      ],
+      "year_end": "2026",
+      "topic_end": 6,
+      "mean_similarity": 0.16,
+      "n_years": 9
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 2,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          2,
+          6
+        ],
+        [
+          "2019",
+          "2020",
+          6,
+          3
+        ],
+        [
+          "2020",
+          "2021",
+          3,
+          3
+        ],
+        [
+          "2021",
+          "2022",
+          3,
+          4
+        ],
+        [
+          "2022",
+          "2023",
+          4,
+          1
+        ],
+        [
+          "2023",
+          "2024",
+          1,
+          1
+        ],
+        [
+          "2024",
+          "2025",
+          1,
+          3
+        ],
+        [
+          "2025",
+          "2026",
+          3,
+          0
+        ]
+      ],
+      "similarities": [
+        0.1,
+        0.02,
+        0.08,
+        0.12000000000000001,
+        0.02,
+        0.4400000000000001,
+        0.4400000000000001,
+        0.19999999999999998
+      ],
+      "year_end": "2026",
+      "topic_end": 0,
+      "mean_similarity": 0.17750000000000005,
+      "n_years": 9
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 3,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          3,
+          4
+        ],
+        [
+          "2019",
+          "2020",
+          4,
+          7
+        ],
+        [
+          "2020",
+          "2021",
+          7,
+          5
+        ],
+        [
+          "2021",
+          "2022",
+          5,
+          6
+        ],
+        [
+          "2022",
+          "2023",
+          6,
+          7
+        ],
+        [
+          "2023",
+          "2024",
+          7,
+          4
+        ],
+        [
+          "2024",
+          "2025",
+          4,
+          7
+        ],
+        [
+          "2025",
+          "2026",
+          7,
+          7
+        ]
+      ],
+      "similarities": [
+        0.04,
+        0.32,
+        0.06,
+        0.3,
+        0.16,
+        0.1,
+        0.4200000000000001,
+        0.23999999999999996
+      ],
+      "year_end": "2026",
+      "topic_end": 7,
+      "mean_similarity": 0.20500000000000002,
+      "n_years": 9
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 4,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          4,
+          2
+        ],
+        [
+          "2019",
+          "2020",
+          2,
+          0
+        ],
+        [
+          "2020",
+          "2021",
+          0,
+          1
+        ],
+        [
+          "2021",
+          "2022",
+          1,
+          1
+        ],
+        [
+          "2022",
+          "2023",
+          1,
+          4
+        ],
+        [
+          "2023",
+          "2024",
+          4,
+          3
+        ],
+        [
+          "2024",
+          "2025",
+          3,
+          4
+        ],
+        [
+          "2025",
+          "2026",
+          4,
+          4
+        ]
+      ],
+      "similarities": [
+        0.32,
+        0.06,
+        0.08,
+        0.02,
+        0.36000000000000004,
+        0.1,
+        0.3,
+        0.27999999999999997
+      ],
+      "year_end": "2026",
+      "topic_end": 4,
+      "mean_similarity": 0.19,
+      "n_years": 9
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 5,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          5,
+          7
+        ],
+        [
+          "2019",
+          "2020",
+          7,
+          1
+        ],
+        [
+          "2020",
+          "2021",
+          1,
+          0
+        ],
+        [
+          "2021",
+          "2022",
+          0,
+          0
+        ],
+        [
+          "2022",
+          "2023",
+          0,
+          0
+        ],
+        [
+          "2023",
+          "2024",
+          0,
+          0
+        ],
+        [
+          "2024",
+          "2025",
+          0,
+          0
+        ],
+        [
+          "2025",
+          "2026",
+          0,
+          3
+        ]
+      ],
+      "similarities": [
+        0.38000000000000006,
+        0.25999999999999995,
+        0.4400000000000001,
+        0.5000000000000001,
+        0.5400000000000001,
+        0.5400000000000001,
+        0.46000000000000013,
+        0.4400000000000001
+      ],
+      "year_end": "2026",
+      "topic_end": 3,
+      "mean_similarity": 0.44500000000000006,
+      "n_years": 9
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 6,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          6,
+          1
+        ],
+        [
+          "2019",
+          "2020",
+          1,
+          4
+        ],
+        [
+          "2020",
+          "2021",
+          4,
+          4
+        ],
+        [
+          "2021",
+          "2022",
+          4,
+          7
+        ],
+        [
+          "2022",
+          "2023",
+          7,
+          6
+        ],
+        [
+          "2023",
+          "2024",
+          6,
+          7
+        ],
+        [
+          "2024",
+          "2025",
+          7,
+          2
+        ],
+        [
+          "2025",
+          "2026",
+          2,
+          1
+        ]
+      ],
+      "similarities": [
+        0.1,
+        0.14,
+        0.12000000000000001,
+        0.21999999999999997,
+        0.12000000000000001,
+        0.19999999999999998,
+        0.12000000000000001,
+        0.25999999999999995
+      ],
+      "year_end": "2026",
+      "topic_end": 1,
+      "mean_similarity": 0.15999999999999998,
+      "n_years": 9
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic_start": 7,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          7,
+          3
+        ],
+        [
+          "2019",
+          "2020",
+          3,
+          2
+        ],
+        [
+          "2020",
+          "2021",
+          2,
+          2
+        ],
+        [
+          "2021",
+          "2022",
+          2,
+          3
+        ],
+        [
+          "2022",
+          "2023",
+          3,
+          2
+        ],
+        [
+          "2023",
+          "2024",
+          2,
+          2
+        ],
+        [
+          "2024",
+          "2025",
+          2,
+          6
+        ],
+        [
+          "2025",
+          "2026",
+          6,
+          2
+        ]
+      ],
+      "similarities": [
+        0.16,
+        0.23999999999999996,
+        0.08,
+        0.23999999999999996,
+        0.4400000000000001,
+        0.46000000000000013,
+        0.5600000000000002,
+        0.4000000000000001
+      ],
+      "year_end": "2026",
+      "topic_end": 2,
+      "mean_similarity": 0.3225,
+      "n_years": 9
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 0,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          0,
+          7
+        ],
+        [
+          "2019",
+          "2020",
+          7,
+          7
+        ],
+        [
+          "2020",
+          "2021",
+          7,
+          5
+        ],
+        [
+          "2021",
+          "2022",
+          5,
+          7
+        ]
+      ],
+      "similarities": [
+        0.18,
+        0.08,
+        0.1,
+        0.12000000000000001
+      ],
+      "year_end": "2022",
+      "topic_end": 7,
+      "mean_similarity": 0.12,
+      "n_years": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 1,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          1,
+          1
+        ],
+        [
+          "2019",
+          "2020",
+          1,
+          5
+        ],
+        [
+          "2020",
+          "2021",
+          5,
+          2
+        ],
+        [
+          "2021",
+          "2022",
+          2,
+          3
+        ]
+      ],
+      "similarities": [
+        0.48000000000000015,
+        0.5000000000000001,
+        0.4200000000000001,
+        0.36000000000000004
+      ],
+      "year_end": "2022",
+      "topic_end": 3,
+      "mean_similarity": 0.4400000000000001,
+      "n_years": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 2,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          2,
+          6
+        ],
+        [
+          "2019",
+          "2020",
+          6,
+          3
+        ],
+        [
+          "2020",
+          "2021",
+          3,
+          7
+        ],
+        [
+          "2021",
+          "2022",
+          7,
+          6
+        ]
+      ],
+      "similarities": [
+        0.14,
+        0.06,
+        0.12000000000000001,
+        0.23999999999999996
+      ],
+      "year_end": "2022",
+      "topic_end": 6,
+      "mean_similarity": 0.13999999999999999,
+      "n_years": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 3,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          3,
+          2
+        ],
+        [
+          "2019",
+          "2020",
+          2,
+          4
+        ],
+        [
+          "2020",
+          "2021",
+          4,
+          1
+        ],
+        [
+          "2021",
+          "2022",
+          1,
+          4
+        ]
+      ],
+      "similarities": [
+        0.38000000000000006,
+        0.25999999999999995,
+        0.34,
+        0.27999999999999997
+      ],
+      "year_end": "2022",
+      "topic_end": 4,
+      "mean_similarity": 0.315,
+      "n_years": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 4,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          4,
+          3
+        ],
+        [
+          "2019",
+          "2020",
+          3,
+          2
+        ],
+        [
+          "2020",
+          "2021",
+          2,
+          0
+        ],
+        [
+          "2021",
+          "2022",
+          0,
+          2
+        ]
+      ],
+      "similarities": [
+        0.4200000000000001,
+        0.04,
+        0.4000000000000001,
+        0.23999999999999996
+      ],
+      "year_end": "2022",
+      "topic_end": 2,
+      "mean_similarity": 0.275,
+      "n_years": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 5,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          5,
+          4
+        ],
+        [
+          "2019",
+          "2020",
+          4,
+          1
+        ],
+        [
+          "2020",
+          "2021",
+          1,
+          6
+        ],
+        [
+          "2021",
+          "2022",
+          6,
+          0
+        ]
+      ],
+      "similarities": [
+        0.12000000000000001,
+        0.19999999999999998,
+        0.32,
+        0.04
+      ],
+      "year_end": "2022",
+      "topic_end": 0,
+      "mean_similarity": 0.17,
+      "n_years": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 6,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          6,
+          5
+        ],
+        [
+          "2019",
+          "2020",
+          5,
+          6
+        ],
+        [
+          "2020",
+          "2021",
+          6,
+          4
+        ],
+        [
+          "2021",
+          "2022",
+          4,
+          1
+        ]
+      ],
+      "similarities": [
+        0.32,
+        0.4400000000000001,
+        0.25999999999999995,
+        0.18
+      ],
+      "year_end": "2022",
+      "topic_end": 1,
+      "mean_similarity": 0.3,
+      "n_years": 5
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic_start": 7,
+      "year_start": "2018",
+      "path": [
+        [
+          "2018",
+          "2019",
+          7,
+          0
+        ],
+        [
+          "2019",
+          "2020",
+          0,
+          0
+        ],
+        [
+          "2020",
+          "2021",
+          0,
+          3
+        ],
+        [
+          "2021",
+          "2022",
+          3,
+          5
+        ]
+      ],
+      "similarities": [
+        0.34,
+        0.21999999999999997,
+        0.5600000000000002,
+        0.21999999999999997
+      ],
+      "year_end": "2022",
+      "topic_end": 5,
+      "mean_similarity": 0.335,
+      "n_years": 5
+    }
+  ]
+}

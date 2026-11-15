@@ -1,0 +1,271 @@
+{
+  "description": "Referencias para el resumen multi-documento por año. Cada caso tiene (a) un resumen de referencia escrito a mano tras leer los discursos medoides y las etiquetas de los grupos temáticos, y (b) una lista de tópicos clave con sus stems alternativos. Los tópicos se evalúan por recall: un tópico se considera cubierto si el resumen contiene alguno de sus stems.",
+  "procedure": "1) se agrupan los discursos del año (k-means sobre w_global); 2) se leen las oraciones más centrales de cada grupo y los títulos; 3) se escribe un resumen de 3 oraciones (~60-80 palabras) y 7-8 tópicos clave. Las referencias son abstractivas y no se usaron para construir el resumen.",
+  "items": [
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2023",
+      "reference": "Sánchez centró 2023 en la presidencia española del Consejo de la Unión Europea: cumbre de Granada, apoyo a Ucrania y respuesta humanitaria en Gaza. En el plano interior defendió la reindustrialización, la ley de vivienda y la renovación del CGPJ, y cerró acuerdos con Marruecos. La investidura y la convivencia en Cataluña marcaron el debate parlamentario.",
+      "key_topics": [
+        {
+          "label": "presidencia de la UE",
+          "all": [
+            "europe"
+          ],
+          "any": [
+            "rotatori",
+            "semestr",
+            "consej"
+          ]
+        },
+        {
+          "label": "Ucrania / Zelenski",
+          "any": [
+            "ucrani",
+            "zelenski"
+          ]
+        },
+        {
+          "label": "Gaza / Palestina",
+          "any": [
+            "gaz",
+            "palestin"
+          ]
+        },
+        {
+          "label": "Marruecos",
+          "any": [
+            "marruec",
+            "marroqu"
+          ]
+        },
+        {
+          "label": "reindustrialización",
+          "any": [
+            "reindustrializ"
+          ]
+        },
+        {
+          "label": "vivienda",
+          "any": [
+            "viviend"
+          ]
+        },
+        {
+          "label": "CGPJ / poder judicial",
+          "any": [
+            "cgpj",
+            "judicial"
+          ]
+        },
+        {
+          "label": "Cataluña / investidura",
+          "any": [
+            "cataluñ",
+            "amnisti",
+            "investidur"
+          ]
+        }
+      ],
+      "notes": "129 discursos. Los grupos del año son legibles: UE/rotatoria, Ucrania, Gaza, Marruecos y política interior."
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "year": "2024",
+      "reference": "En 2024 Sánchez reconoció a Palestina como Estado y mantuvo el apoyo a Ucrania, mientras la DANA de Valencia obligó a movilizar recursos del Estado. Impulsó acuerdos comerciales en India y China y defendió la financiación autonómica y la convivencia en Cataluña. La economía y el empleo fueron el eje de su discurso de gestión.",
+      "key_topics": [
+        {
+          "label": "reconocimiento de Palestina",
+          "any": [
+            "palestin"
+          ]
+        },
+        {
+          "label": "Gaza / Israel",
+          "any": [
+            "gaz",
+            "israel",
+            "israeli"
+          ]
+        },
+        {
+          "label": "DANA / Comunidad Valenciana",
+          "any": [
+            "valencian",
+            "valenci",
+            "ume"
+          ]
+        },
+        {
+          "label": "Ucrania",
+          "any": [
+            "ucrani"
+          ]
+        },
+        {
+          "label": "India / China",
+          "any": [
+            "indi",
+            "chin"
+          ]
+        },
+        {
+          "label": "financiación autonómica / Cataluña",
+          "any": [
+            "financi",
+            "cataluñ"
+          ]
+        },
+        {
+          "label": "empleo / economía",
+          "any": [
+            "emple",
+            "economi",
+            "economic"
+          ]
+        },
+        {
+          "label": "vivienda",
+          "any": [
+            "viviend"
+          ]
+        }
+      ],
+      "notes": "142 discursos. El cluster de la DANA es pequeño (10 docs) pero es el hecho del año; el de deportes (4) no es tópico de gobierno."
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "year": "2023",
+      "reference": "AMLO 2023 giró en torno a los programas sociales (Sembrando Vida, becas, pensiones) y a la federalización de la salud con IMSS-Bienestar. Supervisó los tramos del Tren Maya y del corredor interoceánico del Istmo y la reconstrucción de Acapulco tras el huracán Otis. En seguridad reportó cifras de detenciones y homicidios y confrontó al Poder Judicial por los fideicomisos.",
+      "key_topics": [
+        {
+          "label": "Tren Maya",
+          "any": [
+            "tren"
+          ]
+        },
+        {
+          "label": "IMSS-Bienestar / federalización de la salud",
+          "any": [
+            "imss",
+            "bienest",
+            "federaliz",
+            "salud"
+          ]
+        },
+        {
+          "label": "programas sociales / Sembrando Vida",
+          "any": [
+            "sembr",
+            "bec",
+            "pension"
+          ]
+        },
+        {
+          "label": "Acapulco / huracán Otis",
+          "any": [
+            "acapulc",
+            "otis",
+            "hurac"
+          ]
+        },
+        {
+          "label": "Istmo / corredor interoceánico",
+          "any": [
+            "istmo",
+            "interocean",
+            "tehuantepec"
+          ]
+        },
+        {
+          "label": "seguridad / homicidios",
+          "any": [
+            "segur",
+            "homicidi",
+            "detencion"
+          ]
+        },
+        {
+          "label": "Poder Judicial / fideicomisos",
+          "any": [
+            "judicial",
+            "fideicomis"
+          ]
+        },
+        {
+          "label": "litio",
+          "any": [
+            "liti"
+          ]
+        }
+      ],
+      "notes": "308 discursos (mañaneras). Agrupamiento más débil: el formato es homogéneo y el mayor grupo es la conferencia de prensa genérica."
+    },
+    {
+      "speaker": "Javier Milei",
+      "year": "2024",
+      "reference": "Milei 2024 se definió por el ajuste fiscal de 15 puntos del PBI y la baja de la inflación, junto con la desregulación y el recorte del gasto. Impulsó el Pacto de Mayo y una política exterior alineada con Israel y Estados Unidos, y criticó al Mercosur por sus barreras arancelarias. El discurso ideológico contra la casta y el modelo económico anterior dominó sus alocuciones.",
+      "key_topics": [
+        {
+          "label": "ajuste fiscal",
+          "any": [
+            "fiscal",
+            "ajust"
+          ]
+        },
+        {
+          "label": "inflación / política monetaria",
+          "any": [
+            "inflacion",
+            "monetari"
+          ]
+        },
+        {
+          "label": "desregulación / DNU",
+          "any": [
+            "desregul",
+            "dnu",
+            "decret"
+          ]
+        },
+        {
+          "label": "recorte del gasto",
+          "any": [
+            "motosierr",
+            "gast"
+          ]
+        },
+        {
+          "label": "Pacto de Mayo",
+          "any": [
+            "pact"
+          ]
+        },
+        {
+          "label": "Israel / Holocausto",
+          "any": [
+            "israel",
+            "judi",
+            "holocaust",
+            "antisemit"
+          ]
+        },
+        {
+          "label": "Mercosur / aranceles",
+          "any": [
+            "mercosur",
+            "arancel"
+          ]
+        },
+        {
+          "label": "superávit / déficit",
+          "any": [
+            "superavit",
+            "deficit"
+          ]
+        }
+      ],
+      "notes": "87 discursos. El grupo mayoritario (50 docs) es el discurso ideológico; el económico es el segundo (22 docs)."
+    }
+  ]
+}

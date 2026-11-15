@@ -1,0 +1,1667 @@
+{
+  "meta": {
+    "params": {
+      "min_df": 10,
+      "max_df_ratio": 0.5,
+      "max_terms": 8000,
+      "k_grid": [
+        6,
+        8,
+        10,
+        12,
+        15
+      ],
+      "families": [
+        "lsa",
+        "nmf",
+        "lda"
+      ],
+      "seed": 42,
+      "cooc_window": 10,
+      "cooc_top_terms": 10,
+      "nmf": {
+        "init": "nndsvda",
+        "max_iter": 500
+      },
+      "lda": {
+        "max_iter": 12,
+        "learning_method": "online"
+      },
+      "lsa_components": 50,
+      "window": {
+        "k": 8,
+        "min_docs": 30,
+        "min_sim": 0.25
+      },
+      "stability": {
+        "runs": 5,
+        "subsample": 0.8
+      },
+      "clean_window": [
+        "2023",
+        "2024"
+      ]
+    },
+    "verification": {
+      "max_abs_diff": 0.0,
+      "nnz_mt": 3687905,
+      "nnz_ri": 3687905,
+      "ok": true,
+      "n_docs": 4531,
+      "n_ri": 30083
+    },
+    "n_docs": 4531,
+    "space": {
+      "n_terms": 8000,
+      "nnz": 2579502
+    },
+    "cooc": {
+      "n_candidates": 189,
+      "window": 10
+    },
+    "chosen": {
+      "family": "nmf",
+      "k": 10,
+      "c_v": 0.44334921378518705,
+      "umass": -1.0582809958192696,
+      "diversity": 0.94,
+      "exclusivity": 0.681905465381744,
+      "best_in_family": {
+        "k": 15,
+        "c_v": 0.49205594555931353,
+        "se": 0.04813350372822438,
+        "band": 0.05
+      },
+      "threshold": 0.44205594555931355,
+      "criterion": "menor k con c_v >= c_v_max - max(SE, 0.05) (regla 1-SE)"
+    },
+    "seconds": 186.9
+  },
+  "chosen": {
+    "family": "nmf",
+    "k": 10,
+    "c_v": 0.44334921378518705,
+    "umass": -1.0582809958192696,
+    "diversity": 0.94,
+    "exclusivity": 0.681905465381744,
+    "best_in_family": {
+      "k": 15,
+      "c_v": 0.49205594555931353,
+      "se": 0.04813350372822438,
+      "band": 0.05
+    },
+    "threshold": 0.44205594555931355,
+    "criterion": "menor k con c_v >= c_v_max - max(SE, 0.05) (regla 1-SE)"
+  },
+  "topics": [
+    {
+      "topic": 0,
+      "name": "seguridad y justicia",
+      "auto_label": "Federal · guardia · investigacion",
+      "manual_label": "seguridad y justicia",
+      "manual_anchors": [
+        "delit",
+        "polici"
+      ],
+      "share": 0.1294482148712916,
+      "exclusivity": 0.5067162923506687,
+      "top_terms": [
+        {
+          "term": "federal",
+          "surface": "federal",
+          "weight": 0.0031206896396830464,
+          "exclusive": 0.37892855510786966
+        },
+        {
+          "term": "guardi",
+          "surface": "guardia",
+          "weight": 0.003022187962965761,
+          "exclusive": 0.6266106737253037
+        },
+        {
+          "term": "investig",
+          "surface": "investigacion",
+          "weight": 0.002967607083220033,
+          "exclusive": 0.4632209537952182
+        },
+        {
+          "term": "cient",
+          "surface": "ciento",
+          "weight": 0.002927070510892435,
+          "exclusive": 0.1408241669906081
+        },
+        {
+          "term": "delit",
+          "surface": "delitos",
+          "weight": 0.0029189354290135683,
+          "exclusive": 0.7231780248217339
+        },
+        {
+          "term": "fiscali",
+          "surface": "fiscalia",
+          "weight": 0.002695709608055811,
+          "exclusive": 0.7922513488930799
+        },
+        {
+          "term": "oper",
+          "surface": "operacion",
+          "weight": 0.002404157929082644,
+          "exclusive": 0.360480900850929
+        },
+        {
+          "term": "corrupcion",
+          "surface": "corrupcion",
+          "weight": 0.002306249317268927,
+          "exclusive": 0.15073910196458679
+        },
+        {
+          "term": "homicidi",
+          "surface": "homicidios",
+          "weight": 0.0022712573133485837,
+          "exclusive": 1.0
+        },
+        {
+          "term": "marin",
+          "surface": "marina",
+          "weight": 0.002073885464396524,
+          "exclusive": 0.43092919735735835
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 1637,
+          "speech_id": "MEX-AMLO-20220922-399ba0dd03d9-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-09-22",
+          "theta": 1.0,
+          "snippet": "nsa Nacional, la Secretaría de Marina, la Secretaría de Seguridad y Protección Ciudadana, Guardia Nacional, Centro Nacional de Inteligencia, en coordinación con las secretarías de Seguridad y las fiscalías de los estados y la Fiscalía General de la República. Iniciamos con el reporte de detenidos. Durante el periodo de"
+        },
+        {
+          "doc_id": 1606,
+          "speech_id": "MEX-AMLO-20220825-9743862e4ec1-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-08-25",
+          "theta": 1.0,
+          "snippet": "DOR Buenos días. Ánimo, ánimo. Bueno, pues como los jueves los dedicamos a informar sobre delitos que se cometen y detenidos por esos delitos, todos los casos, en la sección de Cero Impunidad, porque se cometen delitos, pero no hay impunidad y hay castigo, y es parte del trabajo del subsecretario, Ricardo Mejía, él les"
+        },
+        {
+          "doc_id": 1631,
+          "speech_id": "MEX-AMLO-20220915-535dc83b2c3b-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-09-15",
+          "theta": 0.9888794322143248,
+          "snippet": "tenciados, o que no han tenido defensa por su situación de pobreza, presos indígenas, por delitos verdaderamente menores, que se les abandonó o sus familiares no han tenido la posibilidad de hacer los trámites, o no tienen apoyos de abogados de las defensorías de oficio, o enfermos, ancianos. Entonces, el día de hoy va"
+        },
+        {
+          "doc_id": 1598,
+          "speech_id": "MEX-AMLO-20220818-97058319973e-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-08-18",
+          "theta": 0.9869623924358161,
+          "snippet": "EZ OBRADOR Buenos días. Ánimo. Bueno, vamos a informar, como lo hacemos los jueves, sobre delitos que se cometen y se castigan o no se permite la impunidad. Esto lo informa el subsecretario de Seguridad Pública, Ricardo Mejía, que va a informar. Luego, se va a dar un informe sobre posibles hechos de corrupción en Segal"
+        },
+        {
+          "doc_id": 1960,
+          "speech_id": "MEX-AMLO-20231003-eb3c373a5a2f-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2023-10-03",
+          "theta": 0.9606350244661349,
+          "snippet": "Son diferentes cortes las que están requiriendo a estas personas, principalmente por los delitos de asociación delictuosa, contra la salud, homicidio, lesiones, de nuevo homicidio, homicidio, abuso sexual. Son ochos las extradiciones en este periodo. Detenciones importantes, tenemos a Ivohone Patricia ‘N’. Ella fue de"
+        }
+      ]
+    },
+    {
+      "topic": 1,
+      "name": "política exterior",
+      "auto_label": "Europea · union · europa",
+      "manual_label": "política exterior",
+      "manual_anchors": [
+        "europ",
+        "europe",
+        "multilateral",
+        "otan",
+        "putin",
+        "ucrani",
+        "union"
+      ],
+      "share": 0.11868891666420453,
+      "exclusivity": 0.7853880906253397,
+      "top_terms": [
+        {
+          "term": "europe",
+          "surface": "europea",
+          "weight": 0.02608130030482207,
+          "exclusive": 0.9508989311364797
+        },
+        {
+          "term": "union",
+          "surface": "union",
+          "weight": 0.012978669181453377,
+          "exclusive": 0.9991608738781003
+        },
+        {
+          "term": "europ",
+          "surface": "europa",
+          "weight": 0.012454763384576729,
+          "exclusive": 0.8971166820902231
+        },
+        {
+          "term": "ucrani",
+          "surface": "ucrania",
+          "weight": 0.00904590256350301,
+          "exclusive": 0.9700215684386756
+        },
+        {
+          "term": "putin",
+          "surface": "putin",
+          "weight": 0.005174578010794455,
+          "exclusive": 0.9818720296231725
+        },
+        {
+          "term": "consej",
+          "surface": "consejo",
+          "weight": 0.005065638200652924,
+          "exclusive": 0.5922821028226897
+        },
+        {
+          "term": "guerr",
+          "surface": "guerra",
+          "weight": 0.0050076336433373374,
+          "exclusive": 0.6680474467873311
+        },
+        {
+          "term": "eur",
+          "surface": "euros",
+          "weight": 0.004906826433701367,
+          "exclusive": 0.462611466731976
+        },
+        {
+          "term": "cumbr",
+          "surface": "cumbre",
+          "weight": 0.00460058898996351,
+          "exclusive": 0.8105834073822651
+        },
+        {
+          "term": "logic",
+          "surface": "logicamente",
+          "weight": 0.003996961567543025,
+          "exclusive": 0.5212863973624834
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 2516,
+          "speech_id": "ESP-LAMONCLOAGOBES-20180624-crm20180624-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2018-06-24",
+          "theta": 1.0,
+          "snippet": "Declaraciones a la entrada de la reunión de trabajo Presidente .- Buenos días. Es la primera reunión, en este caso, una mini cumbre a la que acude el nuevo Gobierno de España y, en un desafío tan importante como es el de las migraciones que, también, lógicamente, toca de lleno a un país como el nuestro, que es un país"
+        },
+        {
+          "doc_id": 3578,
+          "speech_id": "ESP-LAMONCLOAGOBES-20251124-20251124transcripcionsanchezcumbreafricaue-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2025-11-24",
+          "theta": 1.0,
+          "snippet": "ar al… ¿me alejo? Felicitar al Gobierno de Angola por la celebración de esta Cumbre de la Unión Europea con la Unión Africana. Creo que es muy importante, lo verán posteriormente, la adopción de las conclusiones. Se ha trabajado muy intensamente para hablar de esa agenda compartida entre la Unión Europea y la Unión Af"
+        },
+        {
+          "doc_id": 3227,
+          "speech_id": "ESP-LAMONCLOAGOBES-20230630-prsp30062023-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2023-06-30",
+          "theta": 1.0,
+          "snippet": "portante Consejo antes del inicio de la Presidencia rotatoria de España del Consejo de la Unión Europea. Antes de comenzar quería señalar esto. Mañana empezamos la andadura de la Presidencia rotatoria del Consejo de la Unión Europea y, en ese sentido, quería agradecer particularmente a la Presidencia sueca todo el tra"
+        },
+        {
+          "doc_id": 3222,
+          "speech_id": "ESP-LAMONCLOAGOBES-20230601-prsp02062023-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2023-06-01",
+          "theta": 1.0,
+          "snippet": "cias, querida Maia, por la invitación de hoy a la segunda cumbre de la Comunidad Política Europea. Permítanme felicitarles por el éxito de la reunión y los fructíferos debates que hemos mantenido en este impresionante marco del Castillo de Mimi. Y no es casualidad que todos hayamos querido celebrar esta segunda cumbre"
+        },
+        {
+          "doc_id": 3021,
+          "speech_id": "ESP-LAMONCLOAGOBES-20220317-prsp17032022-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2022-03-17",
+          "theta": 1.0,
+          "snippet": "e Rumanía y ahora con el presidente de Rumanía. Y creo que, antes de entrar en la agenda europea y en la crisis de Ucrania y, sin duda alguna también, los efectos económicos que está teniendo esta guerra sobre nuestras sociedades, sí me gustaría subrayar el que esta visita oficial también es muy importante para España"
+        }
+      ]
+    },
+    {
+      "topic": 2,
+      "name": "pandemia y crisis sanitaria",
+      "auto_label": "Vacunas · dosis · pandemia",
+      "manual_label": "pandemia y crisis sanitaria",
+      "manual_anchors": [
+        "contagi",
+        "pandemi",
+        "virus"
+      ],
+      "share": 0.053931235425964424,
+      "exclusivity": 0.6581172068673713,
+      "top_terms": [
+        {
+          "term": "vacun",
+          "surface": "vacunas",
+          "weight": 0.07782784391075104,
+          "exclusive": 1.0
+        },
+        {
+          "term": "dosis",
+          "surface": "dosis",
+          "weight": 0.018865352081189717,
+          "exclusive": 1.0
+        },
+        {
+          "term": "pandemi",
+          "surface": "pandemia",
+          "weight": 0.011532364501084804,
+          "exclusive": 0.4999670540711075
+        },
+        {
+          "term": "cov",
+          "surface": "covid",
+          "weight": 0.010184722318778521,
+          "exclusive": 0.6510172881711326
+        },
+        {
+          "term": "pfiz",
+          "surface": "pfizer",
+          "weight": 0.006212609799876,
+          "exclusive": 1.0
+        },
+        {
+          "term": "adult",
+          "surface": "adultos",
+          "weight": 0.005546251364063083,
+          "exclusive": 0.4038768262093557
+        },
+        {
+          "term": "poblacion",
+          "surface": "poblacion",
+          "weight": 0.005353889659044921,
+          "exclusive": 0.43470105313696594
+        },
+        {
+          "term": "contagi",
+          "surface": "contagios",
+          "weight": 0.004868140556114514,
+          "exclusive": 0.5889494122608816
+        },
+        {
+          "term": "sanitari",
+          "surface": "sanitaria",
+          "weight": 0.004738369811080105,
+          "exclusive": 0.4231492021729937
+        },
+        {
+          "term": "virus",
+          "surface": "virus",
+          "weight": 0.004498520025940116,
+          "exclusive": 0.5795112326512774
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 4357,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20210225-172414-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2021-02-25",
+          "theta": 1.0,
+          "snippet": "anza, entusiasmo y amor por la vida. Hasta el día de hoy, hemos recibido 4,3 millones de vacunas que nos han permitido vacunar a más de 3,1 millón de personas, y en los días de hoy y mañana vamos a recibir 4 millones adicionales de dosis de vacunas, lo cual totaliza 8,3 millones de vacunas recibidas en nuestro país."
+        },
+        {
+          "doc_id": 4331,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20210118-171056-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2021-01-18",
+          "theta": 1.0,
+          "snippet": "y el proceso no se detiene. A medida que vayan llegando los nuevos embarques de la vacuna Pfizer-BioNTech y prontamente la vacuna Sinovac o la vacuna AstraZeneca vamos a ir vacunando a toda la población, empezando por los que representan un mayor riesgo. Nuestro plan es vacunar al grueso de la población de alto riesgo"
+        },
+        {
+          "doc_id": 4327,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20210113-170934-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2021-01-13",
+          "theta": 1.0,
+          "snippet": "tena preventiva. Pero hoy es un buen día, porque hoy día recibimos el tercer embarque de vacunas. El primer y segundo embarques los recibimos el día de Pascua, el 24 de diciembre, y el día 31 de diciembre, justo antes del Año Nuevo. Pero ahora recibimos el tercer embarque de Pfizer-BioNTech, que son 88.725 dosis de va"
+        },
+        {
+          "doc_id": 4432,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20211007-181113-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2021-10-07",
+          "theta": 0.9873350451650514,
+          "snippet": "ectividad de la vacuna de refuerzo. Al día de ayer, juntos hemos logrado vacunar con dos dosis a 14,2 millones de personas, es decir, 3 de cada 4 compatriotas. Agradezco, porque ha sido un esfuerzo titánico, a todos los que han contribuido a proteger así la vida y la salud de millones de chilenas y chilenos. Chile fu"
+        },
+        {
+          "doc_id": 4397,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20210622-176029-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2021-06-22",
+          "theta": 0.9691560378169967,
+          "snippet": "unar también a los niños menores de 12 años, porque todos tenemos que protegernos de esta pandemia. Las vacunas han demostrado que son seguras y que son eficaces. Y eso es muy importante porque, por ejemplo, una persona que tiene su proceso de vacunación completa tiene menos de 1/3 de posibilidades de contagiarse y me"
+        }
+      ]
+    },
+    {
+      "topic": 3,
+      "name": "salud, educación y protección social",
+      "auto_label": "Jovenes · becas · niños",
+      "manual_label": "salud, educación y protección social",
+      "manual_anchors": [
+        "escuel",
+        "pension"
+      ],
+      "share": 0.13477176405371788,
+      "exclusivity": 0.6189070755210837,
+      "top_terms": [
+        {
+          "term": "joven",
+          "surface": "jovenes",
+          "weight": 0.010444235859354214,
+          "exclusive": 0.830688643805551
+        },
+        {
+          "term": "bec",
+          "surface": "becas",
+          "weight": 0.00788334577362211,
+          "exclusive": 0.9998595065851065
+        },
+        {
+          "term": "niñ",
+          "surface": "niños",
+          "weight": 0.007367843609584732,
+          "exclusive": 0.4734405884774902
+        },
+        {
+          "term": "escuel",
+          "surface": "escuelas",
+          "weight": 0.007290338443870462,
+          "exclusive": 0.6529073581113954
+        },
+        {
+          "term": "adult",
+          "surface": "adultos",
+          "weight": 0.007103323445006165,
+          "exclusive": 0.5172624787791652
+        },
+        {
+          "term": "maestr",
+          "surface": "maestros",
+          "weight": 0.007025020815344389,
+          "exclusive": 0.5991135600980033
+        },
+        {
+          "term": "pension",
+          "surface": "pension",
+          "weight": 0.007019136521376072,
+          "exclusive": 0.661309235899554
+        },
+        {
+          "term": "corrupcion",
+          "surface": "corrupcion",
+          "weight": 0.006362401164347368,
+          "exclusive": 0.4158538414172371
+        },
+        {
+          "term": "diner",
+          "surface": "dinero",
+          "weight": 0.0052867514902221096,
+          "exclusive": 0.39453715693322366
+        },
+        {
+          "term": "credit",
+          "surface": "creditos",
+          "weight": 0.00481602685756705,
+          "exclusive": 0.6440983851041104
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 240,
+          "speech_id": "MEX-AMLO-20190524-8833b6a4bdba-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2019-05-24",
+          "theta": 1.0,
+          "snippet": "odos los compromisos. Ya se está viendo. Ya aquí en Pinos y en Zacatecas y en el país los adultos mayores están recibiendo, no como era antes, mil 160 pesos, dos mil 550 pesos, el doble. Y ahora se está entregando a todos, es universal. Antes no se les entregaba este apoyo a jubilados, a pensionados del Issste, del Seg"
+        },
+        {
+          "doc_id": 53,
+          "speech_id": "MEX-AMLO-20190122-adea85f5b498-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2019-01-22",
+          "theta": 1.0,
+          "snippet": "itamos a incorporarse a los Programas Integrales para el Bienestar en beneficio de niñas, niños, jóvenes, adultos mayores, personas con discapacidad y productores. Nada ha afectado más, nada ha dañado más a la nación que la deshonestidad de los gobernantes. Por eso vamos a limpiar de corrupción el país y se va a acabar"
+        },
+        {
+          "doc_id": 1662,
+          "speech_id": "MEX-AMLO-20221021-b523837a40ba-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-10-21",
+          "theta": 0.9983515963402233,
+          "snippet": "Chiapas, Oaxaca y Guerrero. Y vamos a continuar con todos los apoyos, atendiendo a los jóvenes, como aquí se mencionó, que no los enganchen, que no se los lleven, para que sufran en las filas de la delincuencia, porque eso tarde o temprano causa desgracia. Por eso tenemos que seguir atendiendo a los jóvenes, que se"
+        },
+        {
+          "doc_id": 631,
+          "speech_id": "MEX-AMLO-20200208-6081156d480e-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-02-08",
+          "theta": 0.9941142524381392,
+          "snippet": "ecirles que ya se está aplicando aquí en Atlacomulco y en el Estado de México el programa Jóvenes Construyendo el Futuro. ¿Para qué es este programa? Para que el joven que no está estudiando y no tiene empleo sea contratado, se le dé trabajo como aprendiz. Un año pagándoles salario mínimo para que se capacite en taller"
+        },
+        {
+          "doc_id": 97,
+          "speech_id": "MEX-AMLO-20190215-834805f85453-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2019-02-15",
+          "theta": 0.9850608875594756,
+          "snippet": "os los compromisos. Ya desde este mes se están entregando los apoyos, las pensiones a los adultos mayores del país. Ofrecimos que iba a aumentar la pensión al adulto mayor y ya se están cumpliendo. Les entregaban mil 160 pesos cada dos meses, ahora dos mil 550 pesos. Hasta diciembre no le daban al pensionado, al jubila"
+        }
+      ]
+    },
+    {
+      "topic": 4,
+      "name": "seguridad y justicia",
+      "auto_label": "Carabineros · compatriotas · niños",
+      "manual_label": "seguridad y justicia",
+      "manual_anchors": [
+        "carabiner",
+        "delincuent"
+      ],
+      "share": 0.17512312356725143,
+      "exclusivity": 0.4918566674504694,
+      "top_terms": [
+        {
+          "term": "carabiner",
+          "surface": "carabineros",
+          "weight": 0.00923818134507747,
+          "exclusive": 1.0
+        },
+        {
+          "term": "compatriot",
+          "surface": "compatriotas",
+          "weight": 0.00711477970652326,
+          "exclusive": 0.6554070496389105
+        },
+        {
+          "term": "niñ",
+          "surface": "niños",
+          "weight": 0.0053147699555945345,
+          "exclusive": 0.3415148242459752
+        },
+        {
+          "term": "region",
+          "surface": "region",
+          "weight": 0.004752671288546835,
+          "exclusive": 0.35290782482019134
+        },
+        {
+          "term": "proteg",
+          "surface": "proteger",
+          "weight": 0.004418265798633978,
+          "exclusive": 0.40458114447034954
+        },
+        {
+          "term": "mujer",
+          "surface": "mujeres",
+          "weight": 0.004309840589821804,
+          "exclusive": 0.47348504398372
+        },
+        {
+          "term": "recuper",
+          "surface": "recuperacion",
+          "weight": 0.0035708933296456557,
+          "exclusive": 0.26162738984989686
+        },
+        {
+          "term": "calid",
+          "surface": "calidad",
+          "weight": 0.003546846423179606,
+          "exclusive": 0.4849037698110068
+        },
+        {
+          "term": "esfuerz",
+          "surface": "esfuerzo",
+          "weight": 0.003462320108537396,
+          "exclusive": 0.42733208275472107
+        },
+        {
+          "term": "colabor",
+          "surface": "colaboracion",
+          "weight": 0.0033579105626166694,
+          "exclusive": 0.5168075449299228
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 4136,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20191030-134150-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2019-10-30",
+          "theta": 1.0,
+          "snippet": "Muy buenas tardes: He venido a expresar mi apoyo y gratitud a Carabineros de Chile y mis condolencias y compromisos a los carabineros que han sido heridos o lesionados cumpliendo con su deber. Durante las últimas semanas hemos conocido hechos de extrema violencia, han costado la vida de 20 personas. Lamentamos cada u"
+        },
+        {
+          "doc_id": 4460,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20211201-182567-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2021-12-01",
+          "theta": 1.0,
+          "snippet": "el Interior, señor General Director, señoras y señores Subsecretarios, señores Oficiales, Carabineros de Chile: Estamos hoy reunidos en la Escuela de Suboficiales Mayor Fabriciano González Urzúa, uno de los más de mil mártires héroes que la institución tiene y que refleja el compromiso y el juramento que ellos hacen a"
+        },
+        {
+          "doc_id": 4478,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20211222-184086-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2021-12-22",
+          "theta": 1.0,
+          "snippet": "r, señor Ministro de Defensa, señoras y señores Subsecretarios, señor General Director de Carabineros, señores Embajadores, señor Senador, señor Diputado, señores Oficiales, distinguidas esposas: Todos compartimos la emoción y el significado de esta ceremonia. Ver a nuevos subtenientes de Carabineros graduarse, jurar"
+        },
+        {
+          "doc_id": 4148,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20191129-135110-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2019-11-29",
+          "theta": 1.0,
+          "snippet": "so quiero empezar por reconocer, saludar y agradecer a los 215 egresados de la Escuela de Carabineros General Carlos Ibáñez del Campo, porque está graduación es la culminación de un largo proceso. Esta Ceremonia de Graduación siempre nos produce una profunda emoción y una profunda gratitud con Carabineros de Chile. A"
+        },
+        {
+          "doc_id": 4047,
+          "speech_id": "CHL-PRENSAPRESIDENCIACL-20190611-96872-es",
+          "speaker": "Sebastián Piñera Echenique",
+          "date": "2019-06-11",
+          "theta": 1.0,
+          "snippet": "Primera Dama, señor Ministro del Interior y Seguridad Pública, señor General Director de Carabineros, señor Subsecretario, autoridades presentes, amigas y amigos: Como Presidente me toca participar en muchas ceremonias, condecoraciones y ascensos de nuestras Fuerzas Armadas y de Orden, pero pocas veces con tanta emoc"
+        }
+      ]
+    },
+    {
+      "topic": 5,
+      "name": "infraestructura y obras",
+      "auto_label": "Tren · aeropuerto · maya",
+      "manual_label": "infraestructura y obras",
+      "manual_anchors": [
+        "aeropuert",
+        "cancun",
+        "obra",
+        "tren"
+      ],
+      "share": 0.08472323651849947,
+      "exclusivity": 0.8575947095434578,
+      "top_terms": [
+        {
+          "term": "tren",
+          "surface": "tren",
+          "weight": 0.017235673366412848,
+          "exclusive": 0.9177750799262833
+        },
+        {
+          "term": "aeropuert",
+          "surface": "aeropuerto",
+          "weight": 0.01030354042405537,
+          "exclusive": 0.9224603582704983
+        },
+        {
+          "term": "may",
+          "surface": "maya",
+          "weight": 0.009389287461806766,
+          "exclusive": 0.7081168289553118
+        },
+        {
+          "term": "obra",
+          "surface": "obra",
+          "weight": 0.007575474500375972,
+          "exclusive": 0.8544008568233553
+        },
+        {
+          "term": "tram",
+          "surface": "tramo",
+          "weight": 0.006764269839377627,
+          "exclusive": 0.6974544673494661
+        },
+        {
+          "term": "surest",
+          "surface": "sureste",
+          "weight": 0.005826382550552035,
+          "exclusive": 0.8983979727535245
+        },
+        {
+          "term": "cancun",
+          "surface": "cancun",
+          "weight": 0.005701782478543169,
+          "exclusive": 0.9932467128432809
+        },
+        {
+          "term": "arqueolog",
+          "surface": "arqueologicas",
+          "weight": 0.005666653747721356,
+          "exclusive": 0.9146242224387302
+        },
+        {
+          "term": "roo",
+          "surface": "roo",
+          "weight": 0.0054947652587279475,
+          "exclusive": 0.8373072446548789
+        },
+        {
+          "term": "quintan",
+          "surface": "quintana",
+          "weight": 0.005475974573095678,
+          "exclusive": 0.8321633514192489
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 998,
+          "speech_id": "MEX-AMLO-20201218-5a953e160335-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-12-18",
+          "theta": 1.0,
+          "snippet": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Amigas, amigos de Palenque, de Chiapas, de las comunidades de... también de Yucatán y de Lacandón, estamos aquí en Lacandón. ¡Que viva Lacandón! Me da mucho gusto estar con ustedes. No podemos congregarnos, por la pandemia, pero estamos juntos y tenemos que seguir adelante para"
+        },
+        {
+          "doc_id": 763,
+          "speech_id": "MEX-AMLO-20200601-55d80491baee-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-06-01",
+          "theta": 1.0,
+          "snippet": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Amigas, amigos de Lázaro Cárdenas, de Quintana Roo: Me da mucho gusto estar de nuevo con ustedes en esta ocasión para dar inicio a esta gran obra del Tren Maya. Es como se ha dicho, una obra trascedente, histórica. Empezando, porque va a integrar a toda la región maya del sures"
+        },
+        {
+          "doc_id": 907,
+          "speech_id": "MEX-AMLO-20201011-e0394b7ffcd5-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-10-11",
+          "theta": 1.0,
+          "snippet": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Amigas, amigos de Yucatán: Como aquí se ha expresado, estamos por concluir la supervisión de la obra el Tren Maya, esta importante acción gubernamental que va a impulsar el desarrollo del sureste. No voy a extenderme mucho porque por esta supervisión se tiene detenido el tráfic"
+        },
+        {
+          "doc_id": 770,
+          "speech_id": "MEX-AMLO-20200604-c837bdb5062a-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-06-04",
+          "theta": 0.9944458429129581,
+          "snippet": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Amigas, amigos, paisanas, paisanos: Me da mucho gusto estar en Palenque y participar en este importante acto de inicio de la obra del Tren Maya. Aquí comienza la ruta del Tren Maya, aquí también termina, porque el tren sale -ese es el proyecto- de Palenque, pasa a Boca del Cerr"
+        },
+        {
+          "doc_id": 864,
+          "speech_id": "MEX-AMLO-20200911-78ba395d23b0-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-09-11",
+          "theta": 0.9883933488602131,
+          "snippet": "~~~PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Amigas, amigos del Estado de México, de Zinacantepec, de este Valle de Toluca: Nos da mucho gusto estar de nuevo con todas y todos ustedes para evaluar el avance de esta importante obra, este Tren Interurbano México-Toluca. El fin de semana lo vamos a dedicar a trenes. Superv"
+        }
+      ]
+    },
+    {
+      "topic": 6,
+      "name": "economía, inflación y fiscal",
+      "auto_label": "Inflacion · pbi · monetaria",
+      "manual_label": "economía, inflación y fiscal",
+      "manual_anchors": [
+        "ajust",
+        "crecimient",
+        "deficit",
+        "dolar",
+        "fiscal",
+        "inflacion",
+        "monetari",
+        "pbi",
+        "preci",
+        "tas"
+      ],
+      "share": 0.09589156485109791,
+      "exclusivity": 0.6681335770331285,
+      "top_terms": [
+        {
+          "term": "inflacion",
+          "surface": "inflacion",
+          "weight": 0.007430682320488361,
+          "exclusive": 0.8162035919506565
+        },
+        {
+          "term": "pbi",
+          "surface": "pbi",
+          "weight": 0.006422814826160566,
+          "exclusive": 1.0
+        },
+        {
+          "term": "monetari",
+          "surface": "monetaria",
+          "weight": 0.005666737689581677,
+          "exclusive": 1.0
+        },
+        {
+          "term": "libert",
+          "surface": "libertad",
+          "weight": 0.004822564867620687,
+          "exclusive": 0.6179670082822635
+        },
+        {
+          "term": "crecimient",
+          "surface": "crecimiento",
+          "weight": 0.004772154721218499,
+          "exclusive": 0.4585574881962854
+        },
+        {
+          "term": "fiscal",
+          "surface": "fiscal",
+          "weight": 0.004721335358176273,
+          "exclusive": 0.6239974313308074
+        },
+        {
+          "term": "tas",
+          "surface": "tasa",
+          "weight": 0.004356965652918771,
+          "exclusive": 0.8171833818123406
+        },
+        {
+          "term": "preci",
+          "surface": "precio",
+          "weight": 0.004285940479229924,
+          "exclusive": 0.20434327188603973
+        },
+        {
+          "term": "deficit",
+          "surface": "deficit",
+          "weight": 0.003797865309214921,
+          "exclusive": 0.7751400115509779
+        },
+        {
+          "term": "banc",
+          "surface": "banco",
+          "weight": 0.003742531539860408,
+          "exclusive": 0.36794358532191324
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 2404,
+          "speech_id": "ARG-CASAROSADAGOBAR-20250608-50989-es",
+          "speaker": "Javier Milei",
+          "date": "2025-06-08",
+          "theta": 1.0,
+          "snippet": "¡Viva la libertad, carajo! ¡Viva la libertad, carajo! ¡Viva la libertad, carajo! ¡Muerte al socialismo! ¡Viva la libertad, carajo! Hola a todos. Muchas gracias. Igual me hace bien porque me permite recuperar el aire, así que, si quieren darle zurra al bandido local, no tengo problema. En primer lugar, quiero dar las"
+        },
+        {
+          "doc_id": 2407,
+          "speech_id": "ARG-CASAROSADAGOBAR-20250612-50994-es",
+          "speaker": "Javier Milei",
+          "date": "2025-06-12",
+          "theta": 1.0,
+          "snippet": "nistros suelen contestarles: “Bueno ¿cuánto tenés que ajustar?”; “Cuatro cinco puntos del PBI”; “¿Y cómo pensás hacerlo?”; “Y, bueno, como mucho puedo hacer 1 por año”. Entonces, nuestros ministros le contestan: “¿Y por qué no 5 en un mes?”. Dicen: “No, eso es imposible”. Bueno, eso es lo que hicimos nosotros: en el pr"
+        },
+        {
+          "doc_id": 2403,
+          "speech_id": "ARG-CASAROSADAGOBAR-20250520-50976-es",
+          "speaker": "Javier Milei",
+          "date": "2025-05-20",
+          "theta": 1.0,
+          "snippet": "un negocio que genere flujo de fondos, que no los maten a impuestos, básicamente que haya crecimiento y la tasa de interés. Básicamente, esos son los key value drivers que uno encuentra en cualquier evaluación convencional. Entonces, básicamente lo que yo voy a hacer es contarles por qué Argentina es un excelente caso"
+        },
+        {
+          "doc_id": 2400,
+          "speech_id": "ARG-CASAROSADAGOBAR-20250430-50943-es",
+          "speaker": "Javier Milei",
+          "date": "2025-04-30",
+          "theta": 1.0,
+          "snippet": "ongreso por permitirme esta oportunidad de estar con ustedes. Y la charla de hoy es sobre crecimiento económico. Es decir, es la hora del crecimiento económico. Hemos concluido la etapa de la estabilización. Esto no quiere decir que las cosas estén perfectas, pero sí hemos concluido con la estabilización. Concretamente"
+        },
+        {
+          "doc_id": 2431,
+          "speech_id": "ARG-CASAROSADAGOBAR-20250916-51071-es",
+          "speaker": "Javier Milei",
+          "date": "2025-09-16",
+          "theta": 1.0,
+          "snippet": "ro comenzar recordando a Charlie Kirk, uno de los mejores divulgadores de las ideas de la libertad, un referente que nunca le dio la espalda al debate abierto. Su muerte no debe paralizarnos. Tenemos la obligación de seguir al frente y no claudicar en la batalla por las ideas. Tarde o temprano, el bien y la verdad triu"
+        }
+      ]
+    },
+    {
+      "topic": 7,
+      "name": "salud, educación y protección social",
+      "auto_label": "Hospitales · medicos · imss",
+      "manual_label": "salud, educación y protección social",
+      "manual_anchors": [
+        "hospital",
+        "imss",
+        "medic"
+      ],
+      "share": 0.06407488192434438,
+      "exclusivity": 0.794775450865681,
+      "top_terms": [
+        {
+          "term": "hospital",
+          "surface": "hospitales",
+          "weight": 0.026382161390901573,
+          "exclusive": 0.954018238249772
+        },
+        {
+          "term": "medic",
+          "surface": "medicos",
+          "weight": 0.024879591432541245,
+          "exclusive": 0.8995490150503189
+        },
+        {
+          "term": "imss",
+          "surface": "imss",
+          "weight": 0.013749814143552879,
+          "exclusive": 0.9863538271876038
+        },
+        {
+          "term": "medicament",
+          "surface": "medicamentos",
+          "weight": 0.01314352457696015,
+          "exclusive": 0.8573731993124969
+        },
+        {
+          "term": "medicin",
+          "surface": "medicina",
+          "weight": 0.00873422134974456,
+          "exclusive": 0.8041014774967374
+        },
+        {
+          "term": "atencion",
+          "surface": "atencion",
+          "weight": 0.007663397385068773,
+          "exclusive": 0.638114156506668
+        },
+        {
+          "term": "enfermer",
+          "surface": "enfermeras",
+          "weight": 0.005961001369951588,
+          "exclusive": 0.841609723236162
+        },
+        {
+          "term": "doctor",
+          "surface": "doctor",
+          "weight": 0.0056487583103747825,
+          "exclusive": 0.5785381197440901
+        },
+        {
+          "term": "equip",
+          "surface": "equipo",
+          "weight": 0.005624395090167655,
+          "exclusive": 0.5661769496318475
+        },
+        {
+          "term": "unidad",
+          "surface": "unidades",
+          "weight": 0.005346793955568813,
+          "exclusive": 0.8219198022411128
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 1181,
+          "speech_id": "MEX-AMLO-20210626-2a1087cf3197-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2021-06-26",
+          "theta": 1.0,
+          "snippet": "n Quintín para cumplir con un compromiso que hicimos de ampliar este hospital del sistema IMSS-Bienestar. Es importante informar que antes de la pandemia, cuando ni siquiera pensábamos, sospechábamos, que nos iba a afectar esa terrible pandemia del COVID-19, casi entrando al gobierno llevamos a cabo un recorrido por lo"
+        },
+        {
+          "doc_id": 1686,
+          "speech_id": "MEX-AMLO-20221115-8bf2bad1ad68-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-11-15",
+          "theta": 0.968912561510055,
+          "snippet": "mblea. Pero no voy a tardar más que tres minutos. Miren, agradecer a los trabajadores del IMSS, al personal médico, a todos los trabajadores de unidades médicas, centros de salud, hospitales, al personal administrativo por su apoyo en momentos difíciles de la pandemia de COVID. Dos, estamos, en efecto, en buen momento,"
+        },
+        {
+          "doc_id": 594,
+          "speech_id": "MEX-AMLO-20200116-9ba7ca7e5568-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-01-16",
+          "theta": 0.9042881927203371,
+          "snippet": "nen seguridad social, para decirlo de manera sencilla, que no tienen Issste, que no tiene IMSS, que no tienen el servicio médico militar, que no tienen el servicio médico de Pemex, que no tienen la seguridad social, que es la mayoría de los mexicanos, es más de la mitad de los mexicanos, que no tienen seguridad social,"
+        },
+        {
+          "doc_id": 1258,
+          "speech_id": "MEX-AMLO-20210910-e9d32a9204e3-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2021-09-10",
+          "theta": 0.903786629653663,
+          "snippet": "de 16 especialidades; además, hospital escuela, hospital para la enseñanza, para que los médicos generales se puedan especializar. Tenemos en nuestro país desgraciadamente un déficit de médicos generales y es mayor el déficit de especialistas, porque se abandonó durante mucho tiempo la enseñanza, se limitó de manera a"
+        },
+        {
+          "doc_id": 691,
+          "speech_id": "MEX-AMLO-20200320-00de9052a904-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-03-20",
+          "theta": 0.8953419989069045,
+          "snippet": "IDENTE ANDRÉS MANUEL LÓPEZ OBRADOR Amigas, amigos, trabajadores de la salud, del programa IMSS-Bienestar: Me da mucho gusto estar con ustedes en Tlaxiaco para cumplir el compromiso de iniciar los trabajos de comenzar a operar este nuevo hospital. Ya lo explicó Zoé, por algunas circunstancias no llegó todo el equipo, so"
+        }
+      ]
+    },
+    {
+      "topic": 8,
+      "name": "democracia, instituciones y electoral",
+      "auto_label": "Cataluña · parlamentarios · autonomas",
+      "manual_label": "democracia, instituciones y electoral",
+      "manual_anchors": [
+        "autonom",
+        "cataluñ",
+        "vot"
+      ],
+      "share": 0.0936721760884428,
+      "exclusivity": 0.6833818824209277,
+      "top_terms": [
+        {
+          "term": "cataluñ",
+          "surface": "cataluña",
+          "weight": 0.011955521909600952,
+          "exclusive": 1.0
+        },
+        {
+          "term": "parlamentari",
+          "surface": "parlamentarios",
+          "weight": 0.008136791309063357,
+          "exclusive": 0.9972968924747311
+        },
+        {
+          "term": "autonom",
+          "surface": "autonomas",
+          "weight": 0.007120391946250901,
+          "exclusive": 0.7962458489337054
+        },
+        {
+          "term": "catalan",
+          "surface": "catalana",
+          "weight": 0.00574291716534889,
+          "exclusive": 1.0
+        },
+        {
+          "term": "eur",
+          "surface": "euros",
+          "weight": 0.00537003673767038,
+          "exclusive": 0.5062825443663294
+        },
+        {
+          "term": "popul",
+          "surface": "popular",
+          "weight": 0.004581162380330273,
+          "exclusive": 0.6250692775035402
+        },
+        {
+          "term": "viviend",
+          "surface": "vivienda",
+          "weight": 0.004360044822090921,
+          "exclusive": 0.5033727875422606
+        },
+        {
+          "term": "independent",
+          "surface": "independencia",
+          "weight": 0.004029245692585415,
+          "exclusive": 0.7124406557578457
+        },
+        {
+          "term": "ministr",
+          "surface": "ministro",
+          "weight": 0.0038912662634187096,
+          "exclusive": 0.3099410937636742
+        },
+        {
+          "term": "grup",
+          "surface": "grupo",
+          "weight": 0.0037458101147061513,
+          "exclusive": 0.38316972386718995
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 2549,
+          "speech_id": "ESP-LAMONCLOAGOBES-20180919-prsp20180919-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2018-09-19",
+          "theta": 1.0,
+          "snippet": "e renuncia a defender la soberanía española sobre Gibraltar, al mismo tiempo que dice que Cataluña es una Nación. O la de Política Territorial, que dice que desearía que los presos independentistas estuvieran en la calle. O el de Interior, que en vez de hacer cumplir la Euroorden, lo que hace es que otro tribunal belga"
+        },
+        {
+          "doc_id": 3461,
+          "speech_id": "ESP-LAMONCLOAGOBES-20250326-20250326pgsesiondecontrol-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2025-03-26",
+          "theta": 1.0,
+          "snippet": "desde la tribuna. Se lo digo ahora. El Gobierno de España está trabajando con los grupos parlamentarios por presentar los Presupuestos Generales del Estado. Si no es en este año, serán para el próximo año. Por supuesto que sí, señoría. Claro que sí. Ese es nuestro deber y es nuestra responsabilidad. Y lo vamos a hacer"
+        },
+        {
+          "doc_id": 2757,
+          "speech_id": "ESP-LAMONCLOAGOBES-20191108-pren081119elpaisaspxasp-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2019-11-08",
+          "theta": 1.0,
+          "snippet": "derecha ha engordado a la ultraderecha con los pactos que hicieron en algunas comunidades autónomas y ciudades importantes como Madrid. En Europa se aísla a la ultraderecha, aquí se engorda a la ultraderecha. P. ¿Exime eso al líder del PSOE de la obligación de responderle? R. Son ellos los que pactan con la ultradere"
+        },
+        {
+          "doc_id": 2580,
+          "speech_id": "ESP-LAMONCLOAGOBES-20181024-prsp241020184-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2018-10-24",
+          "theta": 1.0,
+          "snippet": "aría trasladarle en relación con este asunto. La segunda es en relación con el Brexit de Cataluña. Yo siento, a lo mejor, no haber expresado con total fidelidad mi pensamiento. Mi pensamiento es claro, yo no amenazo, al contrario, no digo nada de eso. Lo que digo es lo siguiente: lo que digo es que aquellos que defien"
+        },
+        {
+          "doc_id": 3300,
+          "speech_id": "ESP-LAMONCLOAGOBES-20240221-2024021controlpreguntascongreso-es",
+          "speaker": "Pedro Sánchez",
+          "date": "2024-02-21",
+          "theta": 1.0,
+          "snippet": "fecto, usted reconoció ante 16 periodistas en un off en privado, que el único camino para Cataluña y para España es la reconciliacióny no la confrontación.Yo no tenía ninguna duda, señor Feijóo.Yo no tenía ninguna duda, aunque ahora tenemos las pruebas de esa conversación, esas confesiones privadas que hizo a 16 period"
+        }
+      ]
+    },
+    {
+      "topic": 9,
+      "name": "Centavos · precio · litro",
+      "auto_label": "Centavos · precio · litro",
+      "manual_label": null,
+      "manual_anchors": [],
+      "share": 0.04967488603518556,
+      "exclusivity": 0.7541837011393124,
+      "top_terms": [
+        {
+          "term": "centav",
+          "surface": "centavos",
+          "weight": 0.023844778676176424,
+          "exclusive": 1.0
+        },
+        {
+          "term": "preci",
+          "surface": "precio",
+          "weight": 0.012978408986058643,
+          "exclusive": 0.6187791381934705
+        },
+        {
+          "term": "litr",
+          "surface": "litro",
+          "weight": 0.009605134164922487,
+          "exclusive": 0.9718341492964392
+        },
+        {
+          "term": "gas",
+          "surface": "gas",
+          "weight": 0.007254176577317066,
+          "exclusive": 0.7031808954320606
+        },
+        {
+          "term": "marg",
+          "surface": "margen",
+          "weight": 0.006310454179190909,
+          "exclusive": 0.9154680137529296
+        },
+        {
+          "term": "pemex",
+          "surface": "pemex",
+          "weight": 0.00596448845310194,
+          "exclusive": 0.7075145675798097
+        },
+        {
+          "term": "gasolin",
+          "surface": "gasolina",
+          "weight": 0.005382332698875314,
+          "exclusive": 0.5977745963976188
+        },
+        {
+          "term": "franquici",
+          "surface": "franquicia",
+          "weight": 0.0047921265349241205,
+          "exclusive": 1.0
+        },
+        {
+          "term": "consumidor",
+          "surface": "consumidores",
+          "weight": 0.004673907478254947,
+          "exclusive": 0.8282067634758158
+        },
+        {
+          "term": "cient",
+          "surface": "ciento",
+          "weight": 0.004137911501322542,
+          "exclusive": 0.19907888726498035
+        }
+      ],
+      "top_docs": [
+        {
+          "doc_id": 1403,
+          "speech_id": "MEX-AMLO-20220207-1acbcbdb7d2b-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-02-07",
+          "theta": 0.8325500270346069,
+          "snippet": "ta idea de propaganda, a esta idea de propaganda— a esta sección de Quién es quién en los precios; entonces la vamos a presentar. Si nos dicen que no es posible, pues entonces no; pero por lo pronto aquí está la tribuna. RICARDO SHEFFIELD PADILLA, PROCURADOR FEDERAL DEL CONSUMIDOR: Gracias, señor presidente. Muy buenos"
+        },
+        {
+          "doc_id": 624,
+          "speech_id": "MEX-AMLO-20200203-230c03186ee3-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2020-02-03",
+          "theta": 0.8235564597870835,
+          "snippet": "rdar los temas que se comentan los lunes. Vamos a informar sobre el quién es quién en los precios de los combustibles y vamos a informar sobre el avance de las obras del aeropuerto de la Ciudad de México y de la refinería que estamos construyendo en Dos Bocas, Paraíso, Tabasco. Entonces, sí les parece, comenzamos con Q"
+        },
+        {
+          "doc_id": 257,
+          "speech_id": "MEX-AMLO-20190603-5a763c67cb52-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2019-06-03",
+          "theta": 0.8007653345919449,
+          "snippet": "lado. Lo otro que vamos a tratar ahora es, como todos los lunes, el Quién es Quién en los Precios de los Combustibles y posteriormente abrimos la ronda de preguntas y respuestas. Entonces, vamos a darle la palabra a Ricardo, que nos informe qué sucedió en la semana en cuanto a precios de gasolinas, diésel y gas. RICARD"
+        },
+        {
+          "doc_id": 203,
+          "speech_id": "MEX-AMLO-20190429-282bb88c4005-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2019-04-29",
+          "theta": 0.7984397471999453,
+          "snippet": "días. La agenda para hoy es como todos los lunes, dar a conocer el quién es quién en los precios de las gasolinas. Esta información la vamos a ir mejorando y se va a mantener; todos los lunes se va a dar a conocer aquí en esta conferencia para que la gente sepa dónde puede comprar más barata la gasolina y también el d"
+        },
+        {
+          "doc_id": 1628,
+          "speech_id": "MEX-AMLO-20220912-dca94960122a-es",
+          "speaker": "Andrés Manuel López Obrador",
+          "date": "2022-09-12",
+          "theta": 0.7704285173545399,
+          "snippet": "n justicia. Entonces, vamos a empezar la semana con Ricardo, con el Quién es quién en los precios. RICARDO SHEFFIELD PADILLA, PROCURADOR FEDERAL DEL CONSUMIDOR: Muy buenos días, señor presidente; muy buenos días a todas y a todos ustedes. Quién es quién en el precio de los combustibles. Vamos a iniciar viendo que la"
+        }
+      ]
+    }
+  ],
+  "label_rows": [
+    {
+      "topic": 0,
+      "name": "seguridad y justicia",
+      "auto": "Federal · guardia · investigacion",
+      "manual": "seguridad y justicia",
+      "anchors": 2,
+      "anchor_terms": "delit, polici",
+      "top_terms": "federal, guardia, investigacion, ciento, delitos, fiscalia, operacion, corrupcion, homicidios, marina"
+    },
+    {
+      "topic": 1,
+      "name": "política exterior",
+      "auto": "Europea · union · europa",
+      "manual": "política exterior",
+      "anchors": 7,
+      "anchor_terms": "europ, europe, multilateral, otan, putin, ucrani",
+      "top_terms": "europea, union, europa, ucrania, putin, consejo, guerra, euros, cumbre, logicamente"
+    },
+    {
+      "topic": 2,
+      "name": "pandemia y crisis sanitaria",
+      "auto": "Vacunas · dosis · pandemia",
+      "manual": "pandemia y crisis sanitaria",
+      "anchors": 3,
+      "anchor_terms": "contagi, pandemi, virus",
+      "top_terms": "vacunas, dosis, pandemia, covid, pfizer, adultos, poblacion, contagios, sanitaria, virus"
+    },
+    {
+      "topic": 3,
+      "name": "salud, educación y protección social",
+      "auto": "Jovenes · becas · niños",
+      "manual": "salud, educación y protección social",
+      "anchors": 2,
+      "anchor_terms": "escuel, pension",
+      "top_terms": "jovenes, becas, niños, escuelas, adultos, maestros, pension, corrupcion, dinero, creditos"
+    },
+    {
+      "topic": 4,
+      "name": "seguridad y justicia",
+      "auto": "Carabineros · compatriotas · niños",
+      "manual": "seguridad y justicia",
+      "anchors": 2,
+      "anchor_terms": "carabiner, delincuent",
+      "top_terms": "carabineros, compatriotas, niños, region, proteger, mujeres, recuperacion, calidad, esfuerzo, colaboracion"
+    },
+    {
+      "topic": 5,
+      "name": "infraestructura y obras",
+      "auto": "Tren · aeropuerto · maya",
+      "manual": "infraestructura y obras",
+      "anchors": 4,
+      "anchor_terms": "aeropuert, cancun, obra, tren",
+      "top_terms": "tren, aeropuerto, maya, obra, tramo, sureste, cancun, arqueologicas, roo, quintana"
+    },
+    {
+      "topic": 6,
+      "name": "economía, inflación y fiscal",
+      "auto": "Inflacion · pbi · monetaria",
+      "manual": "economía, inflación y fiscal",
+      "anchors": 10,
+      "anchor_terms": "ajust, crecimient, deficit, dolar, fiscal, inflacion",
+      "top_terms": "inflacion, pbi, monetaria, libertad, crecimiento, fiscal, tasa, precio, deficit, banco"
+    },
+    {
+      "topic": 7,
+      "name": "salud, educación y protección social",
+      "auto": "Hospitales · medicos · imss",
+      "manual": "salud, educación y protección social",
+      "anchors": 3,
+      "anchor_terms": "hospital, imss, medic",
+      "top_terms": "hospitales, medicos, imss, medicamentos, medicina, atencion, enfermeras, doctor, equipo, unidades"
+    },
+    {
+      "topic": 8,
+      "name": "democracia, instituciones y electoral",
+      "auto": "Cataluña · parlamentarios · autonomas",
+      "manual": "democracia, instituciones y electoral",
+      "anchors": 3,
+      "anchor_terms": "autonom, cataluñ, vot",
+      "top_terms": "cataluña, parlamentarios, autonomas, catalana, euros, popular, vivienda, independencia, ministro, grupo"
+    },
+    {
+      "topic": 9,
+      "name": "Centavos · precio · litro",
+      "auto": "Centavos · precio · litro",
+      "manual": "",
+      "anchors": 0,
+      "anchor_terms": "",
+      "top_terms": "centavos, precio, litro, gas, margen, pemex, gasolina, franquicia, consumidores, ciento"
+    }
+  ],
+  "speaker_shares": [
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 0,
+      "share": 0.2267667110162815,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 1,
+      "share": 0.017100885732384847,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 2,
+      "share": 0.06216189425478471,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 3,
+      "share": 0.2377415541348706,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 4,
+      "share": 0.03987812394321484,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 5,
+      "share": 0.1305627833355829,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 6,
+      "share": 0.0633257755548945,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 7,
+      "share": 0.10543391822795067,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 8,
+      "share": 0.027400322694483992,
+      "docs": 2294
+    },
+    {
+      "speaker": "Andrés Manuel López Obrador",
+      "topic": 9,
+      "share": 0.08962803110555197,
+      "docs": 2294
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 0,
+      "share": 0.03667703817268356,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 1,
+      "share": 0.037807069569064496,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 2,
+      "share": 0.0011644389998267082,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 3,
+      "share": 0.006555386347027326,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 4,
+      "share": 0.11424634241544784,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 5,
+      "share": 0.01379198203017866,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 6,
+      "share": 0.7613039122433811,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 7,
+      "share": 0.003538067764929036,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 8,
+      "share": 0.01964553239684436,
+      "docs": 187
+    },
+    {
+      "speaker": "Javier Milei",
+      "topic": 9,
+      "share": 0.005270230060616418,
+      "docs": 187
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 0,
+      "share": 0.0998018152302891,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 1,
+      "share": 0.2036516924185654,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 2,
+      "share": 0.06932421085562111,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 3,
+      "share": 0.037810720998864636,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 4,
+      "share": 0.24234609477650582,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 5,
+      "share": 0.018128828711034665,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 6,
+      "share": 0.18646473233487396,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 7,
+      "share": 0.03723570236664051,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 8,
+      "share": 0.09693653504594608,
+      "docs": 30
+    },
+    {
+      "speaker": "Nicolás Maduro",
+      "topic": 9,
+      "share": 0.008299667261658778,
+      "docs": 30
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 0,
+      "share": 0.025511282930768955,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 1,
+      "share": 0.39838667916141673,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 2,
+      "share": 0.031343473094220274,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 3,
+      "share": 0.015133829633248125,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 4,
+      "share": 0.1332788294553638,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 5,
+      "share": 0.021017438618938514,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 6,
+      "share": 0.06820698736273205,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 7,
+      "share": 0.012125236720768547,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 8,
+      "share": 0.2871024436890519,
+      "docs": 1136
+    },
+    {
+      "speaker": "Pedro Sánchez",
+      "topic": 9,
+      "share": 0.007893799333491408,
+      "docs": 1136
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 0,
+      "share": 0.031101299214840436,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 1,
+      "share": 0.03710781586660484,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 2,
+      "share": 0.07223911814581281,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 3,
+      "share": 0.05171892353141755,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 4,
+      "share": 0.5904561735533982,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 5,
+      "share": 0.06489952932285677,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 6,
+      "share": 0.07214303168979014,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 7,
+      "share": 0.03722276349146105,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 8,
+      "share": 0.03262681329777924,
+      "docs": 884
+    },
+    {
+      "speaker": "Sebastián Piñera Echenique",
+      "topic": 9,
+      "share": 0.010484531886038727,
+      "docs": 884
+    }
+  ]
+}

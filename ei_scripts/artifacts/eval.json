@@ -1,0 +1,594 @@
+{
+  "barrido_umbral": [
+    {
+      "nivel": "cualquier evidencia",
+      "umbral": 0.0,
+      "tp": 25,
+      "fp": 4,
+      "fn": 13,
+      "precision": 0.862,
+      "recall": 0.658,
+      "f1": 0.746,
+      "precision_ci": [
+        0.694,
+        0.945
+      ],
+      "recall_ci": [
+        0.499,
+        0.788
+      ]
+    },
+    {
+      "nivel": "acción de contenido",
+      "umbral": 0.65,
+      "tp": 18,
+      "fp": 3,
+      "fn": 20,
+      "precision": 0.857,
+      "recall": 0.474,
+      "f1": 0.61,
+      "precision_ci": [
+        0.654,
+        0.95
+      ],
+      "recall_ci": [
+        0.325,
+        0.627
+      ]
+    },
+    {
+      "nivel": "+ CYK",
+      "umbral": 0.71,
+      "tp": 17,
+      "fp": 2,
+      "fn": 21,
+      "precision": 0.895,
+      "recall": 0.447,
+      "f1": 0.596,
+      "precision_ci": [
+        0.686,
+        0.971
+      ],
+      "recall_ci": [
+        0.301,
+        0.603
+      ]
+    },
+    {
+      "nivel": "+ lugar explícito",
+      "umbral": 0.81,
+      "tp": 3,
+      "fp": 1,
+      "fn": 35,
+      "precision": 0.75,
+      "recall": 0.079,
+      "f1": 0.143,
+      "precision_ci": [
+        0.301,
+        0.954
+      ],
+      "recall_ci": [
+        0.027,
+        0.208
+      ]
+    },
+    {
+      "nivel": "+ fecha / monto / cantidad",
+      "umbral": 0.86,
+      "tp": 1,
+      "fp": 0,
+      "fn": 37,
+      "precision": 1.0,
+      "recall": 0.026,
+      "f1": 0.051,
+      "precision_ci": [
+        0.207,
+        1.0
+      ],
+      "recall_ci": [
+        0.005,
+        0.135
+      ]
+    }
+  ],
+  "por_estrato": {
+    "aleatorio": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 6,
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.571,
+      "precision_ci": [
+        0.51,
+        1.0
+      ],
+      "recall_ci": [
+        0.168,
+        0.687
+      ]
+    },
+    "aceptado": {
+      "tp": 21,
+      "fp": 4,
+      "fn": 5,
+      "precision": 0.84,
+      "recall": 0.808,
+      "f1": 0.824,
+      "precision_ci": [
+        0.653,
+        0.936
+      ],
+      "recall_ci": [
+        0.621,
+        0.915
+      ]
+    },
+    "rechazado": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "precision_ci": [
+        0.0,
+        0.0
+      ],
+      "recall_ci": [
+        0.0,
+        0.658
+      ]
+    }
+  },
+  "config_evaluada": "D · + CFG/CYK (completo)",
+  "gold": {
+    "n": 205,
+    "positivas": 38,
+    "por_estrato": {
+      "aleatorio": 125,
+      "aceptado": 40,
+      "rechazado": 40
+    },
+    "por_hablante": {
+      "Andrés Manuel López Obrador": 41,
+      "Javier Milei": 41,
+      "Nicolás Maduro": 41,
+      "Pedro Sánchez": 41,
+      "Sebastián Piñera Echenique": 41
+    }
+  },
+  "prevalencia_estrato_aleatorio": {
+    "n": 125,
+    "positivas": 10,
+    "prevalencia": 0.08,
+    "prevalencia_ci": [
+      0.044,
+      0.141
+    ]
+  },
+  "configuraciones": {
+    "A · autómata": {
+      "tp": 30,
+      "fp": 15,
+      "fn": 8,
+      "precision": 0.667,
+      "recall": 0.789,
+      "f1": 0.723,
+      "precision_ci": [
+        0.521,
+        0.786
+      ],
+      "recall_ci": [
+        0.637,
+        0.889
+      ],
+      "tn": 152
+    },
+    "B · + negación": {
+      "tp": 29,
+      "fp": 13,
+      "fn": 9,
+      "precision": 0.69,
+      "recall": 0.763,
+      "f1": 0.725,
+      "precision_ci": [
+        0.54,
+        0.809
+      ],
+      "recall_ci": [
+        0.608,
+        0.87
+      ],
+      "tn": 154
+    },
+    "C · + slots regex": {
+      "tp": 29,
+      "fp": 13,
+      "fn": 9,
+      "precision": 0.69,
+      "recall": 0.763,
+      "f1": 0.725,
+      "precision_ci": [
+        0.54,
+        0.809
+      ],
+      "recall_ci": [
+        0.608,
+        0.87
+      ],
+      "tn": 154
+    },
+    "D · + CFG/CYK (completo)": {
+      "tp": 25,
+      "fp": 4,
+      "fn": 13,
+      "precision": 0.862,
+      "recall": 0.658,
+      "f1": 0.746,
+      "precision_ci": [
+        0.694,
+        0.945
+      ],
+      "recall_ci": [
+        0.499,
+        0.788
+      ],
+      "tn": 163
+    }
+  },
+  "por_hablante": {
+    "A · autómata": {
+      "Andrés Manuel López Obrador": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 2,
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8,
+        "precision_ci": [
+          0.49,
+          0.943
+        ],
+        "recall_ci": [
+          0.49,
+          0.943
+        ],
+        "tn": 29
+      },
+      "Javier Milei": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "precision_ci": [
+          0.231,
+          0.882
+        ],
+        "recall_ci": [
+          0.438,
+          1.0
+        ],
+        "tn": 36
+      },
+      "Nicolás Maduro": {
+        "tp": 6,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "precision_ci": [
+          0.313,
+          0.832
+        ],
+        "recall_ci": [
+          0.61,
+          1.0
+        ],
+        "tn": 31
+      },
+      "Pedro Sánchez": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.8,
+        "recall": 0.727,
+        "f1": 0.762,
+        "precision_ci": [
+          0.49,
+          0.943
+        ],
+        "recall_ci": [
+          0.434,
+          0.903
+        ],
+        "tn": 28
+      },
+      "Sebastián Piñera Echenique": {
+        "tp": 5,
+        "fp": 5,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.625,
+        "f1": 0.556,
+        "precision_ci": [
+          0.237,
+          0.763
+        ],
+        "recall_ci": [
+          0.306,
+          0.863
+        ],
+        "tn": 28
+      }
+    },
+    "B · + negación": {
+      "Andrés Manuel López Obrador": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "precision_ci": [
+          0.676,
+          1.0
+        ],
+        "recall_ci": [
+          0.49,
+          0.943
+        ],
+        "tn": 31
+      },
+      "Javier Milei": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "precision_ci": [
+          0.231,
+          0.882
+        ],
+        "recall_ci": [
+          0.438,
+          1.0
+        ],
+        "tn": 36
+      },
+      "Nicolás Maduro": {
+        "tp": 5,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.556,
+        "recall": 0.833,
+        "f1": 0.667,
+        "precision_ci": [
+          0.267,
+          0.811
+        ],
+        "recall_ci": [
+          0.436,
+          0.97
+        ],
+        "tn": 31
+      },
+      "Pedro Sánchez": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.8,
+        "recall": 0.727,
+        "f1": 0.762,
+        "precision_ci": [
+          0.49,
+          0.943
+        ],
+        "recall_ci": [
+          0.434,
+          0.903
+        ],
+        "tn": 28
+      },
+      "Sebastián Piñera Echenique": {
+        "tp": 5,
+        "fp": 5,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.625,
+        "f1": 0.556,
+        "precision_ci": [
+          0.237,
+          0.763
+        ],
+        "recall_ci": [
+          0.306,
+          0.863
+        ],
+        "tn": 28
+      }
+    },
+    "C · + slots regex": {
+      "Andrés Manuel López Obrador": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "precision_ci": [
+          0.676,
+          1.0
+        ],
+        "recall_ci": [
+          0.49,
+          0.943
+        ],
+        "tn": 31
+      },
+      "Javier Milei": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "precision_ci": [
+          0.231,
+          0.882
+        ],
+        "recall_ci": [
+          0.438,
+          1.0
+        ],
+        "tn": 36
+      },
+      "Nicolás Maduro": {
+        "tp": 5,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.556,
+        "recall": 0.833,
+        "f1": 0.667,
+        "precision_ci": [
+          0.267,
+          0.811
+        ],
+        "recall_ci": [
+          0.436,
+          0.97
+        ],
+        "tn": 31
+      },
+      "Pedro Sánchez": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.8,
+        "recall": 0.727,
+        "f1": 0.762,
+        "precision_ci": [
+          0.49,
+          0.943
+        ],
+        "recall_ci": [
+          0.434,
+          0.903
+        ],
+        "tn": 28
+      },
+      "Sebastián Piñera Echenique": {
+        "tp": 5,
+        "fp": 5,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.625,
+        "f1": 0.556,
+        "precision_ci": [
+          0.237,
+          0.763
+        ],
+        "recall_ci": [
+          0.306,
+          0.863
+        ],
+        "tn": 28
+      }
+    },
+    "D · + CFG/CYK (completo)": {
+      "Andrés Manuel López Obrador": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "precision_ci": [
+          0.676,
+          1.0
+        ],
+        "recall_ci": [
+          0.49,
+          0.943
+        ],
+        "tn": 31
+      },
+      "Javier Milei": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "precision_ci": [
+          0.438,
+          1.0
+        ],
+        "recall_ci": [
+          0.438,
+          1.0
+        ],
+        "tn": 38
+      },
+      "Nicolás Maduro": {
+        "tp": 2,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333,
+        "precision_ci": [
+          0.097,
+          0.7
+        ],
+        "recall_ci": [
+          0.097,
+          0.7
+        ],
+        "tn": 31
+      },
+      "Pedro Sánchez": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.727,
+        "f1": 0.842,
+        "precision_ci": [
+          0.676,
+          1.0
+        ],
+        "recall_ci": [
+          0.434,
+          0.903
+        ],
+        "tn": 30
+      },
+      "Sebastián Piñera Echenique": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 4,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "precision_ci": [
+          0.51,
+          1.0
+        ],
+        "recall_ci": [
+          0.215,
+          0.785
+        ],
+        "tn": 33
+      }
+    }
+  },
+  "kappa": {
+    "A · autómata vs B · + negación": 0.956,
+    "A · autómata vs D · + CFG/CYK (completo)": 0.739
+  }
+}

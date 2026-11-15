@@ -1,0 +1,82 @@
+2
+Recuperación de información (RI)
+Objetivo: El alumno distinguirá los conocimientos básicos sobre la recuperación de información (RI) y los
+componentes de un sistema.
+Contenido:
+2.1 Introducción.
+2.1.1 Antecedentes.
+2.1.2 Concepto.
+2.1.3 El PLN en la RI.
+2.1.4 Aplicaciones.
+2.2 Sistemas de RI.
+2.2.1 Preproceso de documentos.
+2.2.2 Técnicas de indexación.
+2.2.3 Recuperación.
+2.2.4 Recuperación basada en la semántica.
+2.2.5 Medidas de evaluación.
+3
+Extracción de información (EI)
+Objetivo: El alumno aplicará los conceptos principales relacionados con la extracción de información (EI), mediante
+sus técnicas y métodos.
+Contenido:
+3.1 Introducción.
+3.1.1 Antecedentes.
+3.1.2 Concepto.
+3.1.3 Diferencias entre RI y EI.
+3.1.4 Aplicaciones.
+3.2 Técnicas de EI.
+3.2.1 Expresiones regulares.
+3.2.2 Autómatas.
+3.2.3 Gramáticas independientes del contexto.
+3.3 Extracción de entidades.
+3.3.1 Reconocimiento de entidades.
+3.3.2 Identificación y clasificación de nombres.
+3.4 Extracción de eventos.
+3.4.1 Reconocimiento de eventos.
+3.5 Extracción de relaciones.
+3.6 Algoritmos para aprendizaje de máquinas.
+4
+Resumen automático de textos (RAT)
+Objetivo: El alumno comprenderá el análisis y procesamiento inteligente de textos mediante el acercamiento al
+resumen automático de textos (RAT), así como la importancia del PLN en la solución de requerimientos de información
+específicos.
+Contenido:
+4.1 Introducción.
+4.1.1 Concepto.
+4.1.2 Objetivo.
+4.1.3 Retos del RAT.
+4.1.4 Unidades de resumen.
+4.1.5 Aplicaciones.
+4.2 Criterios de extracción.
+4.3 Etapas del RAT.
+4.3.1 Identificación de tópico.
+4.3.2 Identificación de unidades.
+4.3.3 Extracción.
+4.3.4 Generación del resumen.
+4.4 Métodos del RAT.
+4.4.1 Estadísticos.
+4.4.2 Selección de oraciones.
+4.4.3 Selección de párrafos.
+4.4.4 Discursivos.
+4.4.5 Por plantillas.
+4.4.6 Otros.
+4.5 Evaluación de resúmenes.
+4.5.1 Métricas.
+4.6 Resumen de múltiples documentos.
+4.6.1 Problemática.
+4.6.2 Métodos.
+5
+Minería de textos (MT)
+Objetivo: El alumno descubrirá el proceso de minería de textos, así como las técnicas y herramientas para realizarlo.
+Contenido:
+5.1 Introducción.
+5.1.1 Antecedentes.
+5.1.2 Concepto.
+5.1.3 Minería de datos.
+5.1.4 Aplicaciones.
+5.2 Técnicas básicas de MT.
+5.3 Algoritmos y modelos.
+5.4 Herramientas.
+5.5 Software de MT.
+5.6 Más allá de la MT.
+5.6.1 Minería de web.

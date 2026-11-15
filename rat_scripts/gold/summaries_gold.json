@@ -1,0 +1,45 @@
+{
+  "description": "Referencias escritas a mano para evaluar el resumidor (5 discursos, uno por hablante). Son resúmenes abstractivos breves: 3 oraciones y 55-75 palabras. Se usan sólo para medir (ROUGE), nunca para construir el resumen.",
+  "items": [
+    {
+      "doc_id": 1065,
+      "speaker": "Andrés Manuel López Obrador",
+      "date": "2021-02-26",
+      "title": "Inauguración del Hospital General de Querétaro",
+      "reference": "En la inauguración del Hospital General de Querétaro, López Obrador afirmó que se garantiza el derecho del pueblo a la salud, con atención médica de calidad y medicamentos gratuitos. Señaló que el hospital atenderá a la población sin seguridad social y funcionará como hospital escuela de especialidades, para reducir el déficit de médicos. Informó que con este suman 120 centros de salud y hospitales terminados en dos años, con inversión compartida entre la federación y el estado.",
+      "notes": "Discurso de 407 tokens; se espera que el resumen recoja inauguración, derecho a la salud y hospital escuela."
+    },
+    {
+      "doc_id": 2381,
+      "speaker": "Javier Milei",
+      "date": "2024-12-17",
+      "title": "Entrega de sables y medallas en el Colegio Militar",
+      "reference": "En la ceremonia de egreso de oficiales de las tres fuerzas, Milei exigió la liberación inmediata de Nahuel Gallo, detenido en Venezuela. Sostuvo que su gobierno está reconciliando a las Fuerzas Armadas con la política y que las jerarquizará, aunque les exigirá más compromiso. Recordó la batalla de Caseros y pidió a los nuevos oficiales servicio a la patria y fidelidad a la Constitución.",
+      "notes": "Discurso de 401 tokens; el caso de Nahuel Gallo aparece al inicio y es el único hecho noticioso."
+    },
+    {
+      "doc_id": 2493,
+      "speaker": "Nicolás Maduro",
+      "date": "2020-09-18",
+      "title": "Evento de Alto Nivel de la ONU sobre los ODS",
+      "reference": "Ante la ONU, Maduro afirmó que Venezuela mantiene su compromiso con la Agenda 2030 pese a las sanciones y bloqueos de Estados Unidos. Destacó las Misiones sociales: los CLAP cubren más de 6 millones de familias, la Misión Vivienda entregó más de 3 millones de viviendas y casi 5 millones de personas reciben pensión. Aseguró que el sistema público atendió al 99% de los contagiados de COVID-19.",
+      "notes": "Discurso de 432 tokens con muchas cifras: sirve para ver si la densidad numérica ayuda."
+    },
+    {
+      "doc_id": 2877,
+      "speaker": "Pedro Sánchez",
+      "date": "2021-01-26",
+      "title": "Comunicación de nuevos nombramientos",
+      "reference": "Sánchez anunció un reajuste mínimo del Gobierno tras la dimisión de Salvador Illa para ser candidato en las elecciones catalanas. Carolina Darias será la nueva ministra de Sanidad y Miquel Iceta el de Política Territorial y Función Pública. Agradeció el trabajo de Illa y pidió a los nuevos ministros mantener la prioridad en la emergencia sanitaria y en la recuperación económica y social.",
+      "notes": "Discurso de 403 tokens; los dos nombramientos son el núcleo informativo."
+    },
+    {
+      "doc_id": 4432,
+      "speaker": "Sebastián Piñera Echenique",
+      "date": "2021-10-07",
+      "title": "Resultados del estudio sobre efectividad de la dosis de refuerzo",
+      "reference": "Piñera presentó un balance de la vacunación: 14,2 millones de personas tienen dos dosis y 3,6 millones el refuerzo. Un estudio del Ministerio de Salud en 11 millones de personas mostró alta efectividad del refuerzo para evitar hospitalizaciones: 88% con Sinovac, 87% con Pfizer y 96% con AstraZeneca. Llamó a vacunarse y a mantener los protocolos sanitarios frente a la variante Delta.",
+      "notes": "Discurso de 402 tokens; el dato central es la efectividad del refuerzo."
+    }
+  ]
+}

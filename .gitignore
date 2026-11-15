@@ -1,0 +1,11 @@
+.ipynb_checkpoints
+.ruff_cache
+rat_scripts/__pycache__
+ri_scripts/__pycache__
+mt_scripts/__pycache__
+est_scripts/__pycache__
+er_scripts/__pycache__
+ei_scripts/__pycache__
+est_scripts/artifacts/oof_predictions.jsonl
+est_scripts/artifacts/eval.json
+ri_scripts/artifacts/*

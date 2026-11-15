@@ -1,0 +1,750 @@
+{
+  "opciones": {
+    "slots": true,
+    "cyk": true,
+    "negacion": true,
+    "gazetteer": true,
+    "min_conf": 0.55,
+    "limit": 0
+  },
+  "volumen": {
+    "documentos": 4531,
+    "eventos": 11052,
+    "segundos": 145.5,
+    "autómata": {
+      "estados": 727,
+      "patrones": 619,
+      "aristas": 726,
+      "alfabeto": 656,
+      "profundidad_max": 11
+    }
+  },
+  "embudo": {
+    "oraciones": 993494,
+    "sin_disparador": 756922,
+    "con_disparador": 93532,
+    "rechazadas_pregunta": 79588,
+    "rechazadas_cyk": 73272,
+    "descartadas_cortas": 60617,
+    "cyk_acepta": 20260,
+    "aceptadas": 11052,
+    "rechazadas_sin_accion": 7532,
+    "rechazadas_cita": 2835,
+    "rechazadas_confianza": 907,
+    "rechazadas_negacion": 769
+  },
+  "por_hablante": {
+    "Andrés Manuel López Obrador": {
+      "eventos": 9265,
+      "oraciones": 789289,
+      "eventos_por_1000_oraciones": 11.74,
+      "confianza_media": 0.688,
+      "tipos": {
+        "otro": 3827,
+        "social": 1308,
+        "salud": 982,
+        "economia_empleo": 890,
+        "politica_institucional": 748,
+        "infraestructura": 706,
+        "seguridad": 440,
+        "educacion": 364
+      }
+    },
+    "Pedro Sánchez": {
+      "eventos": 1077,
+      "oraciones": 127486,
+      "eventos_por_1000_oraciones": 8.45,
+      "confianza_media": 0.706,
+      "tipos": {
+        "otro": 409,
+        "economia_empleo": 207,
+        "social": 125,
+        "politica_institucional": 97,
+        "salud": 74,
+        "seguridad": 68,
+        "infraestructura": 60,
+        "educacion": 37
+      }
+    },
+    "Sebastián Piñera Echenique": {
+      "eventos": 556,
+      "oraciones": 41426,
+      "eventos_por_1000_oraciones": 13.42,
+      "confianza_media": 0.717,
+      "tipos": {
+        "otro": 137,
+        "politica_institucional": 103,
+        "economia_empleo": 73,
+        "salud": 73,
+        "social": 61,
+        "infraestructura": 47,
+        "seguridad": 42,
+        "educacion": 20
+      }
+    },
+    "Javier Milei": {
+      "eventos": 144,
+      "oraciones": 31833,
+      "eventos_por_1000_oraciones": 4.52,
+      "confianza_media": 0.711,
+      "tipos": {
+        "otro": 64,
+        "economia_empleo": 34,
+        "politica_institucional": 14,
+        "social": 10,
+        "infraestructura": 9,
+        "seguridad": 8,
+        "educacion": 3,
+        "salud": 2
+      }
+    },
+    "Nicolás Maduro": {
+      "eventos": 10,
+      "oraciones": 3460,
+      "eventos_por_1000_oraciones": 2.89,
+      "confianza_media": 0.676,
+      "tipos": {
+        "otro": 5,
+        "seguridad": 2,
+        "economia_empleo": 2,
+        "salud": 1
+      }
+    }
+  },
+  "por_ano": {
+    "2015": 1,
+    "2018": 435,
+    "2019": 2489,
+    "2020": 1836,
+    "2021": 1594,
+    "2022": 1687,
+    "2023": 1598,
+    "2024": 1161,
+    "2025": 177,
+    "2026": 74
+  },
+  "por_tipo": {
+    "otro": 4442,
+    "social": 1504,
+    "economia_empleo": 1206,
+    "salud": 1132,
+    "politica_institucional": 962,
+    "infraestructura": 822,
+    "seguridad": 560,
+    "educacion": 424
+  },
+  "disparadores": [
+    {
+      "forma": "vamos a",
+      "n": 6432
+    },
+    {
+      "forma": "voy a",
+      "n": 1233
+    },
+    {
+      "forma": "va a",
+      "n": 987
+    },
+    {
+      "forma": "vamos a seguir",
+      "n": 630
+    },
+    {
+      "forma": "van a",
+      "n": 306
+    },
+    {
+      "forma": "anuncio",
+      "n": 93
+    },
+    {
+      "forma": "informo que",
+      "n": 91
+    },
+    {
+      "forma": "planteamos",
+      "n": 84
+    },
+    {
+      "forma": "les informo",
+      "n": 78
+    },
+    {
+      "forma": "anuncio que",
+      "n": 76
+    },
+    {
+      "forma": "daremos",
+      "n": 54
+    },
+    {
+      "forma": "nuestro compromiso",
+      "n": 52
+    },
+    {
+      "forma": "quiero informar",
+      "n": 38
+    },
+    {
+      "forma": "presentaremos",
+      "n": 36
+    },
+    {
+      "forma": "informo a",
+      "n": 32
+    },
+    {
+      "forma": "damos a conocer",
+      "n": 31
+    },
+    {
+      "forma": "tenemos el compromiso",
+      "n": 30
+    },
+    {
+      "forma": "proponemos",
+      "n": 30
+    },
+    {
+      "forma": "dare",
+      "n": 28
+    },
+    {
+      "forma": "tenemos que",
+      "n": 27
+    },
+    {
+      "forma": "les anuncio",
+      "n": 26
+    },
+    {
+      "forma": "informaremos",
+      "n": 26
+    },
+    {
+      "forma": "llevara",
+      "n": 26
+    },
+    {
+      "forma": "estamos comprometidos",
+      "n": 22
+    },
+    {
+      "forma": "propongo",
+      "n": 21
+    }
+  ],
+  "polos": {
+    "afirmado": 11045,
+    "atenuado": 7
+  },
+  "cobertura_slots": {
+    "fecha": 305,
+    "monto": 111,
+    "cantidad": 242,
+    "lugar": 1481,
+    "beneficiario": 439,
+    "organizacion": 190
+  },
+  "lugares_top": [
+    [
+      "México",
+      212
+    ],
+    [
+      "Estados Unidos",
+      63
+    ],
+    [
+      "en México",
+      54
+    ],
+    [
+      "Sonora",
+      33
+    ],
+    [
+      "Guerrero",
+      30
+    ],
+    [
+      "Oaxaca",
+      28
+    ],
+    [
+      "Campeche",
+      23
+    ],
+    [
+      "en Estados Unidos",
+      20
+    ],
+    [
+      "Ciudad de México",
+      19
+    ],
+    [
+      "Quintana Roo",
+      19
+    ],
+    [
+      "Veracruz",
+      17
+    ],
+    [
+      "en la Ciudad de México",
+      17
+    ],
+    [
+      "Zacatecas",
+      17
+    ],
+    [
+      "Baja California",
+      17
+    ],
+    [
+      "Chile",
+      17
+    ],
+    [
+      "Yucatán",
+      15
+    ],
+    [
+      "Nayarit",
+      14
+    ],
+    [
+      "Chiapas",
+      14
+    ],
+    [
+      "Sinaloa",
+      13
+    ],
+    [
+      "en Sinaloa",
+      13
+    ]
+  ],
+  "dedup": {
+    "grupo": {
+      "5112": 0,
+      "5169": 0,
+      "5220": 0,
+      "5228": 0,
+      "5237": 0,
+      "5438": 0,
+      "5497": 0,
+      "5531": 0,
+      "5579": 0,
+      "5624": 0,
+      "5656": 0,
+      "5983": 0,
+      "8020": 0,
+      "8277": 0,
+      "8374": 0,
+      "8553": 0,
+      "4758": 1,
+      "4902": 1,
+      "4955": 1,
+      "5101": 1,
+      "5203": 1,
+      "5505": 1,
+      "5809": 1,
+      "5875": 1,
+      "5932": 1,
+      "6143": 1,
+      "7118": 1,
+      "7275": 1,
+      "7504": 1,
+      "8033": 1,
+      "8071": 1,
+      "69": 2,
+      "617": 2,
+      "624": 2,
+      "1185": 2,
+      "1940": 2,
+      "3388": 3,
+      "4700": 3,
+      "6955": 3,
+      "7968": 3,
+      "8514": 3,
+      "4338": 4,
+      "4826": 4,
+      "5102": 4,
+      "5462": 4,
+      "7839": 4,
+      "1296": 5,
+      "1586": 5,
+      "1908": 5,
+      "1995": 5,
+      "5207": 6,
+      "6499": 6,
+      "6603": 6,
+      "6963": 6,
+      "1304": 7,
+      "1507": 7,
+      "2283": 7,
+      "4262": 8,
+      "4617": 8,
+      "4665": 8,
+      "4333": 9,
+      "4359": 9,
+      "4457": 9,
+      "4336": 10,
+      "4548": 10,
+      "6505": 10,
+      "4793": 11,
+      "6066": 11,
+      "6525": 11,
+      "5678": 12,
+      "5684": 12,
+      "5779": 12,
+      "5950": 13,
+      "6975": 13,
+      "9075": 13,
+      "6187": 14,
+      "6880": 14,
+      "8143": 14,
+      "7728": 15,
+      "8345": 15,
+      "9240": 15,
+      "72": 16,
+      "189": 16,
+      "220": 17,
+      "235": 17,
+      "221": 18,
+      "236": 18,
+      "222": 19,
+      "237": 19,
+      "223": 20,
+      "238": 20,
+      "224": 21,
+      "239": 21,
+      "226": 22,
+      "241": 22,
+      "227": 23,
+      "242": 23,
+      "250": 24,
+      "255": 24,
+      "252": 25,
+      "256": 25,
+      "253": 26,
+      "257": 26,
+      "254": 27,
+      "258": 27,
+      "576": 28,
+      "916": 28,
+      "613": 29,
+      "620": 29,
+      "614": 30,
+      "621": 30,
+      "615": 31,
+      "622": 31,
+      "616": 32,
+      "623": 32,
+      "786": 33,
+      "8338": 33,
+      "919": 34,
+      "927": 34,
+      "985": 35,
+      "986": 35,
+      "1074": 36,
+      "1076": 36,
+      "1075": 37,
+      "1077": 37,
+      "1197": 38,
+      "1506": 38,
+      "1300": 39,
+      "3848": 39,
+      "1419": 40,
+      "1994": 40,
+      "1499": 41,
+      "1500": 41,
+      "1626": 42,
+      "1789": 42,
+      "1735": 43,
+      "1879": 43,
+      "1996": 44,
+      "1997": 44,
+      "2182": 45,
+      "2375": 45,
+      "2513": 46,
+      "4926": 46,
+      "2528": 47,
+      "6012": 47,
+      "2682": 48,
+      "6686": 48,
+      "2957": 49,
+      "5948": 49,
+      "3384": 50,
+      "9057": 50,
+      "3484": 51,
+      "3558": 51,
+      "3850": 52,
+      "4972": 52,
+      "4163": 53,
+      "8301": 53,
+      "4329": 54,
+      "4330": 54,
+      "4426": 55,
+      "4432": 55,
+      "4491": 56,
+      "5453": 56,
+      "4622": 57,
+      "4633": 57,
+      "4623": 58,
+      "4634": 58,
+      "4624": 59,
+      "4635": 59,
+      "4625": 60,
+      "4636": 60,
+      "4626": 61,
+      "4637": 61,
+      "4627": 62,
+      "4638": 62,
+      "4628": 63,
+      "4639": 63,
+      "4629": 64,
+      "4640": 64,
+      "4630": 65,
+      "4641": 65,
+      "4631": 66,
+      "4642": 66,
+      "4632": 67,
+      "4643": 67,
+      "4872": 68,
+      "5795": 68,
+      "5017": 69,
+      "9174": 69,
+      "5149": 70,
+      "5313": 70,
+      "5187": 71,
+      "5844": 71,
+      "5289": 72,
+      "5562": 72,
+      "5636": 73,
+      "5637": 73,
+      "5701": 74,
+      "6303": 74,
+      "5702": 75,
+      "6304": 75,
+      "5862": 76,
+      "6506": 76,
+      "6355": 77,
+      "6993": 77,
+      "6657": 78,
+      "6705": 78,
+      "7630": 79,
+      "7631": 79,
+      "7657": 80,
+      "7665": 80,
+      "7658": 81,
+      "7666": 81,
+      "7659": 82,
+      "7667": 82,
+      "7660": 83,
+      "7668": 83,
+      "7661": 84,
+      "7669": 84,
+      "7662": 85,
+      "7670": 85,
+      "7708": 86,
+      "7915": 86,
+      "9115": 87,
+      "9123": 87,
+      "9316": 88,
+      "9317": 88,
+      "10648": 89,
+      "10653": 89,
+      "10649": 90,
+      "10654": 90,
+      "10650": 91,
+      "10655": 91,
+      "10651": 92,
+      "10656": 92,
+      "10652": 93,
+      "10657": 93,
+      "10754": 94,
+      "10880": 94,
+      "10814": 95,
+      "10815": 95
+    },
+    "representante": {
+      "0": 5112,
+      "1": 4758,
+      "2": 69,
+      "3": 3388,
+      "4": 4338,
+      "5": 1296,
+      "6": 5207,
+      "7": 1304,
+      "8": 4262,
+      "9": 4333,
+      "10": 4336,
+      "11": 4793,
+      "12": 5678,
+      "13": 5950,
+      "14": 6187,
+      "15": 7728,
+      "16": 72,
+      "17": 220,
+      "18": 221,
+      "19": 222,
+      "20": 223,
+      "21": 224,
+      "22": 226,
+      "23": 227,
+      "24": 250,
+      "25": 252,
+      "26": 253,
+      "27": 254,
+      "28": 576,
+      "29": 613,
+      "30": 614,
+      "31": 615,
+      "32": 616,
+      "33": 786,
+      "34": 919,
+      "35": 985,
+      "36": 1074,
+      "37": 1075,
+      "38": 1197,
+      "39": 1300,
+      "40": 1419,
+      "41": 1499,
+      "42": 1626,
+      "43": 1735,
+      "44": 1996,
+      "45": 2182,
+      "46": 2513,
+      "47": 2528,
+      "48": 2682,
+      "49": 2957,
+      "50": 3384,
+      "51": 3484,
+      "52": 3850,
+      "53": 4163,
+      "54": 4329,
+      "55": 4426,
+      "56": 4491,
+      "57": 4622,
+      "58": 4623,
+      "59": 4624,
+      "60": 4625,
+      "61": 4626,
+      "62": 4627,
+      "63": 4628,
+      "64": 4629,
+      "65": 4630,
+      "66": 4631,
+      "67": 4632,
+      "68": 4872,
+      "69": 5017,
+      "70": 5149,
+      "71": 5187,
+      "72": 5289,
+      "73": 5636,
+      "74": 5701,
+      "75": 5702,
+      "76": 5862,
+      "77": 6355,
+      "78": 6657,
+      "79": 7630,
+      "80": 7657,
+      "81": 7658,
+      "82": 7659,
+      "83": 7660,
+      "84": 7661,
+      "85": 7662,
+      "86": 7708,
+      "87": 9115,
+      "88": 9316,
+      "89": 10648,
+      "90": 10649,
+      "91": 10650,
+      "92": 10651,
+      "93": 10652,
+      "94": 10754,
+      "95": 10814
+    },
+    "grupos": 96,
+    "pares_verificados": 403,
+    "pares_colision": 2315
+  },
+  "ejemplos_por_hablante": {
+    "Andrés Manuel López Obrador": [
+      {
+        "fecha": "2018-12-02",
+        "confianza": 0.71,
+        "tipo": "otro",
+        "oracion": "Todos los días vamos a llevar a cabo esta labor."
+      },
+      {
+        "fecha": "2018-12-04",
+        "confianza": 0.57,
+        "tipo": "seguridad",
+        "oracion": "Les informo que se está obteniendo información sobre los delitos cometidos en todo el país con un sistema que se está estableciendo, porque no existe un sistema de información que reporte la incidencia delictiva diariamente."
+      }
+    ],
+    "Javier Milei": [
+      {
+        "fecha": "2024-01-26",
+        "confianza": 0.75,
+        "tipo": "otro",
+        "oracion": "Me comprometo también a fortalecer nuestro vínculo diplomático, comercial y de amistad con el Estado de Israel."
+      },
+      {
+        "fecha": "2024-01-26",
+        "confianza": 0.65,
+        "tipo": "seguridad",
+        "oracion": "Y también, en el marco de los 30 años del atentado a la AMIA, me comprometo a seguir trabajando para apoyar la justicia y poner fin a la impunidad que rodea este crimen aberrante y a la tragedia del atentado a la embajada de Israel."
+      }
+    ],
+    "Nicolás Maduro": [
+      {
+        "fecha": "2015-07-06",
+        "confianza": 0.71,
+        "tipo": "otro",
+        "oracion": "Yo tengo un video que es preocupante, yo se los voy a presentar, porque hace unos meses atrás, pedimos explicaciones a la Canciller y al gobierno de Colombia, porque el exministro de Defensa"
+      },
+      {
+        "fecha": "2018-05-22",
+        "confianza": 0.57,
+        "tipo": "seguridad",
+        "oracion": "ya establecida la mesa protocolar, se dio la segunda deserción del proceso democrático y de diálogo, cuando el jefe de la delegación de la oposición venezolana, el señor Julio Borges prófugo de la justicia, anuncio el retiro de la mesa de diálogo y que no firmaba el acuerdo que ya habíamos concertad"
+      }
+    ],
+    "Pedro Sánchez": [
+      {
+        "fecha": "2018-06-18",
+        "confianza": 0.57,
+        "tipo": "otro",
+        "oracion": "Y también le anuncio que este viernes acudiré con el Rey a la inauguración de los Juegos del Mediterráneo en la ciudad de Tarragona."
+      },
+      {
+        "fecha": "2018-06-18",
+        "confianza": 0.81,
+        "tipo": "politica_institucional",
+        "oracion": "Le diré una cosa, ayer mismo tuve la ocasión de poder charlar sobre esta cuestión con el presidente de la República francesa, al cual agradezco mucho la ayuda que nos ha prestado, y ya le anuncio que voy a emprender una ronda de consultas y de viajes con los colegas europeos, en Berlín, en París, y "
+      }
+    ],
+    "Sebastián Piñera Echenique": [
+      {
+        "fecha": "2018-03-11",
+        "confianza": 0.81,
+        "tipo": "economia_empleo",
+        "oracion": "Por eso, vamos a transformar el actual Ministerio de Desarrollo Social en el Ministerio de la Familia y el Desarrollo Social, y la actual Subsecretaría de la Niñez en la Subsecretaría de la Familia e Infancia."
+      },
+      {
+        "fecha": "2018-03-11",
+        "confianza": 0.71,
+        "tipo": "otro",
+        "oracion": "También, vamos a fortalecer la Red de Familias de Acogida y el derecho de los niños a vivir en el seno de una familia que los quiera y proteja."
+      }
+    ]
+  }
+}
